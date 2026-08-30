@@ -3,15 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#090807" />
-  <meta name="description" content="Empire Stogie Lounge — a premium cigar lounge in Clifton Park, New York." />
-  <title>Empire Stogie Lounge | Clifton Park, NY</title>
+  <meta name="theme-color" content="#070706" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="description" content="Empire Stogie Lounge is a premium cigar lounge in Clifton Park, New York, with a curated humidor, comfortable lounge seating, and a relaxed 21+ atmosphere at 15 Park Ave, Suite 14." />
+  <title>Empire Stogie Lounge | Premium Cigar Lounge in Clifton Park, NY</title>
+  <link rel="canonical" href="https://empirestogielounge.com/" />
   <link id="siteFavicon" rel="icon" type="image/jpeg" href="assets/logo.jpg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="IMG_8968.jpeg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Empire Stogie Lounge" />
+  <meta property="og:title" content="Empire Stogie Lounge | Clifton Park, NY" />
+  <meta property="og:description" content="Premium cigars, a curated humidor, and a relaxed lounge experience in Clifton Park, New York." />
+  <meta property="og:url" content="https://empirestogielounge.com/" />
+  <meta property="og:image" content="https://empirestogielounge.com/IMG_8968.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Empire Stogie Lounge | Clifton Park, NY" />
+  <meta name="twitter:description" content="Premium cigars and a relaxed lounge experience in Clifton Park, New York." />
+  <meta name="twitter:image" content="https://empirestogielounge.com/IMG_8968.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="gallery-patch.css" />
+  <link rel="stylesheet" href="premium-v2.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Empire Stogie Lounge",
+    "description": "Premium cigar lounge and humidor in Clifton Park, New York.",
+    "url": "https://empirestogielounge.com/",
+    "image": "https://empirestogielounge.com/IMG_8968.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 Park Ave, Suite 14",
+      "addressLocality": "Clifton Park",
+      "addressRegion": "NY",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.instagram.com/empirestogielounge",
+      "https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr"
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
@@ -29,7 +67,7 @@
   </div>
 
   <div class="topbar">
-    <span>PREMIUM CIGARS · CLIFTON PARK, NY</span>
+    <span>PREMIUM CIGARS · 21+ · 15 PARK AVE, SUITE 14</span>
     <a href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">@empirestogielounge</a>
   </div>
 
@@ -41,7 +79,9 @@
     <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav id="mainNav" aria-label="Primary navigation">
       <a href="#experience">Experience</a>
+      <a href="#humidor">Humidor</a>
       <a href="#gallery">Gallery</a>
+      <a href="#whats-on">What’s On</a>
       <a href="#visit">Visit</a>
       <a href="#social">Social</a>
     </nav>
@@ -49,22 +89,29 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero hero-v2">
       <div class="hero-copy">
+        <div class="status-row">
+          <a class="status-chip" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener"><span class="status-dot"></span><span id="hoursStatus">Latest posted hours · 12 PM–7 PM</span></a>
+          <span class="status-note">Confirm today’s hours on social.</span>
+        </div>
         <p class="kicker">CLIFTON PARK · NEW YORK</p>
         <h1>A proper place<br>for a great cigar.</h1>
-        <p class="hero-lead">A polished, relaxed lounge for premium cigars, conversation, and time well spent.</p>
+        <p class="hero-lead">A polished, relaxed lounge built around premium cigars, a carefully presented humidor, comfortable seating, and time well spent.</p>
         <div class="hero-actions">
           <a class="button button-gold" href="#visit">Visit Empire</a>
-          <a class="button button-dark" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">Instagram ↗</a>
+          <a class="button button-quiet" href="https://www.google.com/maps/search/?api=1&query=15+Park+Ave+Suite+14+Clifton+Park+NY" target="_blank" rel="noopener">Directions</a>
+          <a class="button button-quiet" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">Latest Updates</a>
         </div>
-        <div class="hero-meta">
-          <span>15 Park Ave, Suite 14</span>
-          <span>Clifton Park, NY</span>
+        <div class="hero-trust" aria-label="Empire highlights">
+          <div><strong>21+</strong><small>Adults-only lounge</small></div>
+          <div><strong>Humidor</strong><small>Premium cigar selection</small></div>
+          <div><strong>Clifton Park</strong><small>Local destination</small></div>
         </div>
       </div>
       <div class="hero-visual">
-        <img src="IMG_8968.jpeg" alt="Empire Stogie Lounge seating area" fetchpriority="high" />
+        <img src="IMG_8968.jpeg" alt="Leather lounge seating inside Empire Stogie Lounge in Clifton Park" fetchpriority="high" />
+        <div class="hero-watermark">15 Park Ave · Suite 14</div>
         <div class="hero-logo-card">
           <img class="hero-logo official-logo" src="assets/logo.jpg" alt="Empire Stogie Lounge" />
         </div>
@@ -75,66 +122,138 @@
       <p class="section-label">THE EMPIRE EXPERIENCE</p>
       <div>
         <h2>Built around the lounge experience.</h2>
-        <p>Whether you already know your cigars or you are finding your first favorite, Empire is designed to feel comfortable, considered, and easy to enjoy.</p>
+        <p>Whether you already know your cigars or you are finding your first favorite, Empire is designed to feel considered, comfortable, and easy to enjoy—from the humidor to the lounge chair.</p>
       </div>
     </section>
 
-    <section class="feature-row">
-      <article><span>01</span><h3>Premium selection</h3><p>Explore cigars in a setting built for people who appreciate the details.</p></article>
-      <article><span>02</span><h3>Relaxed atmosphere</h3><p>Comfortable seating, TVs, and room to settle in without feeling rushed.</p></article>
-      <article><span>03</span><h3>Local destination</h3><p>A new cigar-lounge experience right here in Clifton Park.</p></article>
+    <section class="amenities" aria-labelledby="amenitiesTitle">
+      <div class="premium-shell">
+        <div class="amenities-head">
+          <p class="section-eyebrow">WHAT YOU’LL FIND</p>
+          <div><h2 class="section-display" id="amenitiesTitle">The details that make a lounge.</h2><p class="section-copy">A focused cigar experience, presented without the noise: premium selection, a comfortable room, and a place to settle in.</p></div>
+        </div>
+        <div class="amenities-grid">
+          <article class="amenity-card"><span class="amenity-number">01</span><h3>Curated humidor</h3><p>Browse a broad selection of premium cigars displayed in a dedicated humidor environment.</p></article>
+          <article class="amenity-card"><span class="amenity-number">02</span><h3>Lounge seating</h3><p>Leather seating and small tables create an easy setting for conversation and a slower pace.</p></article>
+          <article class="amenity-card"><span class="amenity-number">03</span><h3>Premium selection</h3><p>From familiar names to discoveries worth asking about, the selection is built to be explored.</p></article>
+          <article class="amenity-card"><span class="amenity-number">04</span><h3>TVs & downtime</h3><p>A relaxed place to catch what’s on, meet friends, and spend time without feeling rushed.</p></article>
+          <article class="amenity-card"><span class="amenity-number">05</span><h3>Clifton Park</h3><p>Conveniently located at 15 Park Ave, Suite 14, in Clifton Park, New York.</p></article>
+          <article class="amenity-card"><span class="amenity-number">06</span><h3>Adults 21+</h3><p>Empire is an adults-only tobacco lounge. Government-issued photo ID may be required.</p></article>
+        </div>
+      </div>
     </section>
 
-    <section class="gallery" id="gallery">
+    <section class="humidor-section" id="humidor">
+      <div class="humidor-media"><img src="IMG_8966.jpeg" alt="Premium cigars displayed in the Empire Stogie Lounge humidor" loading="lazy" /></div>
+      <div class="humidor-copy">
+        <p class="section-eyebrow">EXPLORE THE HUMIDOR</p>
+        <h2 class="section-display">Find the cigar for the moment.</h2>
+        <p class="section-copy">Come in with a favorite or come in curious. The humidor is the center of the experience—and the best place to start.</p>
+        <div class="humidor-list">
+          <div class="humidor-item"><b>01</b><div><strong>Premium selection</strong><small>Browse boxes and singles across a range of profiles and styles.</small></div></div>
+          <div class="humidor-item"><b>02</b><div><strong>New arrivals</strong><small>Follow Empire for newly stocked boxes, featured cigars, and lounge updates.</small></div></div>
+          <div class="humidor-item"><b>03</b><div><strong>Ask for a recommendation</strong><small>Not sure where to begin? Start with what you enjoy and explore from there.</small></div></div>
+        </div>
+        <a class="premium-link" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">See new arrivals on Instagram →</a>
+      </div>
+    </section>
+
+    <section class="gallery gallery-v2" id="gallery">
       <div class="gallery-heading">
         <p class="section-label light">INSIDE EMPIRE</p>
         <h2>See the lounge.</h2>
-        <p>Real photos from Empire Stogie Lounge — the humidor, cigar selection, and lounge.</p>
+        <p>Real photos from Empire Stogie Lounge—the humidor, cigar selection, and lounge. Tap any image to view it larger.</p>
       </div>
-      <div class="gallery-grid gallery-grid-six">
-        <figure><img src="IMG_8966.jpeg" alt="Premium cigar selection at Empire Stogie Lounge" loading="lazy" /></figure>
-        <figure><img src="IMG_8971.jpeg" alt="Close-up premium cigars" loading="lazy" /></figure>
-        <figure><img src="IMG_8970.jpeg" alt="Humidor cabinet at Empire Stogie Lounge" loading="lazy" /></figure>
-        <figure><img src="IMG_8969.jpeg" alt="Cigar shelves inside the humidor" loading="lazy" /></figure>
-        <figure><img src="IMG_8965.jpeg" alt="Cigar boxes and shelves" loading="lazy" /></figure>
-        <figure><img src="IMG_8968.jpeg" alt="Lounge seating at Empire Stogie Lounge" loading="lazy" /></figure>
+      <div class="gallery-grid gallery-grid-six" aria-label="Empire Stogie Lounge photo gallery">
+        <figure><button class="gallery-card" type="button" data-full="IMG_8966.jpeg" data-caption="Premium cigar selection inside the humidor"><img src="IMG_8966.jpeg" alt="Premium cigar selection at Empire Stogie Lounge" loading="lazy" /></button></figure>
+        <figure><button class="gallery-card" type="button" data-full="IMG_8971.jpeg" data-caption="Close-up cigar selection at Empire"><img src="IMG_8971.jpeg" alt="Close-up premium cigars" loading="lazy" /></button></figure>
+        <figure><button class="gallery-card" type="button" data-full="IMG_8970.jpeg" data-caption="Humidor cabinet at Empire Stogie Lounge"><img src="IMG_8970.jpeg" alt="Humidor cabinet at Empire Stogie Lounge" loading="lazy" /></button></figure>
+        <figure><button class="gallery-card" type="button" data-full="IMG_8969.jpeg" data-caption="Cigar shelves inside the Empire humidor"><img src="IMG_8969.jpeg" alt="Cigar shelves inside the humidor" loading="lazy" /></button></figure>
+        <figure><button class="gallery-card" type="button" data-full="IMG_8965.jpeg" data-caption="Cigar boxes and premium selection"><img src="IMG_8965.jpeg" alt="Cigar boxes and shelves" loading="lazy" /></button></figure>
+        <figure><button class="gallery-card" type="button" data-full="IMG_8968.jpeg" data-caption="Leather lounge seating at Empire Stogie Lounge"><img src="IMG_8968.jpeg" alt="Lounge seating at Empire Stogie Lounge" loading="lazy" /></button></figure>
       </div>
     </section>
 
-    <section class="visit" id="visit">
+    <section class="events-section" id="whats-on">
+      <div class="premium-shell">
+        <div class="events-header">
+          <p class="section-eyebrow">WHAT’S ON</p>
+          <div><h2 class="section-display">A reason to check back.</h2><p class="section-copy">Empire’s social channels are the live board for arrivals, daily updates, announcements, and special gatherings.</p></div>
+        </div>
+        <div class="events-grid">
+          <article class="event-card"><span class="event-tag">New Arrivals</span><div><h3>Fresh boxes in the humidor.</h3><p>See featured cigars and newly stocked selections as they arrive.</p><a class="premium-link" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">Follow arrivals →</a></div></article>
+          <article class="event-card"><span class="event-tag">Lounge Updates</span><div><h3>Hours, announcements, and daily news.</h3><p>Soft-opening hours and day-to-day updates can change, so social is the best source before you head over.</p><a class="premium-link" href="https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr" target="_blank" rel="noopener">Check Facebook →</a></div></article>
+          <article class="event-card"><span class="event-tag">Events</span><div><h3>Special nights belong here.</h3><p>Tastings, watch nights, launches, and gatherings can be promoted here as soon as dates are announced.</p><a class="premium-link" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">See latest posts →</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-section" aria-labelledby="proofTitle">
+      <div class="premium-shell">
+        <div class="proof-head">
+          <p class="section-eyebrow">COMMUNITY & RECOMMENDATIONS</p>
+          <div><h2 class="section-display" id="proofTitle">See what people are sharing.</h2><p class="section-copy">Rather than publishing invented testimonials, Empire links you directly to the places where current guest recommendations, posts, and location information can be verified.</p></div>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-card"><span class="proof-icon">FACEBOOK</span><h3>Recommendations & updates</h3><p>Visit Empire’s Facebook presence for community activity, recommendations, and current announcements.</p><a class="premium-link" href="https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr" target="_blank" rel="noopener">Open Facebook →</a></article>
+          <article class="proof-card"><span class="proof-icon">INSTAGRAM</span><h3>Real lounge photography</h3><p>See current images, product arrivals, and the latest visual updates directly from the lounge.</p><a class="premium-link" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">Open Instagram →</a></article>
+          <article class="proof-card"><span class="proof-icon">GOOGLE MAPS</span><h3>Location & directions</h3><p>Open the Clifton Park location in Google Maps for navigation and the latest public location information.</p><a class="premium-link" href="https://www.google.com/maps/search/?api=1&query=Empire+Stogie+Lounge+15+Park+Ave+Suite+14+Clifton+Park+NY" target="_blank" rel="noopener">Open Google Maps →</a></article>
+        </div>
+        <p class="proof-disclaimer">Only verifiable source links are shown here. Review ratings and quotes are intentionally not fabricated.</p>
+      </div>
+    </section>
+
+    <section class="visit visit-premium" id="visit">
       <div class="visit-title">
         <p class="section-label">VISIT EMPIRE</p>
         <h2>Come in. Pick a cigar. Stay awhile.</h2>
       </div>
-      <div class="visit-cards">
-        <article><span>ADDRESS</span><p>15 Park Ave<br>Suite 14<br>Clifton Park, NY</p><a href="https://www.google.com/maps/search/?api=1&query=15+Park+Ave+Suite+14+Clifton+Park+NY" target="_blank" rel="noopener">Get Directions ↗</a></article>
-        <article><span>HOURS & UPDATES</span><p>Check the lounge’s social pages for the latest daily hours, announcements, and events.</p><a href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">Latest Updates ↗</a></article>
-        <article><span>GOOD TO KNOW</span><p>Adults 21+ only. Valid government-issued photo ID may be required.</p><a href="#social">Stay Connected ↓</a></article>
+      <div class="visit-layout">
+        <div class="visit-info">
+          <div>
+            <p class="section-eyebrow">CLIFTON PARK · NEW YORK</p>
+            <h3 class="section-display">Your seat is here.</h3>
+            <div class="visit-info-grid">
+              <div class="visit-detail"><span>Address</span><strong>15 Park Ave<br />Suite 14<br />Clifton Park, NY</strong></div>
+              <div class="visit-detail"><span>Latest posted hours</span><strong>12 PM–7 PM</strong><p class="hours-caveat">Soft-opening hours may vary. Confirm today’s schedule on Instagram or Facebook before traveling.</p></div>
+              <div class="visit-detail"><span>Age</span><strong>Adults 21+</strong></div>
+              <div class="visit-detail"><span>Updates</span><strong>@empirestogielounge</strong></div>
+            </div>
+          </div>
+          <div class="visit-actions">
+            <a class="button button-gold" href="https://www.google.com/maps/search/?api=1&query=15+Park+Ave+Suite+14+Clifton+Park+NY" target="_blank" rel="noopener">Get Directions</a>
+            <a class="button button-quiet" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">Message on Instagram</a>
+            <a class="button button-quiet is-hidden" id="callEmpire" href="#">Call Empire</a>
+          </div>
+        </div>
+        <div class="map-panel">
+          <iframe title="Map to Empire Stogie Lounge, 15 Park Ave Suite 14, Clifton Park, New York" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=15%20Park%20Ave%20Suite%2014%20Clifton%20Park%20NY&output=embed"></iframe>
+          <a class="map-label" href="https://www.google.com/maps/search/?api=1&query=15+Park+Ave+Suite+14+Clifton+Park+NY" target="_blank" rel="noopener">Open in Google Maps →</a>
+        </div>
       </div>
     </section>
 
-    <section class="social" id="social">
-      <div class="social-art"><img src="IMG_8971.jpeg" alt="Premium cigars at Empire Stogie Lounge" loading="lazy" /></div>
-      <div class="social-copy">
-        <p class="section-label light">FOLLOW THE LOUNGE</p>
-        <h2>What’s happening at Empire.</h2>
-        <p>Follow for new arrivals, lounge updates, events, and photos from inside.</p>
+    <section class="social social-v2" id="social">
+      <div class="social-v2-inner">
+        <div class="social-v2-head">
+          <p class="section-eyebrow">FOLLOW THE LOUNGE</p>
+          <div><h2 class="section-display">What’s happening at Empire.</h2><p class="section-copy">New arrivals, lounge updates, events, and real photos from inside—without leaving the brand experience behind.</p></div>
+        </div>
+        <div class="instagram-grid" aria-label="Empire Stogie Lounge social photo grid">
+          <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener"><img src="IMG_8971.jpeg" alt="Premium cigars at Empire Stogie Lounge" loading="lazy" /></a>
+          <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener"><img src="IMG_8968.jpeg" alt="Leather seating at Empire Stogie Lounge" loading="lazy" /></a>
+          <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener"><img src="IMG_8970.jpeg" alt="Empire Stogie Lounge humidor cabinet" loading="lazy" /></a>
+          <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener"><img src="IMG_8969.jpeg" alt="Cigar shelves at Empire" loading="lazy" /></a>
+          <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener"><img src="IMG_8965.jpeg" alt="Premium cigar boxes at Empire" loading="lazy" /></a>
+          <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener"><img src="IMG_8966.jpeg" alt="Humidor selection at Empire Stogie Lounge" loading="lazy" /></a>
+        </div>
         <div class="hero-actions social-buttons">
           <a class="button button-gold social-button" href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener" aria-label="Empire Stogie Lounge on Instagram">
-            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <defs><radialGradient id="igGradient" cx="30%" cy="100%" r="120%"><stop offset="0%" stop-color="#ffd600"/><stop offset="28%" stop-color="#ff7a00"/><stop offset="52%" stop-color="#ff0169"/><stop offset="78%" stop-color="#d300c5"/><stop offset="100%" stop-color="#7638fa"/></radialGradient></defs>
-              <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#igGradient)"/>
-              <rect x="5.4" y="5.4" width="13.2" height="13.2" rx="4.1" fill="none" stroke="#fff" stroke-width="1.8"/>
-              <circle cx="12" cy="12" r="3.1" fill="none" stroke="#fff" stroke-width="1.8"/>
-              <circle cx="16.9" cy="7.3" r="1.05" fill="#fff"/>
-            </svg>
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="igGradient" cx="30%" cy="100%" r="120%"><stop offset="0%" stop-color="#ffd600"/><stop offset="28%" stop-color="#ff7a00"/><stop offset="52%" stop-color="#ff0169"/><stop offset="78%" stop-color="#d300c5"/><stop offset="100%" stop-color="#7638fa"/></radialGradient></defs><rect x="1" y="1" width="22" height="22" rx="6" fill="url(#igGradient)"/><rect x="5.4" y="5.4" width="13.2" height="13.2" rx="4.1" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="3.1" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16.9" cy="7.3" r="1.05" fill="#fff"/></svg>
             <span>Instagram</span>
           </a>
           <a class="button button-outline social-button" href="https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Empire Stogie Lounge on Facebook">
-            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="11" fill="#1877F2"/>
-              <path fill="#fff" d="M13.7 21v-7h2.35l.35-2.73h-2.7V9.53c0-.79.22-1.33 1.35-1.33h1.44V5.76a19.2 19.2 0 0 0-2.1-.11c-2.08 0-3.5 1.27-3.5 3.6v2.02H8.54V14h2.35v7h2.81z"/>
-            </svg>
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#1877F2"/><path fill="#fff" d="M13.7 21v-7h2.35l.35-2.73h-2.7V9.53c0-.79.22-1.33 1.35-1.33h1.44V5.76a19.2 19.2 0 0 0-2.1-.11c-2.08 0-3.5 1.27-3.5 3.6v2.02H8.54V14h2.35v7h2.81z"/></svg>
             <span>Facebook</span>
           </a>
         </div>
@@ -142,14 +261,38 @@
     </section>
   </main>
 
-  <footer>
-    <div class="footer-brand">
-      <img class="footer-logo official-logo" src="assets/logo.jpg" alt="Empire Stogie Lounge logo" />
-      <div><strong>EMPIRE STOGIE LOUNGE</strong><small>Clifton Park, New York</small></div>
+  <footer class="footer-premium">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo official-logo" src="assets/logo.jpg" alt="Empire Stogie Lounge logo" />
+        <div class="footer-brand-copy"><strong>EMPIRE STOGIE LOUNGE</strong><p>A premium 21+ cigar lounge and humidor in Clifton Park, New York.</p></div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><a href="#experience">Experience</a><a href="#humidor">Humidor</a><a href="#gallery">Gallery</a><a href="#whats-on">What’s On</a></div>
+      <div class="footer-col"><h4>Visit</h4><span>15 Park Ave, Suite 14</span><span>Clifton Park, NY</span><span>Latest posted: 12 PM–7 PM*</span><a href="https://www.google.com/maps/search/?api=1&query=15+Park+Ave+Suite+14+Clifton+Park+NY" target="_blank" rel="noopener">Directions</a></div>
+      <div class="footer-col"><h4>Connect</h4><a href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="#visit">Visit Empire</a></div>
     </div>
-    <p>© <span id="year"></span> Empire Stogie Lounge. All rights reserved.</p>
-    <p class="legal">For adults 21+. Tobacco products contain nicotine. Nicotine is an addictive chemical.</p>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Empire Stogie Lounge. All rights reserved.</p>
+      <p class="legal">For adults 21+. Tobacco products contain nicotine. Nicotine is an addictive chemical. *Soft-opening hours may vary; confirm current hours on social.</p>
+    </div>
   </footer>
+
+  <div class="mobile-quickbar" aria-label="Quick actions">
+    <a href="https://www.google.com/maps/search/?api=1&query=15+Park+Ave+Suite+14+Clifton+Park+NY" target="_blank" rel="noopener">Directions</a>
+    <a href="#visit">Hours</a>
+    <a href="https://www.instagram.com/empirestogielounge" target="_blank" rel="noopener">Message</a>
+    <a class="is-hidden" id="mobileCallEmpire" href="#">Call</a>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <div class="lightbox-stage">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo viewer">×</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous photo">‹</button>
+      <img id="lightboxImage" src="" alt="" />
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next photo">›</button>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
