@@ -1,0 +1,1 @@
+(binary logo will replace this via Git data API)
