@@ -4,12 +4,14 @@ const header = document.querySelector('.site-header');
 const menuButton = document.getElementById('menuButton');
 const nav = document.getElementById('mainNav');
 
-// Keep factual business data centralized here. Add a verified public phone number
-// when Empire publishes one; the Call buttons will appear automatically.
+// Verified business facts belong here. Unknown facts stay blank instead of being guessed.
 const BUSINESS = {
   phone: '',
+  timezone: 'America/New_York',
   instagram: 'https://www.instagram.com/empirestogielounge',
-  facebook: 'https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr'
+  facebook: 'https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr',
+  // Add a verified weekly schedule later, e.g. {0:null,1:['12:00','19:00'],...}
+  hours: null
 };
 
 async function loadOfficialLogo() {
@@ -38,16 +40,23 @@ async function loadOfficialLogo() {
 
 loadOfficialLogo();
 
-const allowed = localStorage.getItem('empireAgeVerified') === 'true';
+// Age gate: store only a local browser confirmation. No account or personal data is created.
+let allowed = false;
+try {
+  allowed = localStorage.getItem('empireAgeVerified') === 'true';
+} catch (_) {
+  allowed = false;
+}
 if (allowed && gate) gate.classList.add('hidden');
 
 if (enter && gate) {
   enter.addEventListener('click', () => {
-    localStorage.setItem('empireAgeVerified', 'true');
+    try { localStorage.setItem('empireAgeVerified', 'true'); } catch (_) {}
     gate.classList.add('hidden');
   });
 }
 
+// Mobile navigation.
 if (menuButton && header && nav) {
   menuButton.addEventListener('click', () => {
     const open = header.classList.toggle('nav-open');
@@ -64,7 +73,14 @@ if (menuButton && header && nav) {
   });
 }
 
-// Phone CTA is intentionally hidden until a verified public number is configured.
+// Header polish on scroll.
+function updateHeaderState() {
+  header?.classList.toggle('is-scrolled', window.scrollY > 18);
+}
+updateHeaderState();
+window.addEventListener('scroll', updateHeaderState, { passive: true });
+
+// Phone CTA appears only when a verified public number is configured.
 if (BUSINESS.phone) {
   const tel = `tel:${BUSINESS.phone.replace(/[^+\d]/g, '')}`;
   ['callEmpire', 'mobileCallEmpire'].forEach((id) => {
@@ -74,6 +90,14 @@ if (BUSINESS.phone) {
       link.classList.remove('is-hidden');
     }
   });
+}
+
+// Hours status remains conservative until a verified weekly schedule is supplied.
+const hoursStatus = document.getElementById('hoursStatus');
+const visitHoursText = document.getElementById('visitHoursText');
+if (!BUSINESS.hours) {
+  if (hoursStatus) hoursStatus.textContent = 'Today’s hours · check latest update';
+  if (visitHoursText) visitHoursText.textContent = 'Check today’s update';
 }
 
 // Premium gallery lightbox.
@@ -133,6 +157,21 @@ document.addEventListener('keydown', (event) => {
   if (event.key === 'ArrowLeft') renderLightbox(activeGalleryIndex - 1);
   if (event.key === 'ArrowRight') renderLightbox(activeGalleryIndex + 1);
 });
+
+// Subtle reveal animation with a no-JS-safe default and reduced-motion respect.
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealItems = Array.from(document.querySelectorAll('[data-reveal]'));
+if (!reduceMotion && revealItems.length && 'IntersectionObserver' in window) {
+  document.documentElement.classList.add('js-reveal');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -28px 0px' });
+  revealItems.forEach((item) => observer.observe(item));
+}
 
 // Keep the copyright current without a yearly manual edit.
 const year = document.getElementById('year');
