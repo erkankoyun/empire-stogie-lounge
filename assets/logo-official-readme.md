@@ -1,1 +1,0 @@
-Official Empire Stogie Lounge logo supplied in chat. Use the image asset for header, age gate, hero badge, and footer.

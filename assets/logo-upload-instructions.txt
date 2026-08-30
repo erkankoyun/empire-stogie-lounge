@@ -1,1 +1,0 @@
-Use the official logo supplied by the user. This text file is temporary and can be removed after the binary asset is committed.

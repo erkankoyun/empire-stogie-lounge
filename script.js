@@ -14,45 +14,40 @@ const BUSINESS = {
   hours: null
 };
 
-async function loadOfficialLogo() {
-  try {
-    const parts = await Promise.all(
-      [1, 2, 3].map(async (n) => {
-        const response = await fetch(`assets/logo.part${n}.txt`, { cache: 'force-cache' });
-        if (!response.ok) throw new Error(`Logo asset ${n} unavailable`);
-        return response.text();
-      })
-    );
+// Age gate: accessible focus management without collecting personal data.
+const gateFocusable = () => gate ? Array.from(gate.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')) : [];
+const backgroundNodes = () => Array.from(document.body.children).filter((node) => node !== gate && node.tagName !== 'SCRIPT');
 
-    const base64 = parts.join('').replace(/\s+/g, '');
-    const logoSrc = `data:image/jpeg;base64,${base64}`;
-
-    document.querySelectorAll('.official-logo').forEach((img) => {
-      img.src = logoSrc;
-    });
-
-    const favicon = document.getElementById('siteFavicon');
-    if (favicon) favicon.href = logoSrc;
-  } catch (error) {
-    console.warn('Official logo could not be loaded; using fallback logo.', error);
+function setAgeGateOpen(open) {
+  document.documentElement.classList.toggle('age-gate-active', open);
+  backgroundNodes().forEach((node) => { node.inert = open; });
+  if (!gate) return;
+  gate.setAttribute('aria-hidden', String(!open));
+  if (open) {
+    gate.classList.remove('hidden');
+    requestAnimationFrame(() => (enter || gateFocusable()[0])?.focus());
+  } else {
+    gate.classList.add('hidden');
+    document.querySelector('.brand')?.focus();
   }
 }
 
-loadOfficialLogo();
-
-// Age gate: store only a local browser confirmation. No account or personal data is created.
 let allowed = false;
-try {
-  allowed = localStorage.getItem('empireAgeVerified') === 'true';
-} catch (_) {
-  allowed = false;
-}
-if (allowed && gate) gate.classList.add('hidden');
+try { allowed = localStorage.getItem('empireAgeVerified') === 'true'; } catch (_) {}
+setAgeGateOpen(!allowed);
 
 if (enter && gate) {
   enter.addEventListener('click', () => {
     try { localStorage.setItem('empireAgeVerified', 'true'); } catch (_) {}
-    gate.classList.add('hidden');
+    setAgeGateOpen(false);
+  });
+  gate.addEventListener('keydown', (event) => {
+    if (event.key !== 'Tab') return;
+    const items = gateFocusable();
+    if (!items.length) return;
+    const first = items[0], last = items[items.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   });
 }
 
