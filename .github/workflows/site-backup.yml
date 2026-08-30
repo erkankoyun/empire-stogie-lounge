@@ -1,0 +1,24 @@
+name: Site Backup
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout current site
+        uses: actions/checkout@v4
+      - name: Create ZIP backup
+        run: |
+          zip -r empire-stogie-lounge-backup.zip . -x ".git/*" "empire-stogie-lounge-backup.zip"
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: empire-stogie-lounge-backup
+          path: empire-stogie-lounge-backup.zip
+          retention-days: 30
