@@ -18,7 +18,7 @@ const BUSINESS = {
 const gateFocusable = () => gate ? Array.from(gate.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')) : [];
 const backgroundNodes = () => Array.from(document.body.children).filter((node) => node !== gate && node.tagName !== 'SCRIPT');
 
-function setAgeGateOpen(open) {
+function setAgeGateOpen(open, restoreFocus = false) {
   document.documentElement.classList.toggle('age-gate-active', open);
   backgroundNodes().forEach((node) => { node.inert = open; });
   if (!gate) return;
@@ -28,7 +28,7 @@ function setAgeGateOpen(open) {
     requestAnimationFrame(() => (enter || gateFocusable()[0])?.focus());
   } else {
     gate.classList.add('hidden');
-    document.querySelector('.brand')?.focus();
+    if (restoreFocus) document.querySelector('.brand')?.focus();
   }
 }
 
@@ -39,7 +39,7 @@ setAgeGateOpen(!allowed);
 if (enter && gate) {
   enter.addEventListener('click', () => {
     try { localStorage.setItem('empireAgeVerified', 'true'); } catch (_) {}
-    setAgeGateOpen(false);
+    setAgeGateOpen(false, true);
   });
   gate.addEventListener('keydown', (event) => {
     if (event.key !== 'Tab') return;
@@ -106,6 +106,9 @@ const lightboxNext = document.getElementById('lightboxNext');
 let activeGalleryIndex = 0;
 let lastGalleryTrigger = null;
 
+const lightboxFocusable = () => lightbox ? Array.from(lightbox.querySelectorAll('button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])')) : [];
+const lightboxBackgroundNodes = () => Array.from(document.body.children).filter((node) => node !== lightbox && node.tagName !== 'SCRIPT');
+
 function renderLightbox(index) {
   if (!galleryItems.length || !lightboxImage) return;
   activeGalleryIndex = (index + galleryItems.length) % galleryItems.length;
@@ -120,16 +123,18 @@ function openLightbox(index, trigger) {
   if (!lightbox) return;
   lastGalleryTrigger = trigger || null;
   renderLightbox(index);
+  lightboxBackgroundNodes().forEach((node) => { node.inert = true; });
   lightbox.classList.add('open');
   lightbox.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
-  lightboxClose?.focus();
+  requestAnimationFrame(() => lightboxClose?.focus());
 }
 
 function closeLightbox() {
   if (!lightbox) return;
   lightbox.classList.remove('open');
   lightbox.setAttribute('aria-hidden', 'true');
+  lightboxBackgroundNodes().forEach((node) => { node.inert = false; });
   document.body.style.overflow = '';
   lastGalleryTrigger?.focus();
 }
@@ -144,6 +149,15 @@ lightboxNext?.addEventListener('click', () => renderLightbox(activeGalleryIndex 
 
 lightbox?.addEventListener('click', (event) => {
   if (event.target === lightbox) closeLightbox();
+});
+
+lightbox?.addEventListener('keydown', (event) => {
+  if (event.key !== 'Tab') return;
+  const items = lightboxFocusable();
+  if (!items.length) return;
+  const first = items[0], last = items[items.length - 1];
+  if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+  else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
 });
 
 document.addEventListener('keydown', (event) => {
