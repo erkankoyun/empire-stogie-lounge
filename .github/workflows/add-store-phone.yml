@@ -1,0 +1,67 @@
+name: Add Store Phone
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  update-phone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add verified store phone without changing layout
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          phone_display = '(518) 280-2139'
+          phone_tel = '+15182802139'
+          phone_schema = '+1-518-280-2139'
+
+          # Update JS business config so existing desktop/mobile Call CTAs become active.
+          js_path = Path('script.js')
+          js = js_path.read_text(encoding='utf-8')
+          old_phone = "  phone: '',"
+          new_phone = f"  phone: '{phone_tel}',"
+          if old_phone in js:
+              js = js.replace(old_phone, new_phone, 1)
+          elif new_phone not in js:
+              raise SystemExit('Could not find BUSINESS phone field in script.js')
+          js_path.write_text(js, encoding='utf-8')
+
+          # Update HTML structured data and reuse an existing Visit detail slot, preserving grid count/layout.
+          html_path = Path('index.html')
+          html = html_path.read_text(encoding='utf-8')
+
+          schema_anchor = '        "image": "https://empirestogielounge.com/IMG_8968.jpeg",\n'
+          schema_phone = f'        "telephone": "{phone_schema}",\n'
+          if schema_phone not in html:
+              if schema_anchor not in html:
+                  raise SystemExit('Could not find JSON-LD image anchor')
+              html = html.replace(schema_anchor, schema_anchor + schema_phone, 1)
+
+          old_contact = '<div class="visit-detail"><span>Current updates</span><strong>@empirestogielounge</strong></div>'
+          new_contact = f'<div class="visit-detail"><span>Phone</span><strong>{phone_display}</strong><a href="tel:{phone_tel}">Call Empire →</a></div>'
+          if old_contact in html:
+              html = html.replace(old_contact, new_contact, 1)
+          elif new_contact not in html:
+              raise SystemExit('Could not find Visit contact detail')
+
+          html_path.write_text(html, encoding='utf-8')
+          PY
+
+      - name: Commit phone update and remove one-time workflow
+        run: |
+          rm -f .github/workflows/add-store-phone.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html script.js .github/workflows/add-store-phone.yml
+          git commit -m "Add Empire Stogie Lounge phone number"
+          git push origin main
