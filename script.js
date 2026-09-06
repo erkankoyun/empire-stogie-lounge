@@ -6,7 +6,7 @@ const nav = document.getElementById('mainNav');
 
 // Verified business facts belong here. Unknown facts stay blank instead of being guessed.
 const BUSINESS = {
-  phone: '',
+  phone: '+15182802139',
   timezone: 'America/New_York',
   instagram: 'https://www.instagram.com/empirestogielounge',
   facebook: 'https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr',
