@@ -10,8 +10,15 @@ const BUSINESS = {
   timezone: 'America/New_York',
   instagram: 'https://www.instagram.com/empirestogielounge',
   facebook: 'https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr',
-  // Add a verified weekly schedule later, e.g. {0:null,1:['12:00','19:00'],...}
-  hours: null
+  hours: {
+    0: ['12:00', '19:00'],
+    1: ['12:00', '19:00'],
+    2: ['12:00', '19:00'],
+    3: ['11:00', '21:00'],
+    4: ['11:00', '21:00'],
+    5: ['11:00', '21:00'],
+    6: ['11:00', '21:00']
+  }
 };
 
 // Age gate: accessible focus management without collecting personal data.
@@ -87,12 +94,34 @@ if (BUSINESS.phone) {
   });
 }
 
-// Hours status remains conservative until a verified weekly schedule is supplied.
+// Verified regular hours. NFL game nights may run later than the posted closing time.
 const hoursStatus = document.getElementById('hoursStatus');
 const visitHoursText = document.getElementById('visitHoursText');
-if (!BUSINESS.hours) {
-  if (hoursStatus) hoursStatus.textContent = 'Today’s hours · check latest update';
-  if (visitHoursText) visitHoursText.textContent = 'Check today’s update';
+
+function formatBusinessTime(value) {
+  const [hourText, minuteText] = value.split(':');
+  const hour = Number(hourText);
+  const minute = Number(minuteText);
+  const displayHour = hour % 12 || 12;
+  const suffix = hour >= 12 ? 'PM' : 'AM';
+  return `${displayHour}${minute ? `:${String(minute).padStart(2, '0')}` : ''} ${suffix}`;
+}
+
+function updateTodayHours() {
+  if (!BUSINESS.hours || !hoursStatus) return;
+  const weekdayName = new Intl.DateTimeFormat('en-US', {
+    timeZone: BUSINESS.timezone,
+    weekday: 'long'
+  }).format(new Date());
+  const dayIndex = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].indexOf(weekdayName);
+  const schedule = BUSINESS.hours[dayIndex];
+  if (!schedule) return;
+  hoursStatus.textContent = `Today’s hours · ${formatBusinessTime(schedule[0])}–${formatBusinessTime(schedule[1])}`;
+}
+
+updateTodayHours();
+if (visitHoursText) {
+  visitHoursText.innerHTML = 'Sun–Tue · 12 PM–7 PM<br>Wed–Sat · 11 AM–9 PM';
 }
 
 // Premium gallery lightbox.
