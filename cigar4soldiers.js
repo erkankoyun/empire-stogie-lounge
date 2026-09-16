@@ -38,5 +38,5 @@
   `;
 
   const main = document.querySelector('main');
-  if (main) main.appendChild(section);
+  if (main) main.insertBefore(section, main.querySelector('#drinks'));
 })();
