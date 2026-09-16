@@ -1,3 +1,9 @@
+/* Keep the Drinks anchor steady while the preceding images load. */
+#cigar-4-soldier .c4s-logo,
+#cigar-4-soldier .c4s-media img {
+  height: auto;
+}
+
 #drinks {
   padding: 96px 24px;
   scroll-margin-top: 112px;
