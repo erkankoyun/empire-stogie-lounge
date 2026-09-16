@@ -1,0 +1,88 @@
+name: Update Hours and NFL Badge
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update all hours and add inline NFL logo
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          index = Path('index.html')
+          html = index.read_text(encoding='utf-8')
+
+          # Structured data: every day 11 AM–9 PM.
+          html = re.sub(
+              r'"openingHoursSpecification"\s*:\s*\[.*?\],\s*"address"',
+              '"openingHoursSpecification": [\n          {\n            "@type": "OpeningHoursSpecification",\n            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],\n            "opens": "11:00",\n            "closes": "21:00"\n          }\n        ],\n        "address"',
+              html,
+              count=1,
+              flags=re.S
+          )
+
+          # Replace all old schedule wording with the new regular hours.
+          replacements = {
+              'Sun–Tue 12 PM–7 PM · Wed–Sat 11 AM–9 PM': 'Monday–Sunday · 11 AM–9 PM',
+              'Sun–Tue · 12 PM–7 PM<br/>Wed–Sat · 11 AM–9 PM': 'Monday–Sunday · 11 AM–9 PM',
+              'Sunday through Tuesday: 12 PM–7 PM. Wednesday through Saturday: 11 AM–9 PM.': 'Monday through Sunday: 11 AM–9 PM.',
+              '<span>Sun–Tue · 12 PM–7 PM</span><span>Wed–Sat · 11 AM–9 PM</span>': '<span>Monday–Sunday · 11 AM–9 PM</span>',
+              'Sun–Tue · 12 PM–7 PM': 'Monday–Sunday · 11 AM–9 PM',
+              'Wed–Sat · 11 AM–9 PM': 'Monday–Sunday · 11 AM–9 PM',
+          }
+          for old, new in replacements.items():
+              html = html.replace(old, new)
+
+          # Keep the NFL late-hours message and place the small NFL shield immediately after “NFL”.
+          nfl_logo = '<img class="nfl-inline-logo" src="assets/nfl-logo.svg" alt="" aria-hidden="true"/>'
+          html = html.replace('NFL games', f'NFL {nfl_logo} games')
+
+          # Cache-bust changed CSS/JS assets.
+          html = re.sub(r'site\.min\.css\?v=[^"\']+', 'site.min.css?v=3.3', html)
+          html = re.sub(r'script\.js\?v=[^"\']+', 'script.js?v=3.3', html)
+          index.write_text(html, encoding='utf-8')
+
+          script = Path('script.js')
+          js = script.read_text(encoding='utf-8')
+
+          # Every weekday uses the same verified schedule.
+          js = re.sub(
+              r'hours:\s*\{.*?\}\n\};',
+              "hours: {\n    0: ['11:00', '21:00'],\n    1: ['11:00', '21:00'],\n    2: ['11:00', '21:00'],\n    3: ['11:00', '21:00'],\n    4: ['11:00', '21:00'],\n    5: ['11:00', '21:00'],\n    6: ['11:00', '21:00']\n  }\n};",
+              js,
+              count=1,
+              flags=re.S
+          )
+          js = js.replace("visitHoursText.innerHTML = 'Sun–Tue · 12 PM–7 PM<br>Wed–Sat · 11 AM–9 PM';",
+                          "visitHoursText.textContent = 'Monday–Sunday · 11 AM–9 PM';")
+          script.write_text(js, encoding='utf-8')
+
+          css = Path('site.min.css')
+          css_text = css.read_text(encoding='utf-8')
+          rule = '.nfl-inline-logo{display:inline-block;width:22px;height:auto;vertical-align:-5px;margin:0 .18rem;object-fit:contain}'
+          if '.nfl-inline-logo{' not in css_text:
+              css_text += rule
+          css.write_text(css_text, encoding='utf-8')
+          PY
+
+      - name: Commit update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/update-hours-and-nfl.yml
+          git add index.html script.js site.min.css assets/nfl-logo.svg
+          git commit -m "Set daily hours to 11 AM–9 PM and add NFL badge"
+          git push
