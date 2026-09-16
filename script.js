@@ -214,3 +214,9 @@ if (!reduceMotion && revealItems.length && 'IntersectionObserver' in window) {
 // Keep the copyright current without a yearly manual edit.
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
+
+// Load the dedicated Cigars 4 Soldiers section after the main page is ready.
+const c4sSectionScript = document.createElement('script');
+c4sSectionScript.src = 'cigar4soldiers.js?v=1.0';
+c4sSectionScript.defer = true;
+document.head.appendChild(c4sSectionScript);
