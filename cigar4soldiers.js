@@ -12,8 +12,7 @@
     .c4s-subtitle{margin:14px 0 0;max-width:680px;color:#bdb5aa;font:400 1rem/1.7 Inter,sans-serif}
     .c4s-media{overflow:hidden;border:1px solid rgba(201,154,76,.26);border-radius:20px;background:#0d0b0a;box-shadow:0 28px 70px rgba(0,0,0,.28)}
     .c4s-media img{display:block;width:100%;height:auto;object-fit:cover}
-    .c4s-text{margin-top:30px;max-width:880px;color:#c9c1b7;font:400 1.04rem/1.8 Inter,sans-serif}
-    .c4s-text:empty{display:none}
+    .c4s-text{margin-top:30px;max-width:880px;color:#c9c1b7;font:500 1.12rem/1.8 Inter,sans-serif}
     @media(max-width:760px){.c4s-section{padding:68px 16px}.c4s-head{grid-template-columns:1fr;gap:20px}.c4s-logo{width:150px}.c4s-media{border-radius:14px}.c4s-title{font-size:2.7rem}}
   `;
   document.head.appendChild(style);
@@ -34,7 +33,7 @@
       <div class="c4s-media">
         <img src="assets/cigars4soldiers-photo.webp" alt="Cigars 4 Soldiers donation box, hats, and information cards" loading="lazy" decoding="async" />
       </div>
-      <div class="c4s-text" id="c4sText"></div>
+      <p class="c4s-text" id="c4sText">Collection point for our service members deployed.</p>
     </div>
   `;
 
