@@ -11,9 +11,9 @@ const BUSINESS = {
   instagram: 'https://www.instagram.com/empirestogielounge',
   facebook: 'https://www.facebook.com/share/1Djrby26UD/?mibextid=wwXIfr',
   hours: {
-    0: ['12:00', '19:00'],
-    1: ['12:00', '19:00'],
-    2: ['12:00', '19:00'],
+    0: ['11:00', '21:00'],
+    1: ['11:00', '21:00'],
+    2: ['11:00', '21:00'],
     3: ['11:00', '21:00'],
     4: ['11:00', '21:00'],
     5: ['11:00', '21:00'],
@@ -121,7 +121,7 @@ function updateTodayHours() {
 
 updateTodayHours();
 if (visitHoursText) {
-  visitHoursText.innerHTML = 'Sun–Tue · 12 PM–7 PM<br>Wed–Sat · 11 AM–9 PM';
+  visitHoursText.textContent = 'Monday–Sunday · 11 AM–9 PM';
 }
 
 // Premium gallery lightbox.
