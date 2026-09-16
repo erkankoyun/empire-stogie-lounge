@@ -7,7 +7,7 @@
   section.innerHTML = `
     <div class="c4s-shell">
       <div class="c4s-head">
-        <img class="c4s-logo" src="assets/cigars4soldiers-logo.webp?v=3" alt="Cigars 4 Soldiers logo" loading="lazy" decoding="async" />
+        <img class="c4s-logo" src="assets/cigars4soldiers-logo.png" alt="Cigars 4 Soldiers logo" loading="lazy" decoding="async" />
         <div>
           <p class="c4s-eyebrow">Cigar 4 Soldier</p>
           <h2 class="c4s-title">Cigars 4 Soldiers</h2>
