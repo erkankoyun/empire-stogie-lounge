@@ -1,0 +1,40 @@
+name: Replace NFL Logo
+on:
+  push:
+    paths:
+      - '.github/workflows/replace-nfl-logo.yml'
+jobs:
+  replace-logo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace NFL logo and references
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          s=s.replace('assets/nfl-logo.png','assets/nfl-logo-official.png')
+          p.write_text(s)
+          css=Path('site.min.css').read_text()
+          extra='\n.nfl-inline-logo{display:inline-block;width:24px;height:24px;object-fit:contain;vertical-align:-6px;margin:0 5px;flex:0 0 auto}.hero-nfl-note{display:flex;align-items:center;gap:4px;flex-wrap:wrap}@media(max-width:520px){.nfl-inline-logo{width:22px;height:22px;vertical-align:-5px}}\n'
+          if '.hero-nfl-note{display:flex' not in css:
+              Path('site.min.css').write_text(css+extra)
+          PY
+      - name: Decode uploaded NFL logo
+        shell: bash
+        run: |
+          cat > /tmp/nfl.b64 <<'EOF'
+          iVBORw0KGgoAAAANSUhEUgAAAR8AAAEkCAYAAAAW6jUjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAE9TSURBVHhe7Z0JfFxlmef/59x7M5nMTJokTZqkTZtQkya0gZZQSqFQIBUEtRZcK1BHW3V1d9XV3V1dXf1wqKIiIpYVRKkF0i5p27ZpW7YJSVsmGZLJmWS+7z7z+f3R5JlzZnLO5Jxzzp3z+XzP82dObuac7znPeZ7zvOc9j4QQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCiH8H/wdq9v7+utnX7AAAAABJRU5ErkJggg==
+          EOF
+          base64 -d /tmp/nfl.b64 > assets/nfl-logo-official.png
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html site.min.css assets/nfl-logo-official.png
+          git commit -m 'Use uploaded NFL logo across site' || exit 0
+          git push
