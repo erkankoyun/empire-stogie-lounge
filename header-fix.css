@@ -1,44 +1,30 @@
-.site-header{grid-template-columns:auto minmax(0,1fr) auto;column-gap:clamp(10px,1.1vw,20px);padding-left:clamp(16px,2vw,36px);padding-right:clamp(16px,2vw,36px)}
-.site-header .brand{min-width:clamp(185px,12vw,220px)}
-.site-header nav{display:flex;width:100%;min-width:0;justify-content:center;align-items:center;gap:clamp(6px,.55vw,10px)}
-.site-header nav a{white-space:nowrap;font-size:clamp(14px,.92vw,17px);font-weight:600;letter-spacing:.01em}
-.header-cta{display:inline-flex!important;white-space:nowrap;min-width:max-content;font-size:clamp(.8rem,.78vw,.92rem);padding-left:clamp(12px,1vw,18px);padding-right:clamp(12px,1vw,18px)}
+.site-header{grid-template-columns:auto minmax(0,1fr) auto;column-gap:clamp(8px,1vw,16px);padding-left:clamp(14px,1.6vw,28px);padding-right:clamp(14px,1.6vw,28px)}
+.site-header .brand{min-width:clamp(175px,11vw,210px)}
+.site-header nav{display:flex;width:100%;min-width:0;justify-content:center;align-items:center;gap:clamp(4px,.42vw,8px)}
+.site-header nav a{white-space:nowrap;font-size:clamp(12px,.78vw,15px);font-weight:600;letter-spacing:0}
+.header-cta{display:inline-flex!important;white-space:nowrap;min-width:max-content;font-size:clamp(.76rem,.72vw,.88rem);padding-left:clamp(10px,.8vw,15px);padding-right:clamp(10px,.8vw,15px)}
 .menu-button{display:none}
 
-@media(max-width:1650px) and (min-width:1251px){
-  .site-header{grid-template-columns:auto minmax(0,1fr) auto;padding-left:16px;padding-right:16px;column-gap:10px}
-  .site-header .brand{min-width:180px}
-  .site-header nav{display:flex;gap:5px}
-  .site-header nav a{font-size:clamp(12px,.88vw,14px);letter-spacing:0}
-  .header-cta{display:inline-flex!important;font-size:.78rem;padding-left:10px;padding-right:10px}
-  .menu-button{display:none}
-}
-
-@media(max-width:1380px) and (min-width:1251px){
-  .site-header .brand{min-width:165px}
-  .site-header nav a{font-size:12px}
-  .header-cta{font-size:.72rem;padding-left:8px;padding-right:8px}
-}
-
-@media(max-width:1250px) and (min-width:701px){
-  .site-header{height:auto;min-height:148px;grid-template-columns:1fr;grid-template-rows:auto auto;padding:16px 20px 14px;row-gap:12px;align-content:center}
+/* When the viewport gets tighter (or browser zoom makes the layout effectively narrower),
+   switch to the menu button instead of squeezing or wrapping the navigation. */
+@media(max-width:1480px){
+  .site-header{height:94px;min-height:94px;grid-template-columns:1fr auto;grid-template-rows:auto;padding:0 20px;align-items:center}
   .site-header .brand{min-width:0;justify-self:start}
-  .site-header nav{display:flex!important;position:static!important;width:100%;padding:0!important;background:transparent!important;border:0!important;flex-direction:row!important;flex-wrap:wrap;justify-content:center;align-items:center;column-gap:16px;row-gap:9px}
-  .site-header nav a{font-size:18px;letter-spacing:0;line-height:1.15}
-  .header-cta{display:none!important}
-  .menu-button{display:none!important}
-}
-
-@media(max-width:700px){
-  .site-header{height:94px;min-height:94px;grid-template-columns:1fr auto;grid-template-rows:auto;padding:0 20px}
   .site-header nav{display:none!important}
   .header-cta{display:none!important}
   .menu-button{display:block!important;justify-self:end}
-  .site-header.nav-open nav{display:flex!important;position:absolute!important;top:94px;left:0;right:0;width:auto;background:#0a0908!important;padding:22px 24px!important;flex-direction:column!important;flex-wrap:nowrap;align-items:flex-start;gap:20px;border-top:1px solid var(--line)!important}
-  .site-header.nav-open nav a{font-size:20px}
+  .site-header.nav-open nav{display:flex!important;position:absolute!important;z-index:1000;top:94px;left:0;right:0;width:auto;background:#0a0908!important;padding:22px 24px!important;flex-direction:column!important;flex-wrap:nowrap!important;align-items:flex-start!important;justify-content:flex-start!important;gap:18px!important;border-top:1px solid var(--line)!important;box-shadow:0 18px 32px rgba(0,0,0,.35)}
+  .site-header.nav-open nav a{font-size:16px;line-height:1.2;width:100%}
+}
+
+@media(max-width:700px){
+  .site-header{height:88px;min-height:88px;padding:0 18px}
+  .site-header.nav-open nav{top:88px;padding:20px!important;gap:17px!important}
+  .site-header.nav-open nav a{font-size:16px}
 }
 
 @media(max-width:520px){
   .site-header{height:76px;min-height:76px;padding:0 16px}
-  .site-header.nav-open nav{top:76px}
+  .site-header.nav-open nav{top:76px;padding:18px 16px!important;gap:16px!important}
+  .site-header.nav-open nav a{font-size:15px}
 }
