@@ -45,6 +45,23 @@
     humidorImage.alt = 'Premium cigars displayed in the Empire Stogie Lounge humidor';
   }
 
+  const galleryGrid = document.querySelector('#gallery .gallery-grid');
+  if (galleryGrid && !galleryGrid.classList.contains('gallery-user-images')) {
+    galleryGrid.classList.add('gallery-user-images');
+    galleryGrid.innerHTML = `
+      <figure>
+        <button class="gallery-card" data-caption="Empire Stogie Lounge" data-full="assets/ChatGPT%20Image%2016%20Eyl%202026%2020_57_27.png?v=1" type="button">
+          <img alt="Empire Stogie Lounge gallery photo" decoding="async" loading="lazy" src="assets/ChatGPT%20Image%2016%20Eyl%202026%2020_57_27.png?v=1" />
+        </button>
+      </figure>
+      <figure>
+        <button class="gallery-card" data-caption="Empire Stogie Lounge" data-full="assets/ChatGPT%20Image%2016%20Eyl%202026%2021_02_52.png?v=1" type="button">
+          <img alt="Empire Stogie Lounge gallery photo" decoding="async" loading="lazy" src="assets/ChatGPT%20Image%2016%20Eyl%202026%2021_02_52.png?v=1" />
+        </button>
+      </figure>
+    `;
+  }
+
   const addHumidorsOnlyNotes = () => {
     document.querySelectorAll('h3, strong').forEach((element) => {
       if (element.textContent.trim() !== 'Adults 21+') return;
