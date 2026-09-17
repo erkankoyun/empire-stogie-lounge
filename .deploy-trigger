@@ -1,3 +1,4 @@
 Cloudflare Pages redeploy trigger
-2026-09-16T19:14:00-05:00
-Latest expected main commit before trigger: 6c7b80a41b6db021bdf960a8a94c3e30abfe4590
+2026-09-16T20:20:00-05:00
+Latest expected main commit before trigger: ba934eb787e3008dc684588d6499b3d6cd1c2b80
+Reason: force deployment of updated hero image
