@@ -62,6 +62,21 @@
     `;
   }
 
+  const updateImageSources = [
+    'assets/ChatGPT%20Image%2016%20Eyl%202026%2021_08_20%20(9).png?v=1',
+    'assets/ChatGPT%20Image%2016%20Eyl%202026%2021_08_18%20(1).png?v=1',
+    'assets/ChatGPT%20Image%2016%20Eyl%202026%2021_08_20%20(7).png?v=1'
+  ];
+
+  document.querySelectorAll('#updates .update-card-media img').forEach((image, index) => {
+    if (!updateImageSources[index]) return;
+    image.src = updateImageSources[index];
+    image.removeAttribute('srcset');
+    image.removeAttribute('sizes');
+    image.removeAttribute('width');
+    image.removeAttribute('height');
+  });
+
   const addHumidorsOnlyNotes = () => {
     document.querySelectorAll('h3, strong').forEach((element) => {
       if (element.textContent.trim() !== 'Adults 21+') return;
