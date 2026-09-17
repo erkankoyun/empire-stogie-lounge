@@ -24,6 +24,12 @@
   requestAnimationFrame(applyHeroImage);
   window.addEventListener('load', applyHeroImage, { once: true });
 
+  const heroAgeText = Array.from(document.querySelectorAll('.hero-trust small'))
+    .find((element) => element.textContent.trim() === 'Adults-only lounge');
+  if (heroAgeText) {
+    heroAgeText.textContent = 'Only in humidors';
+  }
+
   const visitHeading = document.querySelector('#visit .visit-title h2');
   if (visitHeading) {
     visitHeading.textContent = visitHeading.textContent.replace('Stay awhile.', 'Stay a while.');
