@@ -7,7 +7,7 @@
   section.innerHTML = `
     <div class="c4s-shell">
       <div class="c4s-head">
-        <img class="c4s-logo" src="assets/ChatGPT%20Image%2016%20Eyl%202026%2018_00_10.png?v=1" alt="Cigars 4 Soldiers logo" width="1254" height="1254" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/cigars4soldiers-logo.png?v=2'" />
+        <img class="c4s-logo" src="assets/ChatGPT%20Image%2016%20Eyl%202026%2018_00_10.png?v=1" alt="Cigars 4 Soldiers logo" width="1254" height="1254" loading="lazy" decoding="async" style="display:block;width:clamp(92px,10vw,160px);max-width:30vw;height:auto;max-height:160px;object-fit:contain" onerror="this.onerror=null;this.src='assets/cigars4soldiers-logo.png?v=2'" />
         <div>
           <p class="c4s-eyebrow">Cigar 4 Soldier</p>
           <h2 class="c4s-title">Cigars 4 Soldiers</h2>
