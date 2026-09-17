@@ -8,6 +8,11 @@
     statusRow.parentNode.insertBefore(planLink, statusRow);
   }
 
+  const visitHeading = document.querySelector('#visit .visit-title h2');
+  if (visitHeading) {
+    visitHeading.textContent = visitHeading.textContent.replace('Stay awhile.', 'Stay a while.');
+  }
+
   if (document.getElementById('cigar-4-soldier')) return;
 
   const section = document.createElement('section');
