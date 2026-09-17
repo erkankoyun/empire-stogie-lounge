@@ -215,8 +215,45 @@ if (!reduceMotion && revealItems.length && 'IntersectionObserver' in window) {
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 
+// Keep every visible number unmistakably numeric even inside the serif display font.
+function applyClearNumberGlyphs(root = document.body) {
+  if (!root) return;
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const textNodes = [];
+  while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+  textNodes.forEach((node) => {
+    const parent = node.parentElement;
+    const text = node.nodeValue || '';
+    if (!parent || !/\d/.test(text)) return;
+    if (parent.closest('script, style, .site-number')) return;
+
+    const parts = text.split(/(\d+(?::\d+)?)/g);
+    if (parts.length < 2) return;
+
+    const fragment = document.createDocumentFragment();
+    parts.forEach((part) => {
+      if (/^\d+(?::\d+)?$/.test(part)) {
+        const span = document.createElement('span');
+        span.className = 'site-number';
+        span.textContent = part;
+        span.style.fontFamily = "Inter, Arial, sans-serif";
+        span.style.fontVariantNumeric = 'lining-nums tabular-nums';
+        span.style.fontFeatureSettings = '"lnum" 1, "tnum" 1';
+        fragment.appendChild(span);
+      } else if (part) {
+        fragment.appendChild(document.createTextNode(part));
+      }
+    });
+    node.replaceWith(fragment);
+  });
+}
+
+applyClearNumberGlyphs();
+
 // Load the dedicated Cigars 4 Soldiers section after the main page is ready.
 const c4sSectionScript = document.createElement('script');
 c4sSectionScript.src = 'cigar4soldiers.js?v=1.0';
 c4sSectionScript.defer = true;
+c4sSectionScript.addEventListener('load', () => applyClearNumberGlyphs(document.getElementById('cigar-4-soldier')));
 document.head.appendChild(c4sSectionScript);
