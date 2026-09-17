@@ -77,6 +77,25 @@
     image.removeAttribute('height');
   });
 
+  const socialGrid = document.querySelector('#social .instagram-grid');
+  if (socialGrid && !socialGrid.classList.contains('social-user-images')) {
+    socialGrid.classList.add('social-user-images');
+    socialGrid.innerHTML = `
+      <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" rel="noopener" target="_blank">
+        <img alt="Empire Stogie Lounge social photo" decoding="async" loading="lazy" src="assets/ChatGPT%20Image%2016%20Eyl%202026%2021_36_25%20(5).png?v=1" />
+      </a>
+      <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" rel="noopener" target="_blank">
+        <img alt="Empire Stogie Lounge social photo" decoding="async" loading="lazy" src="assets/ChatGPT%20Image%2016%20Eyl%202026%2021_36_24%20(3).png?v=1" />
+      </a>
+      <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" rel="noopener" target="_blank">
+        <img alt="Empire Stogie Lounge social photo" decoding="async" loading="lazy" src="assets/ChatGPT%20Image%2016%20Eyl%202026%2021_08_19%20(6).png?v=1" />
+      </a>
+      <a class="instagram-tile" href="https://www.instagram.com/empirestogielounge" rel="noopener" target="_blank">
+        <img alt="Empire Stogie Lounge social photo" decoding="async" loading="lazy" src="assets/ChatGPT%20Image%2016%20Eyl%202026%2021_36_28%20(9).png?v=1" />
+      </a>
+    `;
+  }
+
   const addHumidorsOnlyNotes = () => {
     document.querySelectorAll('h3, strong').forEach((element) => {
       if (element.textContent.trim() !== 'Adults 21+') return;
