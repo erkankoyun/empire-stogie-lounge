@@ -29,6 +29,10 @@
   background: #12100e;
 }
 
+#drinks .drinks-menu + .drinks-menu {
+  margin-top: 24px;
+}
+
 #drinks .drinks-menu-heading h3 {
   margin: 0 0 12px;
   color: #e0b872;
@@ -62,6 +66,10 @@
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: 1.5;
   overflow-wrap: anywhere;
+}
+
+#drinks .drinks-other-list {
+  margin-top: 0;
 }
 
 @media (min-width: 701px) and (max-width: 1250px) {
