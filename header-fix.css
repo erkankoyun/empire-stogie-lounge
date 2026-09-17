@@ -1,12 +1,12 @@
-.site-header{grid-template-columns:auto minmax(0,1fr) auto;column-gap:clamp(8px,1vw,16px);padding-left:clamp(14px,1.6vw,28px);padding-right:clamp(14px,1.6vw,28px)}
+.site-header{grid-template-columns:auto minmax(0,1fr);column-gap:clamp(8px,1vw,16px);padding-left:clamp(14px,1.6vw,28px);padding-right:clamp(14px,1.6vw,28px)}
 .site-header .brand{min-width:clamp(175px,11vw,210px)}
 .site-header nav{display:flex;width:100%;min-width:0;justify-content:center;align-items:center;gap:clamp(4px,.42vw,8px)}
 .site-header nav a{white-space:nowrap;font-size:clamp(12px,.78vw,15px);font-weight:600;letter-spacing:0}
-.header-cta{display:inline-flex!important;white-space:nowrap;min-width:max-content;font-size:clamp(.76rem,.72vw,.88rem);padding-left:clamp(10px,.8vw,15px);padding-right:clamp(10px,.8vw,15px)}
+.header-cta{display:none!important}
 .menu-button{display:none}
 
-.hero-plan-link{display:inline-flex;margin:0 0 10px;color:#d5a857;text-decoration:none;font:700 .78rem/1.2 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
-.hero-plan-link:hover,.hero-plan-link:focus-visible{color:#f0c66f;text-decoration:underline;text-underline-offset:4px}
+.hero-plan-link{display:inline-flex;align-items:center;justify-content:center;margin:0 0 12px;padding:10px 18px;border:1px solid #d5a857;border-radius:999px;color:#d5a857;text-decoration:none;font:700 .78rem/1.2 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.hero-plan-link:hover,.hero-plan-link:focus-visible{color:#f0c66f;border-color:#f0c66f;background:rgba(213,168,87,.08);text-decoration:none}
 
 /* At normal desktop zoom the full navigation stays visible. When browser zoom
    makes the effective viewport narrower, switch to the compact Menu button. */
@@ -24,10 +24,12 @@
   .site-header{height:88px;min-height:88px;padding:0 18px}
   .site-header.nav-open nav{top:88px;padding:20px!important;gap:17px!important}
   .site-header.nav-open nav a{font-size:16px}
+  .hero-plan-link{padding:9px 16px;font-size:.74rem}
 }
 
 @media(max-width:520px){
   .site-header{height:76px;min-height:76px;padding:0 16px}
   .site-header.nav-open nav{top:76px;padding:18px 16px!important;gap:16px!important}
   .site-header.nav-open nav a{font-size:15px}
+  .hero-plan-link{padding:8px 14px;font-size:.72rem}
 }
