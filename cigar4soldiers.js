@@ -39,6 +39,21 @@
     humidorImage.alt = 'Premium cigars displayed in the Empire Stogie Lounge humidor';
   }
 
+  const addHumidorsOnlyNotes = () => {
+    document.querySelectorAll('h3, strong').forEach((element) => {
+      if (element.textContent.trim() !== 'Adults 21+') return;
+      const next = element.nextElementSibling;
+      if (next?.classList.contains('humidors-only-note')) return;
+
+      const note = document.createElement('span');
+      note.className = 'humidors-only-note';
+      note.textContent = 'Only in humidors.';
+      element.insertAdjacentElement('afterend', note);
+    });
+  };
+
+  addHumidorsOnlyNotes();
+
   if (document.getElementById('cigar-4-soldier')) return;
 
   const section = document.createElement('section');
