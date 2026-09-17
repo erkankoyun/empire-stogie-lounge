@@ -72,6 +72,45 @@
   margin-top: 0;
 }
 
+#drinks .abbina-products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#drinks .abbina-products li {
+  padding-top: 24px;
+  border-top: 1px solid rgba(201, 154, 76, .2);
+  overflow-wrap: anywhere;
+}
+
+#drinks .abbina-products h4 {
+  margin: 0;
+  color: #e0b872;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  line-height: 1.5;
+}
+
+#drinks .abbina-products p {
+  margin: 12px 0 0;
+  color: #c9c1b7;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+  #drinks .abbina-products { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+  #drinks .abbina-products { grid-template-columns: 1fr; }
+}
+
 @media (min-width: 701px) and (max-width: 1250px) {
   #drinks { scroll-margin-top: 180px; }
 }
