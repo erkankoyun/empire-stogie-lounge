@@ -13,6 +13,16 @@
     visitHeading.textContent = visitHeading.textContent.replace('Stay awhile.', 'Stay a while.');
   }
 
+  const humidorImage = document.querySelector('#humidor .humidor-media img');
+  if (humidorImage) {
+    humidorImage.src = 'assets/ChatGPT%20Image%2016%20Eyl%202026%2021_15_23.png?v=1';
+    humidorImage.removeAttribute('srcset');
+    humidorImage.removeAttribute('sizes');
+    humidorImage.removeAttribute('width');
+    humidorImage.removeAttribute('height');
+    humidorImage.alt = 'Premium cigars displayed in the Empire Stogie Lounge humidor';
+  }
+
   if (document.getElementById('cigar-4-soldier')) return;
 
   const section = document.createElement('section');
