@@ -8,6 +8,39 @@
 .hero-plan-link{display:inline-flex;align-items:center;justify-content:center;margin:0 0 12px;padding:10px 18px;border:1px solid #d5a857;border-radius:999px;color:#d5a857;text-decoration:none;font:700 .78rem/1.2 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
 .hero-plan-link:hover,.hero-plan-link:focus-visible{color:#f0c66f;border-color:#f0c66f;background:rgba(213,168,87,.08);text-decoration:none}
 
+/* The number-highlighting script wraps digits in .site-number spans. The base
+   Visit styles target every span, which was accidentally shrinking the digits
+   to label size. Reset those generated number spans so they inherit the real
+   text size, weight and color from Address / Hours / Age / Phone content. */
+.visit-premium .visit-detail span.site-number{
+  display:inline!important;
+  font-size:inherit!important;
+  font-weight:inherit!important;
+  line-height:inherit!important;
+  letter-spacing:inherit!important;
+  text-transform:none!important;
+  color:inherit!important;
+  vertical-align:baseline!important;
+}
+.visit-premium .visit-detail strong .site-number{
+  font-family:Inter,Arial,sans-serif!important;
+  font-variant-numeric:lining-nums tabular-nums;
+  font-feature-settings:"lnum" 1,"tnum" 1;
+}
+.visit-premium .visit-detail:nth-child(4) strong{
+  font-family:Inter,Arial,sans-serif;
+  font-size:1.12rem;
+  font-weight:600;
+  letter-spacing:.06em;
+  line-height:1.35;
+}
+.visit-premium .visit-status-card .site-number{
+  font-size:1em!important;
+  font-weight:600!important;
+  letter-spacing:0!important;
+  color:inherit!important;
+}
+
 /* Keep the larger desktop navigation at normal zoom. As soon as the effective
    viewport becomes tighter (smaller screen or browser zoom), switch to Menu
    before the links can wrap or collide. */
