@@ -2,8 +2,9 @@
 .c4s-shell{width:min(1180px,100%);margin:0 auto}
 .c4s-head{display:flex;align-items:center;margin-bottom:34px}
 .c4s-section .c4s-logo{display:block!important;width:100%!important;max-width:160px!important;height:auto!important;max-height:160px!important;aspect-ratio:1/1;object-fit:contain;filter:drop-shadow(0 14px 30px rgba(0,0,0,.36))}
-.c4s-media{min-height:220px;padding:32px;overflow:hidden;border:1px solid rgba(201,154,76,.26);border-radius:20px;background:#0d0b0a;box-shadow:0 28px 70px rgba(0,0,0,.28);display:flex;align-items:flex-start}
+.c4s-media{min-height:220px;padding:32px;overflow:hidden;border:1px solid rgba(201,154,76,.26);border-radius:20px;background:#0d0b0a;box-shadow:0 28px 70px rgba(0,0,0,.28);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
+.c4s-title{margin:0 0 14px;color:#d5a857;font:700 clamp(1.15rem,2vw,1.55rem)/1.2 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
 .c4s-text{margin:0;max-width:880px;color:#c9c1b7;font:500 clamp(1rem,1.5vw,1.12rem)/1.8 Inter,sans-serif}
-@media(max-width:900px){.c4s-section .c4s-logo{max-width:135px!important;max-height:135px!important}.c4s-media{min-height:190px;padding:28px}}
-@media(max-width:760px){.c4s-section{padding:68px 16px}.c4s-head{margin-bottom:24px}.c4s-section .c4s-logo{max-width:112px!important;max-height:112px!important}.c4s-media{min-height:160px;padding:22px;border-radius:14px}}
-@media(max-width:420px){.c4s-section .c4s-logo{max-width:92px!important;max-height:92px!important}.c4s-media{min-height:140px;padding:18px}.c4s-text{font-size:.95rem;line-height:1.65}}
+@media(max-width:900px){.c4s-section .c4s-logo{max-width:135px!important;max-height:135px!important}.c4s-media{min-height:190px;padding:28px}.c4s-title{font-size:clamp(1.05rem,2.8vw,1.35rem)}}
+@media(max-width:760px){.c4s-section{padding:68px 16px}.c4s-head{margin-bottom:24px}.c4s-section .c4s-logo{max-width:112px!important;max-height:112px!important}.c4s-media{min-height:160px;padding:22px;border-radius:14px}.c4s-title{margin-bottom:12px}}
+@media(max-width:420px){.c4s-section .c4s-logo{max-width:92px!important;max-height:92px!important}.c4s-media{min-height:140px;padding:18px}.c4s-title{font-size:1rem;letter-spacing:.11em}.c4s-text{font-size:.95rem;line-height:1.65}}
