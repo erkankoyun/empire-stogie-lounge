@@ -1,7 +1,7 @@
 .site-header{grid-template-columns:auto minmax(0,1fr);column-gap:clamp(10px,1.2vw,20px);padding-left:clamp(14px,1.6vw,28px);padding-right:clamp(14px,1.6vw,28px)}
 .site-header .brand{min-width:clamp(175px,11vw,210px)}
-.site-header nav{display:flex;width:100%;min-width:0;justify-content:center;align-items:center;gap:clamp(14px,1vw,22px)}
-.site-header nav a{white-space:nowrap;font-size:clamp(17px,1.08vw,20px);font-weight:600;letter-spacing:.005em}
+.site-header nav{display:flex;width:100%;min-width:0;justify-content:center;align-items:center;gap:clamp(16px,1.15vw,24px)}
+.site-header nav a{white-space:nowrap;font-size:clamp(19px,1.18vw,22px);font-weight:600;letter-spacing:.005em}
 .header-cta{display:none!important}
 .menu-button{display:none}
 
@@ -11,26 +11,26 @@
 /* Keep the larger desktop navigation at normal zoom. As soon as the effective
    viewport becomes tighter (smaller screen or browser zoom), switch to Menu
    before the links can wrap or collide. */
-@media(max-width:1600px){
+@media(max-width:1650px){
   .site-header{height:94px;min-height:94px;grid-template-columns:1fr auto;grid-template-rows:auto;padding:0 20px;align-items:center}
   .site-header .brand{min-width:0;justify-self:start}
   .site-header nav{display:none!important}
   .header-cta{display:none!important}
   .menu-button{display:block!important;justify-self:end}
   .site-header.nav-open nav{display:flex!important;position:absolute!important;z-index:1000;top:94px;left:0;right:0;width:auto;background:#0a0908!important;padding:24px!important;flex-direction:column!important;flex-wrap:nowrap!important;align-items:flex-start!important;justify-content:flex-start!important;gap:20px!important;border-top:1px solid var(--line)!important;box-shadow:0 18px 32px rgba(0,0,0,.35)}
-  .site-header.nav-open nav a{font-size:20px;line-height:1.2;width:100%}
+  .site-header.nav-open nav a{font-size:21px;line-height:1.2;width:100%}
 }
 
 @media(max-width:700px){
   .site-header{height:88px;min-height:88px;padding:0 18px}
   .site-header.nav-open nav{top:88px;padding:20px!important;gap:18px!important}
-  .site-header.nav-open nav a{font-size:18px}
+  .site-header.nav-open nav a{font-size:19px}
   .hero-plan-link{padding:9px 16px;font-size:.74rem}
 }
 
 @media(max-width:520px){
   .site-header{height:76px;min-height:76px;padding:0 16px}
   .site-header.nav-open nav{top:76px;padding:18px 16px!important;gap:16px!important}
-  .site-header.nav-open nav a{font-size:17px}
+  .site-header.nav-open nav a{font-size:18px}
   .hero-plan-link{padding:8px 14px;font-size:.72rem}
 }
