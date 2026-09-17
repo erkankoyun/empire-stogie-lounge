@@ -8,6 +8,15 @@
     statusRow.parentNode.insertBefore(planLink, statusRow);
   }
 
+  const heroImage = document.querySelector('.hero-visual > img');
+  if (heroImage) {
+    heroImage.src = 'assets/ChatGPT%20Image%2016%20Eyl%202026%2021_17_58.png?v=1';
+    heroImage.removeAttribute('srcset');
+    heroImage.removeAttribute('sizes');
+    heroImage.removeAttribute('width');
+    heroImage.removeAttribute('height');
+  }
+
   const visitHeading = document.querySelector('#visit .visit-title h2');
   if (visitHeading) {
     visitHeading.textContent = visitHeading.textContent.replace('Stay awhile.', 'Stay a while.');
