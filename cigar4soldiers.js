@@ -1,4 +1,13 @@
 (() => {
+  const statusRow = document.querySelector('.hero .status-row');
+  if (statusRow && !document.querySelector('.hero-plan-link')) {
+    const planLink = document.createElement('a');
+    planLink.className = 'hero-plan-link';
+    planLink.href = '#visit';
+    planLink.textContent = 'Plan Your Visit';
+    statusRow.parentNode.insertBefore(planLink, statusRow);
+  }
+
   if (document.getElementById('cigar-4-soldier')) return;
 
   const section = document.createElement('section');
