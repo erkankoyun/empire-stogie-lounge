@@ -1,11 +1,13 @@
 .c4s-section{padding:96px 24px;background:linear-gradient(180deg,#0b0a09 0%,#080706 100%);border-top:1px solid rgba(201,154,76,.18)}
 .c4s-shell{width:min(1180px,100%);margin:0 auto}
-.c4s-head{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;margin-bottom:34px}
-.c4s-logo{display:block;width:clamp(140px,14vw,200px);max-width:100%;height:auto;filter:drop-shadow(0 14px 30px rgba(0,0,0,.36))}
+.c4s-head{display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:32px;align-items:center;margin-bottom:34px}
+.c4s-section .c4s-logo{display:block!important;width:100%!important;max-width:160px!important;height:auto!important;max-height:160px!important;aspect-ratio:1/1;object-fit:contain;filter:drop-shadow(0 14px 30px rgba(0,0,0,.36))}
 .c4s-eyebrow{margin:0 0 10px;color:#d5a857;font:700 .82rem/1.2 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase}
 .c4s-title{margin:0;color:#f4efe7;font:600 clamp(2.5rem,5vw,4.9rem)/.95 'Cormorant Garamond',serif}
 .c4s-subtitle{margin:14px 0 0;max-width:680px;color:#bdb5aa;font:400 1rem/1.7 Inter,sans-serif}
 .c4s-media{overflow:hidden;border:1px solid rgba(201,154,76,.26);border-radius:20px;background:#0d0b0a;box-shadow:0 28px 70px rgba(0,0,0,.28)}
 .c4s-media img{display:block;width:100%;height:auto;object-fit:cover}
 .c4s-text{margin-top:30px;max-width:880px;color:#c9c1b7;font:500 1.12rem/1.8 Inter,sans-serif}
-@media(max-width:760px){.c4s-section{padding:68px 16px}.c4s-head{grid-template-columns:1fr;gap:20px}.c4s-logo{width:140px}.c4s-media{border-radius:14px}.c4s-title{font-size:2.7rem}}
+@media(max-width:900px){.c4s-head{grid-template-columns:minmax(100px,135px) minmax(0,1fr);gap:24px}.c4s-section .c4s-logo{max-width:135px!important;max-height:135px!important}}
+@media(max-width:760px){.c4s-section{padding:68px 16px}.c4s-head{grid-template-columns:minmax(88px,112px) minmax(0,1fr);gap:18px}.c4s-section .c4s-logo{max-width:112px!important;max-height:112px!important}.c4s-media{border-radius:14px}.c4s-title{font-size:clamp(2rem,10vw,2.7rem)}}
+@media(max-width:420px){.c4s-head{grid-template-columns:92px minmax(0,1fr);gap:14px}.c4s-section .c4s-logo{max-width:92px!important;max-height:92px!important}.c4s-eyebrow{font-size:.72rem}.c4s-title{font-size:clamp(1.8rem,9vw,2.25rem)}.c4s-subtitle{font-size:.92rem;line-height:1.55}}
