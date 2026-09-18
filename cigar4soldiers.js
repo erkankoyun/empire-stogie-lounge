@@ -127,7 +127,7 @@
             <img class="c4s-photo" src="assets/cigars4soldiers-display..png?v=1" alt="Cigars 4 Soldiers collection display with donation can, hats, and cards" loading="lazy" decoding="async" />
           </div>
           <div class="c4s-copy">
-            <h2 class="c4s-title">CIGAR 4 SOLDIER</h2>
+            <h2 class="c4s-title">Cigars for Soldiers</h2>
             <p class="c4s-text" id="c4sText">Collection point for our service members deployed.</p>
           </div>
         </div>
