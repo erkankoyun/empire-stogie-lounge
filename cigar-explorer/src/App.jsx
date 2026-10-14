@@ -238,6 +238,47 @@ const PRODUCTS = [
   }
 ];
 
+const BRANDS = Array.from(new Set(PRODUCTS.map(product => product.brand)))
+  .sort()
+  .map(name => {
+    const cigars = PRODUCTS.filter(product => product.brand === name);
+    return {
+      name,
+      count: cigars.length,
+      accent: cigars[0].accent,
+      initials: name.split(" ").map(word => word[0]).join("")
+    };
+  });
+
+function BrandSelection({ selectBrand, buttonRefs }) {
+  return (
+    <section className="brand-picker" aria-labelledby="brand-title">
+      <div className="brand-picker-heading">
+        <small>{BRANDS.length} BRANDS · {PRODUCTS.length} CIGARS</small>
+        <h1 id="brand-title">CHOOSE YOUR <em>BRAND.</em></h1>
+        <p>Select a brand to discover its cigars, blends and flavor profiles.</p>
+      </div>
+      <div className="brand-grid">
+        {BRANDS.map(brand => (
+          <button
+            key={brand.name}
+            className="brand-card"
+            style={{ "--brand-accent": brand.accent }}
+            aria-label={`${brand.name} · ${brand.count} ${brand.count === 1 ? "cigar" : "cigars"}`}
+            ref={node => { buttonRefs.current[brand.name] = node; }}
+            onClick={() => selectBrand(brand.name)}
+          >
+            <span className="brand-monogram" aria-hidden="true">{brand.initials}</span>
+            <strong>{brand.name}</strong>
+            <span className="brand-count">{brand.count} {brand.count === 1 ? "cigar" : "cigars"} in this collection</span>
+            <span className="brand-card-action">VIEW CIGARS <i aria-hidden="true">↗</i></span>
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function relativeIndex(index, active, length) {
   let delta = index - active;
   if (delta > length / 2) delta -= length;
@@ -292,14 +333,14 @@ function ProductImage({ product, active, detail, progress }) {
   );
 }
 
-function Carousel({active, setActive, detail, progress}) {
+function Carousel({products, active, setActive, detail, progress}) {
   const drag = useRef(null);
   const suppressClick = useRef(false);
 
   return (
     <div className={detail ? "carousel detail" : "carousel"}>
-      {PRODUCTS.map((product, index) => {
-        const rel = relativeIndex(index, active, PRODUCTS.length);
+      {products.map((product, index) => {
+        const rel = relativeIndex(index, active, products.length);
         const abs = Math.abs(rel);
         const visible = abs <= 3;
         const activeItem = index === active;
@@ -421,20 +462,42 @@ function Detail({product, progress, setProgress, close}) {
 }
 
 export default function App(){
+  const [selectedBrand,setSelectedBrand]=useState(null);
   const [active,setActiveState]=useState(0);
   const [detail,setDetail]=useState(false);
   const [progress,setProgress]=useState(0);
   const touch=useRef(null);
   const wheelUntil=useRef(0);
-  const product=PRODUCTS[active];
+  const brandButtons=useRef({});
+  const collectionHeading=useRef(null);
+  const focusRequest=useRef(null);
+  const products=useMemo(()=>selectedBrand ? PRODUCTS.filter(product=>product.brand===selectedBrand) : [],[selectedBrand]);
+  const product=products[active] || PRODUCTS[0];
 
   const setActive=useCallback((value)=>{
     setActiveState(prev=>{
+      if(products.length < 2)return 0;
       const raw=typeof value==="function" ? value(prev) : value;
-      return ((raw%PRODUCTS.length)+PRODUCTS.length)%PRODUCTS.length;
+      return ((raw%products.length)+products.length)%products.length;
     });
     setProgress(0);
+  },[products.length]);
+
+  const selectBrand=useCallback((brand)=>{
+    focusRequest.current={collection:true};
+    setActiveState(0);
+    setDetail(false);
+    setProgress(0);
+    setSelectedBrand(brand);
   },[]);
+  const showBrands=useCallback(()=>{
+    focusRequest.current={brand:selectedBrand};
+    setSelectedBrand(null);
+    setActiveState(0);
+    setDetail(false);
+    setProgress(0);
+    touch.current=null;
+  },[selectedBrand]);
 
   const openDetail=useCallback(()=>{
     setDetail(true);
@@ -447,10 +510,19 @@ export default function App(){
 
   useEffect(()=>{
     window.scrollTo({top:0,behavior:"auto"});
-  },[detail]);
+  },[detail,selectedBrand]);
+
+  useEffect(()=>{
+    const request=focusRequest.current;
+    if(!request)return;
+    const target=request.collection ? collectionHeading.current : brandButtons.current[request.brand];
+    target?.focus({preventScroll:true});
+    focusRequest.current=null;
+  },[selectedBrand]);
 
   useEffect(()=>{
     const wheel=(e)=>{
+      if(!selectedBrand)return;
       if (document.getElementById("ageGate")?.classList.contains("open")) return;
       if(!detail){
         if(Math.abs(e.deltaX)>Math.abs(e.deltaY) && Math.abs(e.deltaX)>12){
@@ -467,9 +539,10 @@ export default function App(){
       setProgress(p=>Math.max(0,Math.min(.9999,p+e.deltaY*.00045)));
     };
     const key=(e)=>{
+      if(!selectedBrand)return;
       if (document.getElementById("ageGate")?.classList.contains("open")) return;
       if((!detail && ["ArrowRight","ArrowLeft"].includes(e.key)) || (detail && ["ArrowDown","ArrowUp"].includes(e.key)))e.preventDefault();
-      if(e.key==="Escape")closeDetail();
+      if(e.key==="Escape"){if(detail)closeDetail();else showBrands();}
       if(!detail && e.key==="ArrowRight")setActive(active+1);
       if(!detail && e.key==="ArrowLeft")setActive(active-1);
       if(detail && e.key==="ArrowDown")setProgress(p=>Math.min(.9999,p+1/product.facts.length));
@@ -481,7 +554,7 @@ export default function App(){
       window.removeEventListener("wheel",wheel);
       window.removeEventListener("keydown",key);
     };
-  },[detail,active,product.facts.length,setActive,closeDetail]);
+  },[selectedBrand,detail,active,product.facts.length,setActive,closeDetail,showBrands]);
 
   const fullscreen=()=>{
     if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>{});
@@ -490,9 +563,10 @@ export default function App(){
 
   return (
     <main
-      className={detail?"app detail-mode":"app"}
-      style={{"--accent":product.accent}}
+      className={!selectedBrand?"app brand-mode":detail?"app detail-mode":"app"}
+      style={{"--accent":selectedBrand ? product.accent : "#b08954"}}
       onTouchStart={(e)=>{
+        if(!selectedBrand)return;
         const t=e.touches[0];
         if(t)touch.current={x:t.clientX,y:t.clientY,scan:!!e.target.closest?.(".carousel")};
       }}
@@ -505,7 +579,7 @@ export default function App(){
         setProgress(p=>Math.max(0,Math.min(.9999,p+dy*.002)));
       }}
       onTouchEnd={(e)=>{
-        if(!touch.current || detail){touch.current=null;return}
+        if(!selectedBrand || !touch.current?.scan || detail){touch.current=null;return}
         const t=e.changedTouches[0];
         if(t){
           const dx=t.clientX-touch.current.x;
@@ -603,19 +677,21 @@ export default function App(){
       <header className="topbar">
         <div className="brand"><b>EMPIRE STOGIE LOUNGE</b><span>CIGAR EXPLORER</span></div>
         <div className="top-actions">
-          {!detail && <span>← SWIPE / CLICK PRODUCTS →</span>}
+          {selectedBrand && !detail && products.length > 1 && <span>← SWIPE / CLICK PRODUCTS →</span>}
+          {selectedBrand && <button className="brands-back" onClick={showBrands}>← ALL BRANDS</button>}
           <a className="home-link" href="../">LOUNGE HOME</a>
           <button onClick={fullscreen}>FULL SCREEN ⛶</button>
         </div>
       </header>
 
-      <Carousel active={active} setActive={setActive} detail={detail} progress={progress}/>
+      {!selectedBrand ? <BrandSelection selectBrand={selectBrand} buttonRefs={brandButtons}/> : <>
+      <Carousel products={products} active={active} setActive={setActive} detail={detail} progress={progress}/>
 
       {!detail ? (
         <>
           <section className="hero-copy">
             <small>{product.brand}</small>
-            <h1>{product.name}<em>{product.variant}</em></h1>
+            <h1 ref={collectionHeading} tabIndex={-1}>{product.name}<em>{product.variant}</em></h1>
             <div className="brand-model-line">
               <span>BRAND · {product.brand}</span>
               <i />
@@ -640,21 +716,22 @@ export default function App(){
             <div>{product.flavors.map(f=><span key={f}>{f}</span>)}</div>
           </div>
 
-          <div className="carousel-controls">
+          {products.length > 1 && <div className="carousel-controls">
             <button aria-label="Previous cigar" className="arrow prev" onClick={()=>setActive(active-1)}>←</button>
             <button aria-label="Next cigar" className="arrow next" onClick={()=>setActive(active+1)}>→</button>
-          </div>
+          </div>}
 
           <button className="explore" onClick={openDetail}>
             <span>EXPLORE HEAD TO FOOT</span><i>↓</i>
           </button>
 
-          <div className="counter">{String(active+1).padStart(2,"0")} <i/> {String(PRODUCTS.length).padStart(2,"0")}</div>
+          <div className="counter" aria-label={`Cigar ${active+1} of ${products.length}`}>{String(active+1).padStart(2,"0")} <i/> {String(products.length).padStart(2,"0")}</div>
           <div className="image-credit">PRODUCT IMAGE · {product.imageCredit}</div>
         </>
       ):(
         <Detail product={product} progress={progress} setProgress={setProgress} close={closeDetail}/>
       )}
+      </>}
     </main>
   );
 }
