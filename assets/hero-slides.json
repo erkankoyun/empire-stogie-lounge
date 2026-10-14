@@ -1,3 +1,89 @@
 {
-  "slides": []
+  "slides": [
+    {
+      "src": "IMG_8968.webp",
+      "srcset": "assets/responsive/IMG_8968-480.webp 480w, assets/responsive/IMG_8968-768.webp 768w, assets/responsive/IMG_8968-1200.webp 1200w, IMG_8968.webp 2416w",
+      "alt": "Leather lounge seating inside Empire Stogie Lounge in Clifton Park"
+    },
+    {
+      "src": "assets/hero/SLAYT0-1086.webp",
+      "alt": "Coffee and refreshments counter at Empire Stogie Lounge",
+      "srcset": "assets/hero/SLAYT0-768.webp 768w, assets/hero/SLAYT0-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT1-1448.webp",
+      "alt": "Glass entrance to the Empire Stogie Lounge humidor",
+      "srcset": "assets/hero/SLAYT1-768.webp 768w, assets/hero/SLAYT1-1448.webp 1448w"
+    },
+    {
+      "src": "assets/hero/SLAYT2-1086.webp",
+      "alt": "Cigar accessories and the front counter at Empire Stogie Lounge",
+      "srcset": "assets/hero/SLAYT2-768.webp 768w, assets/hero/SLAYT2-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT3-1086.webp",
+      "alt": "Premium cigar boxes displayed on wooden shelves",
+      "srcset": "assets/hero/SLAYT3-768.webp 768w, assets/hero/SLAYT3-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT4-1086.webp",
+      "alt": "A selection of premium cigars inside the humidor",
+      "srcset": "assets/hero/SLAYT4-768.webp 768w, assets/hero/SLAYT4-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT6-1086.webp",
+      "alt": "Open cigar boxes along the humidor shelves",
+      "srcset": "assets/hero/SLAYT6-768.webp 768w, assets/hero/SLAYT6-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT7-1086.webp",
+      "alt": "Featured premium cigars displayed in open boxes",
+      "srcset": "assets/hero/SLAYT7-768.webp 768w, assets/hero/SLAYT7-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT8-1086.webp",
+      "alt": "Colorful cigar boxes and singles in the humidor",
+      "srcset": "assets/hero/SLAYT8-768.webp 768w, assets/hero/SLAYT8-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT9-1086.webp",
+      "alt": "Wooden humidor shelves stocked with premium cigars",
+      "srcset": "assets/hero/SLAYT9-768.webp 768w, assets/hero/SLAYT9-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT11-1086.webp",
+      "alt": "A view inside the walk-in humidor",
+      "srcset": "assets/hero/SLAYT11-768.webp 768w, assets/hero/SLAYT11-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT12-1086.webp",
+      "alt": "Members Only Lounge door at Empire Stogie Lounge",
+      "srcset": "assets/hero/SLAYT12-768.webp 768w, assets/hero/SLAYT12-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT13-1086.webp",
+      "alt": "Leather seating in the private members lounge",
+      "srcset": "assets/hero/SLAYT13-768.webp 768w, assets/hero/SLAYT13-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT14-1086.webp",
+      "alt": "Climate control inside the members lounge",
+      "srcset": "assets/hero/SLAYT14-768.webp 768w, assets/hero/SLAYT14-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT15-1086.webp",
+      "alt": "Members lounge seating and private cigar lockers",
+      "srcset": "assets/hero/SLAYT15-768.webp 768w, assets/hero/SLAYT15-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT16-1086.webp",
+      "alt": "Entrance to the private lounge",
+      "srcset": "assets/hero/SLAYT16-768.webp 768w, assets/hero/SLAYT16-1086.webp 1086w"
+    },
+    {
+      "src": "assets/hero/SLAYT17-1086.webp",
+      "alt": "Cigars displayed near the lounge counter",
+      "srcset": "assets/hero/SLAYT17-768.webp 768w, assets/hero/SLAYT17-1086.webp 1086w"
+    }
+  ]
 }
