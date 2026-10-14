@@ -41,7 +41,7 @@
 }
 .hero-slideshow-controls button:hover { background: rgba(255, 255, 255, .14); }
 .hero-slideshow-controls button:focus-visible { outline: 2px solid #d8b77a; outline-offset: 1px; }
-.hero-slideshow-controls button:disabled { opacity: .45; cursor: wait; }
+.hero-slideshow-controls button[aria-disabled="true"] { opacity: .45; cursor: wait; }
 .hero-slideshow-count { min-width: 42px; text-align: center; font: 500 12px/1.2 Inter, sans-serif; font-variant-numeric: tabular-nums; }
 .hero-slideshow-toggle { margin-left: 3px; }
 .hero-slideshow-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }

@@ -36,8 +36,9 @@
     count.setAttribute('aria-label', `Photo ${active + 1} of ${slides.length}`);
     toggle.classList.toggle('is-paused', paused);
     toggle.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
-    previous.disabled = busy;
-    next.disabled = busy;
+    // Preserve keyboard focus while the next image loads.
+    previous.setAttribute('aria-disabled', String(busy));
+    next.setAttribute('aria-disabled', String(busy));
   }
 
   function loadPhoto(slide) {
