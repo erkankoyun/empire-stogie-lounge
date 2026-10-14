@@ -1,5 +1,6 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { BRAND_DEFINITIONS } from "./brands.js";
 
 const PRODUCTS = [
   {
@@ -238,23 +239,38 @@ const PRODUCTS = [
   }
 ];
 
-const BRANDS = Array.from(new Set(PRODUCTS.map(product => product.brand)))
-  .sort()
-  .map(name => {
-    const cigars = PRODUCTS.filter(product => product.brand === name);
+const BRANDS = [
+  ...BRAND_DEFINITIONS,
+  ...Array.from(new Set(PRODUCTS.map(product => product.brand)))
+    .filter(name => !BRAND_DEFINITIONS.some(brand => brand.name === name))
+    .map(name => ({ name }))
+].map(brand => {
+    const cigars = PRODUCTS.filter(product => product.brand === brand.name);
     return {
-      name,
+      ...brand,
+      displayName: brand.displayName || brand.name,
       count: cigars.length,
-      accent: cigars[0].accent,
-      initials: name.split(" ").map(word => word[0]).join("")
+      accent: cigars[0]?.accent || "#b08954",
+      initials: brand.name.split(" ").map(word => word[0]).join("")
     };
   });
+
+function BrandLogo({ brand }) {
+  const [failed, setFailed] = useState(false);
+  return (
+    <span className={`brand-logo-panel ${brand.tone === "dark" ? "dark" : "light"}`} aria-hidden="true">
+      {brand.logo && !failed ? (
+        <img src={`./assets/brands/${brand.logo}`} className={brand.fit ? `logo-${brand.fit}` : undefined} alt="" width="240" height="128" loading="lazy" decoding="async" onError={() => setFailed(true)}/>
+      ) : <span className="brand-monogram">{brand.initials}</span>}
+    </span>
+  );
+}
 
 function BrandSelection({ selectBrand, buttonRefs }) {
   return (
     <section className="brand-picker" aria-labelledby="brand-title">
       <div className="brand-picker-heading">
-        <small>{BRANDS.length} BRANDS · {PRODUCTS.length} CIGARS</small>
+        <small>{BRANDS.length} BRANDS · CIGAR EXPLORER</small>
         <h1 id="brand-title">CHOOSE YOUR <em>BRAND.</em></h1>
         <p>Select a brand to discover its cigars, blends and flavor profiles.</p>
       </div>
@@ -264,17 +280,29 @@ function BrandSelection({ selectBrand, buttonRefs }) {
             key={brand.name}
             className="brand-card"
             style={{ "--brand-accent": brand.accent }}
-            aria-label={`${brand.name} · ${brand.count} ${brand.count === 1 ? "cigar" : "cigars"}`}
+            aria-label={`${brand.displayName}${brand.count ? ` · ${brand.count} ${brand.count === 1 ? "cigar" : "cigars"}` : " · profiles coming soon"}`}
             ref={node => { buttonRefs.current[brand.name] = node; }}
             onClick={() => selectBrand(brand.name)}
           >
-            <span className="brand-monogram" aria-hidden="true">{brand.initials}</span>
-            <strong>{brand.name}</strong>
-            <span className="brand-count">{brand.count} {brand.count === 1 ? "cigar" : "cigars"} in this collection</span>
-            <span className="brand-card-action">VIEW CIGARS <i aria-hidden="true">↗</i></span>
+            <BrandLogo brand={brand}/>
+            <strong>{brand.displayName}</strong>
+            <span className="brand-count">{brand.count ? `${brand.count} ${brand.count === 1 ? "cigar profile" : "cigar profiles"}` : "Cigar profiles coming soon"}</span>
+            <span className="brand-card-action">{brand.count ? "VIEW CIGARS" : "VIEW BRAND"} <i aria-hidden="true">↗</i></span>
           </button>
         ))}
       </div>
+    </section>
+  );
+}
+
+function BrandPending({ brand, headingRef, showBrands }) {
+  return (
+    <section className="brand-pending" aria-labelledby="pending-brand-title">
+      <BrandLogo brand={brand}/>
+      <h1 id="pending-brand-title" ref={headingRef} tabIndex={-1}>{brand.displayName}</h1>
+      <h2>Cigar profiles coming soon.</h2>
+      <p>We’re preparing the cigar profiles for this brand. Choose another brand to explore the profiles already available.</p>
+      <button onClick={showBrands}>← ALL BRANDS</button>
     </section>
   );
 }
@@ -473,6 +501,7 @@ export default function App(){
   const focusRequest=useRef(null);
   const products=useMemo(()=>selectedBrand ? PRODUCTS.filter(product=>product.brand===selectedBrand) : [],[selectedBrand]);
   const product=products[active] || PRODUCTS[0];
+  const brand=BRANDS.find(brand=>brand.name===selectedBrand);
 
   const setActive=useCallback((value)=>{
     setActiveState(prev=>{
@@ -516,13 +545,13 @@ export default function App(){
     const request=focusRequest.current;
     if(!request)return;
     const target=request.collection ? collectionHeading.current : brandButtons.current[request.brand];
-    target?.focus({preventScroll:true});
+    target?.focus({preventScroll:!!request.collection});
     focusRequest.current=null;
   },[selectedBrand]);
 
   useEffect(()=>{
     const wheel=(e)=>{
-      if(!selectedBrand)return;
+      if(!selectedBrand || !products.length)return;
       if (document.getElementById("ageGate")?.classList.contains("open")) return;
       if(!detail){
         if(Math.abs(e.deltaX)>Math.abs(e.deltaY) && Math.abs(e.deltaX)>12){
@@ -541,6 +570,7 @@ export default function App(){
     const key=(e)=>{
       if(!selectedBrand)return;
       if (document.getElementById("ageGate")?.classList.contains("open")) return;
+      if(!products.length){if(e.key==="Escape")showBrands();return;}
       if((!detail && ["ArrowRight","ArrowLeft"].includes(e.key)) || (detail && ["ArrowDown","ArrowUp"].includes(e.key)))e.preventDefault();
       if(e.key==="Escape"){if(detail)closeDetail();else showBrands();}
       if(!detail && e.key==="ArrowRight")setActive(active+1);
@@ -554,7 +584,7 @@ export default function App(){
       window.removeEventListener("wheel",wheel);
       window.removeEventListener("keydown",key);
     };
-  },[selectedBrand,detail,active,product.facts.length,setActive,closeDetail,showBrands]);
+  },[selectedBrand,products.length,detail,active,product.facts.length,setActive,closeDetail,showBrands]);
 
   const fullscreen=()=>{
     if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>{});
@@ -563,8 +593,8 @@ export default function App(){
 
   return (
     <main
-      className={!selectedBrand?"app brand-mode":detail?"app detail-mode":"app"}
-      style={{"--accent":selectedBrand ? product.accent : "#b08954"}}
+      className={!selectedBrand || !products.length?"app brand-mode":detail?"app detail-mode":"app"}
+      style={{"--accent":products.length ? product.accent : brand?.accent || "#b08954"}}
       onTouchStart={(e)=>{
         if(!selectedBrand)return;
         const t=e.touches[0];
@@ -684,7 +714,7 @@ export default function App(){
         </div>
       </header>
 
-      {!selectedBrand ? <BrandSelection selectBrand={selectBrand} buttonRefs={brandButtons}/> : <>
+      {!selectedBrand ? <BrandSelection selectBrand={selectBrand} buttonRefs={brandButtons}/> : !products.length ? <BrandPending brand={brand} headingRef={collectionHeading} showBrands={showBrands}/> : <>
       <Carousel products={products} active={active} setActive={setActive} detail={detail} progress={progress}/>
 
       {!detail ? (

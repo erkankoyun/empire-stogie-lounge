@@ -514,3 +514,35 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
   .brand-card strong{font-size:23px}
 }
 @media(prefers-reduced-motion:reduce){.brand-card{transition:none}.brand-card:hover{transform:none}}
+
+/* Brand marks keep their original colors and proportions. */
+.brand-card{min-height:320px}
+.brand-logo-panel{
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  width:100%;height:136px;padding:16px;border-radius:10px;overflow:hidden;
+}
+.brand-logo-panel.light{background:#f5f2ec;color:#17191e}
+.brand-logo-panel.dark{background:#090b0e;color:#f2eee8;border:1px solid rgba(255,255,255,.08)}
+.brand-logo-panel img{display:block;width:100%;height:100%;object-fit:contain}
+.brand-logo-panel img.logo-wide{object-fit:cover}
+.brand-logo-panel img.logo-zoom{transform:scale(1.4)}
+.brand-logo-panel .brand-monogram{color:inherit}
+.brand-pending{
+  grid-area:brands;position:relative;z-index:5;width:min(100%,720px);
+  justify-self:center;align-self:center;text-align:center;padding:48px 0;
+}
+.brand-pending .brand-logo-panel{width:min(100%,380px);height:200px;margin:0 auto 28px}
+.brand-pending h1{margin:0;font-size:clamp(30px,4vw,54px);line-height:1.15;overflow-wrap:anywhere;text-wrap:balance}
+.brand-pending h1:focus{outline:none}
+.brand-pending h2{margin:22px 0 12px;font-size:24px;line-height:1.4;color:#d7c29f}
+.brand-pending p{max-width:54ch;margin:0 auto;color:#b8c0cc;font-size:18px;line-height:1.7}
+.brand-pending>button{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:28px;padding:12px 22px;
+  border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.04);font-size:14px;
+}
+@media(max-width:600px){
+  .brand-card{min-height:294px}
+  .brand-logo-panel{height:120px}
+  .brand-pending{padding:24px 0}
+  .brand-pending p{font-size:17px}
+}
