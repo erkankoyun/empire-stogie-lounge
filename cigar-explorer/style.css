@@ -546,3 +546,24 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
   .brand-pending{padding:24px 0}
   .brand-pending p{font-size:17px}
 }
+
+/* Empire emblem beside the heading in every explorer view. */
+.topbar .brand{flex-direction:row;align-items:center;flex-wrap:nowrap;gap:14px;flex:1 1 auto;min-width:0}
+.brand-name{display:flex;flex-direction:column;gap:5px;min-width:0}
+.brand-name b{display:block;line-height:1.25;text-wrap:balance}
+.brand-name span{display:block}
+.lounge-emblem{display:block;width:80px;height:80px;flex:0 0 auto}
+.lounge-emblem img{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:860px){
+  .topbar{flex-direction:column;align-items:stretch;gap:14px}
+  .lounge-emblem{width:64px;height:64px}
+  .top-actions{width:100%;justify-content:flex-start}
+}
+@media(max-width:600px){
+  .topbar .brand{gap:12px}
+  .lounge-emblem{width:56px;height:56px}
+}
+@media(max-width:360px){
+  .topbar .brand{gap:10px}
+  .lounge-emblem{width:48px;height:48px}
+}

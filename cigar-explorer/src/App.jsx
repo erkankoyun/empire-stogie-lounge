@@ -705,7 +705,13 @@ export default function App(){
       <div className="ambient"/>
 
       <header className="topbar">
-        <div className="brand"><b>EMPIRE STOGIE LOUNGE</b><span>CIGAR EXPLORER</span></div>
+        <div className="brand">
+          <picture className="lounge-emblem">
+            <source type="image/webp" srcSet="../assets/kesikuclu-192.webp 192w, ../assets/kesikuclu-384.webp 384w" sizes="(max-width:360px) 48px, (max-width:600px) 56px, (max-width:860px) 64px, 80px"/>
+            <img src="../assets/kesikuclu.png" alt="Empire Stogie Lounge logo" width="80" height="80" decoding="async"/>
+          </picture>
+          <div className="brand-name"><b>EMPIRE STOGIE LOUNGE</b><span>CIGAR EXPLORER</span></div>
+        </div>
         <div className="top-actions">
           {selectedBrand && !detail && products.length > 1 && <span>← SWIPE / CLICK PRODUCTS →</span>}
           {selectedBrand && <button className="brands-back" onClick={showBrands}>← ALL BRANDS</button>}
