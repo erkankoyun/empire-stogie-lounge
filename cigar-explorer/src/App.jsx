@@ -304,9 +304,7 @@ function Carousel({active, setActive, detail, progress}) {
         const visible = abs <= 3;
         const activeItem = index === active;
 
-        const x = detail
-          ? (activeItem ? 0 : rel * 32)
-          : rel * 19;
+        const x = activeItem ? 0 : rel * 32;
 
         const scale = detail
           ? (activeItem ? 1.45 : .42)
@@ -320,8 +318,12 @@ function Carousel({active, setActive, detail, progress}) {
           <button
             key={product.id}
             className={`slot ${activeItem ? "active" : ""}`}
+            aria-label={`${product.brand} ${product.name} ${product.variant}`}
+            aria-pressed={activeItem}
+            aria-hidden={!visible || (detail && !activeItem)}
+            tabIndex={activeItem && !detail ? 0 : -1}
             style={{
-              "--x": `${x}vw`,
+              "--x": detail ? `${x}vw` : `calc(${rel} * var(--carousel-step))`,
               "--scale": scale,
               "--opacity": opacity,
               "--y": `${y}vh`,
@@ -377,12 +379,19 @@ function Detail({product, progress, setProgress, close}) {
         <span>{product.brand} / {product.name} / {product.variant}</span>
       </div>
 
-      <section className="fact" key={`${product.id}-${current}`}>
+      <section className="fact">
+        <div className="fact-copy" key={`${product.id}-${current}`} aria-live="polite" aria-atomic="true">
         <small>{fact[0]}</small>
         <h2>{fact[1]}</h2>
         <h3 style={{color:product.accent}}>{fact[2]}</h3>
         <p>{fact[3]}</p>
         <a href={product.source} target="_blank" rel="noreferrer">SOURCE · {product.sourceName} ↗</a>
+        </div>
+        <div className="detail-step-nav" aria-label="Cigar details">
+          <button disabled={current === 0} onClick={()=>setProgress((current - 1 + .02)/product.facts.length)}>← Previous</button>
+          <span>{current + 1} / {product.facts.length}</span>
+          <button disabled={current === product.facts.length - 1} onClick={()=>setProgress((current + 1 + .02)/product.facts.length)}>Next →</button>
+        </div>
       </section>
 
       <div className="scan">
@@ -396,6 +405,7 @@ function Detail({product, progress, setProgress, close}) {
           <button
             key={i}
             aria-label={`View ${product.facts[i][0]}`}
+            aria-pressed={i===current}
             className={i===current ? "active":""}
             style={i===current ? {background:product.accent,borderColor:product.accent}:undefined}
             onClick={()=>setProgress((i+.02)/product.facts.length)}
@@ -404,7 +414,7 @@ function Detail({product, progress, setProgress, close}) {
       </div>
 
       <div className="scroll-tip">
-        {current < product.facts.length-1 ? "SCROLL / SWIPE DOWN ↓" : "END OF PRODUCT · SCROLL UP ↑"}
+        {current < product.facts.length-1 ? "SCROLL ON THE CIGAR OR CHOOSE A STEP ↓" : "END OF PRODUCT · BACK TO COLLECTION ↑"}
       </div>
     </>
   );
@@ -436,24 +446,29 @@ export default function App(){
   },[]);
 
   useEffect(()=>{
+    window.scrollTo({top:0,behavior:"auto"});
+  },[detail]);
+
+  useEffect(()=>{
     const wheel=(e)=>{
       if (document.getElementById("ageGate")?.classList.contains("open")) return;
-      e.preventDefault();
       if(!detail){
         if(Math.abs(e.deltaX)>Math.abs(e.deltaY) && Math.abs(e.deltaX)>12){
+          e.preventDefault();
           if(performance.now()<wheelUntil.current)return;
           wheelUntil.current=performance.now()+420;
           setActive(active+(e.deltaX>0?1:-1));
           return;
         }
-        openDetail();
-        setProgress(p=>Math.min(.9999,p+Math.abs(e.deltaY)*.00028));
         return;
       }
+      if(!e.target.closest?.(".carousel, .rail"))return;
+      e.preventDefault();
       setProgress(p=>Math.max(0,Math.min(.9999,p+e.deltaY*.00045)));
     };
     const key=(e)=>{
       if (document.getElementById("ageGate")?.classList.contains("open")) return;
+      if((!detail && ["ArrowRight","ArrowLeft"].includes(e.key)) || (detail && ["ArrowDown","ArrowUp"].includes(e.key)))e.preventDefault();
       if(e.key==="Escape")closeDetail();
       if(!detail && e.key==="ArrowRight")setActive(active+1);
       if(!detail && e.key==="ArrowLeft")setActive(active-1);
@@ -466,7 +481,7 @@ export default function App(){
       window.removeEventListener("wheel",wheel);
       window.removeEventListener("keydown",key);
     };
-  },[detail,active,product.facts.length,setActive,openDetail,closeDetail]);
+  },[detail,active,product.facts.length,setActive,closeDetail]);
 
   const fullscreen=()=>{
     if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>{});
@@ -479,14 +494,14 @@ export default function App(){
       style={{"--accent":product.accent}}
       onTouchStart={(e)=>{
         const t=e.touches[0];
-        if(t)touch.current={x:t.clientX,y:t.clientY};
+        if(t)touch.current={x:t.clientX,y:t.clientY,scan:!!e.target.closest?.(".carousel")};
       }}
       onTouchMove={(e)=>{
-        if(!detail || !touch.current)return;
+        if(!detail || !touch.current?.scan)return;
         const t=e.touches[0];
         if(!t)return;
         const dy=touch.current.y-t.clientY;
-        touch.current={x:t.clientX,y:t.clientY};
+        touch.current={x:t.clientX,y:t.clientY,scan:true};
         setProgress(p=>Math.max(0,Math.min(.9999,p+dy*.002)));
       }}
       onTouchEnd={(e)=>{
@@ -496,10 +511,10 @@ export default function App(){
           const dx=t.clientX-touch.current.x;
           const dy=t.clientY-touch.current.y;
           if(Math.abs(dx)>55 && Math.abs(dx)>Math.abs(dy)*1.2)setActive(active+(dx<0?1:-1));
-          else if(dy<-45)openDetail();
         }
         touch.current=null;
       }}
+      onTouchCancel={()=>{touch.current=null;}}
     >
       <svg className="svg-filter" aria-hidden="true">
         <filter id="remove-product-bg" colorInterpolationFilters="sRGB">
@@ -625,8 +640,10 @@ export default function App(){
             <div>{product.flavors.map(f=><span key={f}>{f}</span>)}</div>
           </div>
 
-          <button aria-label="Previous cigar" className="arrow prev" onClick={()=>setActive(active-1)}>←</button>
-          <button aria-label="Next cigar" className="arrow next" onClick={()=>setActive(active+1)}>→</button>
+          <div className="carousel-controls">
+            <button aria-label="Previous cigar" className="arrow prev" onClick={()=>setActive(active-1)}>←</button>
+            <button aria-label="Next cigar" className="arrow next" onClick={()=>setActive(active+1)}>→</button>
+          </div>
 
           <button className="explore" onClick={openDetail}>
             <span>EXPLORE HEAD TO FOOT</span><i>↓</i>

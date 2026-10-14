@@ -274,3 +274,182 @@ button{cursor:pointer}
 }
 .explorer-age-card button{background:#b08954;border-color:#b08954;color:#111}
 @media(max-width:780px){.top-actions .home-link{display:none}}
+
+/* Readable, responsive showroom: keep every product fact available. */
+html,body,#root{height:auto;min-height:100%;overflow:visible}
+html,body{overflow-x:hidden}
+#root{min-height:100vh;min-height:100svh}
+button,a{-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5px}
+.app{
+  --page-gutter:clamp(16px,2vw,32px);
+  --carousel-step:19vw;
+  height:auto;min-height:100vh;min-height:100svh;display:grid;
+  grid-template-columns:minmax(220px,280px) minmax(0,1fr) minmax(220px,280px);
+  grid-template-areas:"topbar topbar topbar" "hero hero hero" "left carousel right" "counter explore flavors" "credit credit credit";
+  column-gap:clamp(16px,2vw,32px);row-gap:16px;
+  padding:0 var(--page-gutter) max(20px,env(safe-area-inset-bottom));
+  touch-action:pan-y pinch-zoom;user-select:text;
+}
+.topbar{
+  grid-area:topbar;position:relative;inset:auto;min-height:82px;height:auto;
+  margin:0 calc(-1 * var(--page-gutter));padding:16px var(--page-gutter);gap:20px;
+}
+.brand{min-width:0;flex-wrap:wrap;gap:8px 14px}
+.brand b{font-size:clamp(18px,1.3vw,24px);letter-spacing:.045em}
+.brand span,.top-actions>span{font-size:12px;line-height:1.5;letter-spacing:.08em;color:#a6acb6}
+.top-actions{gap:12px;flex-shrink:0}
+.top-actions button,.top-actions .home-link{
+  display:inline-flex;align-items:center;justify-content:center;min-height:44px;height:auto;
+  padding:12px 16px;font-size:12px;line-height:1.4;letter-spacing:.07em;
+  border-color:rgba(255,255,255,.24);white-space:nowrap;
+}
+.hero-copy{
+  grid-area:hero;position:relative;inset:auto;transform:none;justify-self:center;
+  width:100%;max-width:1100px;min-width:0;padding:16px 0 4px;
+}
+.hero-copy>small{font-size:14px;color:#b6bdc7;letter-spacing:.16em;line-height:1.5}
+.hero-copy h1{font-size:clamp(48px,6vw,108px);line-height:.88;margin-top:14px;text-wrap:balance;overflow-wrap:anywhere}
+.hero-copy h1 em{font-size:.58em;line-height:1.05;margin-top:8px;-webkit-text-stroke:1px rgba(241,239,234,.46)}
+.brand-model-line{font-size:12px;line-height:1.5;letter-spacing:.045em;color:#a9b0bc;flex-wrap:wrap;margin-top:16px;gap:8px 14px}
+.carousel{
+  grid-area:carousel;position:relative;inset:auto;width:100%;min-width:0;
+  height:clamp(320px,43vh,540px);height:clamp(320px,43svh,540px);overflow:hidden;align-self:center;
+  touch-action:pan-y pinch-zoom;
+}
+.slot{top:50%;width:190px;height:calc(100% - 8px)}
+.slot.active{width:clamp(280px,23vw,420px);height:92%}
+.photo-shell{inset:0 0 60px}
+.slot-name{bottom:0;width:270px;max-width:85vw;white-space:normal;line-height:1.35}
+.slot-name small,.slot-name b,.slot-name span{font-size:calc(11px / var(--scale));letter-spacing:.035em;color:#aab2bf}
+.slot-name strong{font-size:calc(13px / var(--scale));letter-spacing:.035em;color:#d1d6df}
+.slot-name b,.slot-name span{display:block;margin:3px 0}
+.slot-name small{margin-right:8px}
+.slot.active .slot-name b,.slot.active .slot-name span{color:#bac2ce}
+.image-fallback b{font-size:20px}.image-fallback span{font-size:14px;color:#b6beca;letter-spacing:.06em}
+.spec-panel{position:relative;inset:auto;transform:none;width:100%;align-self:center;border-color:rgba(255,255,255,.15);border-radius:12px}
+.spec-panel.left{grid-area:left;left:auto}.spec-panel.right{grid-area:right;right:auto}
+.spec-panel div{padding:16px 18px;border-color:rgba(255,255,255,.10)}
+.spec-panel small{font-size:13px;line-height:1.4;letter-spacing:.09em;margin-bottom:8px;color:#a7afbd}
+.spec-panel strong{display:block;font-size:clamp(16px,1.03vw,19px);font-weight:500;line-height:1.5;letter-spacing:.015em;color:#f0eee9;overflow-wrap:anywhere}
+.flavors{grid-area:flavors;position:relative;inset:auto;display:block;width:100%;align-self:center;text-align:right}
+.flavors>small{font-size:13px;line-height:1.4;letter-spacing:.09em;color:#b2bac6}
+.flavors>div{gap:8px;margin-top:12px}
+.flavors span{padding:8px 12px;font-size:14px;line-height:1.4;letter-spacing:0;color:#d5dae2;border-color:rgba(255,255,255,.18)}
+.carousel-controls{grid-area:carousel;position:relative;z-index:24;display:flex;align-items:center;justify-content:space-between;padding:0 8px;pointer-events:none;min-width:0}
+.arrow{position:relative;top:auto;width:52px;height:52px;font-size:23px;pointer-events:auto;border-color:rgba(255,255,255,.3)}
+.arrow.prev{left:auto}.arrow.next{right:auto}
+.explore{grid-area:explore;position:relative;inset:auto;transform:none;justify-self:center;align-self:center;min-height:56px;height:auto;padding:10px 10px 10px 20px;font-size:13px;line-height:1.4;letter-spacing:.045em;border-color:rgba(255,255,255,.25)}
+.explore i{width:36px;height:36px;flex-shrink:0}
+.counter{grid-area:counter;position:relative;inset:auto;font-size:14px;letter-spacing:.08em;color:#b2bac6;align-self:center}
+.image-credit{grid-area:credit;position:relative;inset:auto;display:block;font-size:11px;line-height:1.5;letter-spacing:.035em;color:#969eaa}
+
+/* The detail view uses the same readable flow, with reachable step controls. */
+.app.detail-mode{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) 44px;
+  grid-template-areas:"topbar topbar topbar" "detail-head detail-head detail-head" "fact carousel rail" "tip tip tip";
+}
+.detail-head{grid-area:detail-head;position:relative;inset:auto;gap:20px;min-width:0}
+.detail-head button{min-height:44px;height:auto;padding:12px 16px;font-size:13px;line-height:1.4;letter-spacing:.045em}
+.detail-head span{font-size:13px;line-height:1.5;letter-spacing:.045em;color:#b0b8c5;text-align:right}
+.carousel.detail{inset:auto;height:clamp(380px,62vh,720px);height:clamp(380px,62svh,720px);touch-action:none}
+.carousel.detail .slot:not(.active){display:none}
+.carousel.detail .slot.active{width:min(100%,420px);height:100%;top:50%;transform:translate(-50%,calc(-50% + var(--y))) scale(1)}
+.carousel.detail .photo-shell{inset:0}
+.fact{grid-area:fact;position:relative;inset:auto;transform:none;width:100%;min-width:0;align-self:center;animation:none}
+.fact-copy{animation:readable-fact-in .3s ease both}
+@keyframes readable-fact-in{from{opacity:0;translate:0 12px}to{opacity:1;translate:0 0}}
+.fact small{font-size:13px;line-height:1.5;letter-spacing:.09em;color:#aeb7c5}
+.fact h2{font-size:clamp(34px,4.4vw,72px);line-height:1.03;overflow-wrap:anywhere;text-wrap:balance;margin-top:18px}
+.fact h3{font-size:18px;line-height:1.5;letter-spacing:.045em;margin-top:16px}
+.fact p{max-width:48ch;color:#c3cad4;font-size:clamp(16px,1.05vw,19px);line-height:1.7;margin:18px 0}
+.fact a{min-height:44px;display:inline-flex;align-items:center;font-size:13px;line-height:1.6;letter-spacing:.035em;color:#b7c0cf;overflow-wrap:anywhere}
+.detail-step-nav{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.detail-step-nav button{min-height:44px;padding:10px 16px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.04);font-size:15px;line-height:1.4}
+.detail-step-nav button:disabled{opacity:.4;cursor:default}
+.detail-step-nav span{font-size:14px;color:#b7c0cf;min-width:44px;text-align:center}
+.scan{grid-area:carousel;position:relative;inset:auto;align-self:center;justify-self:start;font-size:12px;letter-spacing:.04em;color:#b4bdcb;min-width:0}
+.scan i{width:72px;max-width:12vw}
+.rail{grid-area:rail;position:relative;inset:auto;width:44px;height:clamp(280px,46vh,440px);height:clamp(280px,46svh,440px);align-self:center}
+.rail .track,.rail .fill{left:21px}
+.rail .track{top:22px;bottom:22px}
+.rail button{width:44px;height:44px;border:0!important;background:transparent!important;display:grid;place-items:center;border-radius:50%}
+.rail button:before{content:"";width:14px;height:14px;border:1px solid #9da6b5;border-radius:50%;background:#15171b}
+.rail button.active{box-shadow:none}
+.rail button.active:before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 5px rgba(255,255,255,.12)}
+.scroll-tip{grid-area:tip;position:relative;inset:auto;transform:none;justify-self:center;font-size:13px;line-height:1.5;letter-spacing:.045em;text-align:center;color:#aeb7c5}
+
+.explorer-age-gate{overflow-y:auto;align-items:safe center}
+.explorer-age-card small{font-size:12px;letter-spacing:.12em;color:#c2ad92}
+.explorer-age-card p{font-size:16px;line-height:1.6;color:#c3bab0}
+.explorer-age-card button,.explorer-age-card a{min-height:48px;font-size:13px;letter-spacing:.06em}
+
+@media(max-width:1250px){
+  .app{grid-template-columns:220px minmax(0,1fr) 220px;column-gap:20px}
+  .top-actions>span{display:none}
+  .brand{flex-direction:column;align-items:flex-start;gap:4px}
+}
+@media(max-width:1000px){
+  .app{
+    --carousel-step:clamp(150px,34vw,300px);
+    grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:20px;
+    grid-template-areas:"topbar topbar" "hero hero" "carousel carousel" "left right" "flavors flavors" "explore explore" "counter counter" "credit credit";
+  }
+  .topbar{gap:16px;min-height:82px}
+  .brand span{display:block}
+  .hero-copy{padding-top:12px}
+  .hero-copy h1{font-size:clamp(36px,8.5vw,76px);line-height:.95}
+  .hero-copy h1 em{font-size:.58em}
+  .brand-model-line{font-size:12px;max-width:95%;letter-spacing:.025em}
+  .carousel{height:clamp(280px,42vh,440px);height:clamp(280px,42svh,440px)}
+  .slot{width:clamp(130px,30vw,200px);height:100%}
+  .slot.active{width:clamp(220px,52vw,360px);height:92%}
+  .slot:not(.active) .slot-name{display:none}
+  .slot-name{width:230px;bottom:0}
+  .slot-name small{display:inline}
+  .spec-panel{top:auto;bottom:auto;width:100%;transform:none}
+  .spec-panel.left{left:auto}.spec-panel.right{right:auto}
+  .spec-panel div:nth-child(n+2){display:block}
+  .spec-panel div{padding:14px}
+  .spec-panel strong{font-size:16px;line-height:1.5}
+  .flavors{display:block;width:100%;text-align:center}
+  .flavors>div{justify-content:center}
+  .explore{width:fit-content;max-width:100%;margin:4px 0}
+  .counter{left:auto;justify-self:center}
+  .image-credit{display:block;justify-self:center;text-align:center}
+  .app.detail-mode{grid-template-columns:minmax(0,1fr) 44px;grid-template-areas:"topbar topbar" "detail-head detail-head" "carousel rail" "fact fact" "tip tip"}
+  .detail-head{left:auto;right:auto}
+  .carousel.detail{height:clamp(260px,40vh,430px);height:clamp(260px,40svh,430px)}
+  .carousel.detail .slot.active{width:clamp(190px,52vw,340px);height:100%}
+  .fact{left:auto;top:auto;bottom:auto;transform:none;width:100%}
+  .fact h2{font-size:clamp(32px,6vw,56px)}
+  .fact h3{font-size:17px}
+  .fact p{font-size:17px;max-width:60ch}
+  .scan{display:none}
+  .rail{right:auto;top:auto;height:280px}
+}
+@media(max-width:600px){
+  .topbar{flex-direction:column;align-items:stretch;gap:14px;padding:16px var(--page-gutter)}
+  .brand{gap:5px}
+  .brand b{font-size:clamp(16px,4.8vw,22px);letter-spacing:.035em}
+  .brand span{font-size:12px;letter-spacing:.08em}
+  .top-actions{width:100%;gap:10px}
+  .top-actions button,.top-actions .home-link{flex:1;display:inline-flex;padding:11px 8px;font-size:12px;letter-spacing:.035em}
+  .hero-copy>small{font-size:13px;letter-spacing:.09em}
+  .brand-model-line{display:block}
+  .brand-model-line span{display:block;margin-top:6px}
+  .brand-model-line i{display:none}
+  .spec-panel small{font-size:12px;letter-spacing:.055em}
+  .spec-panel strong{font-size:15px;line-height:1.5}
+  .spec-panel div{padding:14px 12px}
+  .flavors span{font-size:14px}
+  .detail-step-nav{justify-content:space-between;gap:8px}
+  .detail-step-nav button{padding:10px 13px}
+  .scroll-tip{font-size:12px;max-width:90%}
+  .explorer-age-card{padding:26px 22px}
+  .explorer-age-card h1{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){
+  .noise,.ember,.smoke-wrap>i,.fact-copy{animation:none}
+  .slot,.app{transition:none}
+}
