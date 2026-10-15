@@ -54,7 +54,7 @@
       photo.className = 'hero-slide';
       photo.alt = slide.alt || 'Inside Empire Stogie Lounge';
       photo.decoding = 'async';
-      photo.sizes = '(max-width: 820px) 100vw, 55vw';
+      photo.sizes = slide.sizes || '(max-width: 820px) 100vw, 55vw';
       photo.onload = () => photo.decode().catch(() => {}).then(() => finish());
       photo.onerror = () => finish(new Error('Photo unavailable'));
       if (slide.srcset) photo.srcset = slide.srcset;

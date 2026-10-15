@@ -3,7 +3,8 @@
     {
       "src": "assets/hero/lounge-seating-1305.webp",
       "srcset": "assets/hero/lounge-seating-768.webp 768w, assets/hero/lounge-seating-1305.webp 1305w",
-      "alt": "Leather lounge seating inside Empire Stogie Lounge in Clifton Park"
+      "alt": "Leather lounge seating inside Empire Stogie Lounge in Clifton Park",
+      "sizes": "(max-width: 820px) 100vw, 1305px"
     },
     {
       "src": "assets/hero/SLAYT0-1086.webp",
@@ -13,7 +14,8 @@
     {
       "src": "assets/hero/SLAYT1-1448.webp",
       "alt": "Glass entrance to the Empire Stogie Lounge humidor",
-      "srcset": "assets/hero/SLAYT1-768.webp 768w, assets/hero/SLAYT1-1448.webp 1448w"
+      "srcset": "assets/hero/SLAYT1-768.webp 768w, assets/hero/SLAYT1-1448.webp 1448w",
+      "sizes": "(max-width: 820px) 100vw, 1448px"
     },
     {
       "src": "assets/hero/SLAYT2-1086.webp",
