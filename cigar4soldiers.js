@@ -11,6 +11,7 @@
   const applyHeroImage = () => {
     const heroImage = document.querySelector('.hero-visual > img');
     if (!heroImage) return;
+    if (heroImage.closest('[data-slides]')) return;
     const newHero = 'assets/ChatGPT%20Image%2016%20Eyl%202026%2021_17_58.png?v=2';
     heroImage.setAttribute('src', newHero);
     heroImage.removeAttribute('srcset');

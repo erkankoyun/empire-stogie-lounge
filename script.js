@@ -253,7 +253,7 @@ applyClearNumberGlyphs();
 
 // Load the dedicated Cigars 4 Soldiers section after the main page is ready.
 const c4sSectionScript = document.createElement('script');
-c4sSectionScript.src = 'cigar4soldiers.js?v=1.0';
+c4sSectionScript.src = 'cigar4soldiers.js?v=1.6';
 c4sSectionScript.defer = true;
 c4sSectionScript.addEventListener('load', () => applyClearNumberGlyphs(document.getElementById('cigar-4-soldier')));
 document.head.appendChild(c4sSectionScript);
