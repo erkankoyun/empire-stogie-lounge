@@ -96,6 +96,10 @@
 .membership-contact-note { margin: 15px 0 0; color: #ab9f90; font-size: .78rem; line-height: 1.7; }
 .membership-contact-note a { color: #e1bf8c; text-decoration: underline; text-underline-offset: 3px; }
 
+@media (min-width: 821px) {
+  .membership-photo { height: 600px; }
+}
+
 @media (max-width: 820px) {
   .membership-section { padding: 48px 24px; }
   .membership-shell { grid-template-columns: minmax(0, 1fr); gap: 30px; }
