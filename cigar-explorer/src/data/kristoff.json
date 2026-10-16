@@ -17,8 +17,8 @@
       "Toast",
       "Sweet finish"
     ],
-    "image": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/21324/83583/pistoff_kristoff_single_robusto___60916__40937__01181.1728569255.jpg?c=2",
-    "imageCredit": "GQ Tobaccos — Pistoff Kristoff individual cigar",
+    "image": "https://www.cigarsinternational.com/dw/image/v2/BKCV_PRD/on/demandware.static/-/Sites-stg-master-catalog/default/dw4c4096cc/CI/KRP-PM-1015_open.png?sh=800&sw=800",
+    "imageCredit": "Cigars International — Pistoff Kristoff current red-and-black band",
     "source": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -40,16 +40,21 @@
       {
         "label": "GQ Tobaccos — Pistoff Kristoff individual cigar",
         "url": "https://www.gqtobaccos.com/cigars/kristoff-pistoff-robusto-single-cigar/"
+      },
+      {
+        "label": "Cigars International — Pistoff Kristoff current red-and-black band",
+        "url": "https://www.cigarsinternational.com/product/pistoff-kristoff/KRP-PM.html"
       }
     ],
     "imageSources": [
       {
-        "label": "GQ Tobaccos — Pistoff Kristoff individual cigar",
-        "url": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/21324/83583/pistoff_kristoff_single_robusto___60916__40937__01181.1728569255.jpg?c=2"
+        "label": "Cigars International — Pistoff Kristoff current red-and-black band",
+        "url": "https://www.cigarsinternational.com/dw/image/v2/BKCV_PRD/on/demandware.static/-/Sites-stg-master-catalog/default/dw4c4096cc/CI/KRP-PM-1015_open.png?sh=800&sw=800"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Line photograph of a single Pistoff cigar; Corona Gorda's exact format is specified separately."
+    "imageNote": "Current label from the manufacturer's redesigned presentation; single-cigar crop. Vitola is specified separately.",
+    "imageCrop": "pistoff"
   },
   {
     "id": "kristoff-pistoff-robusto",
@@ -69,8 +74,8 @@
       "Toast",
       "Sweet finish"
     ],
-    "image": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/21324/83583/pistoff_kristoff_single_robusto___60916__40937__01181.1728569255.jpg?c=2",
-    "imageCredit": "GQ Tobaccos — Pistoff Kristoff Robusto single cigar",
+    "image": "https://www.cigarsinternational.com/dw/image/v2/BKCV_PRD/on/demandware.static/-/Sites-stg-master-catalog/default/dw4c4096cc/CI/KRP-PM-1015_open.png?sh=800&sw=800",
+    "imageCredit": "Cigars International — Pistoff Kristoff current red-and-black band",
     "source": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -90,17 +95,19 @@
         "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
       },
       {
-        "label": "Size-specific product photo — GQ Tobaccos — Pistoff Kristoff Robusto single cigar",
-        "url": "https://www.gqtobaccos.com/cigars/kristoff-pistoff-robusto-single-cigar/"
+        "label": "Cigars International — Pistoff Kristoff current red-and-black band",
+        "url": "https://www.cigarsinternational.com/product/pistoff-kristoff/KRP-PM.html"
       }
     ],
     "imageSources": [
       {
-        "label": "GQ Tobaccos — Pistoff Kristoff Robusto single cigar",
-        "url": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/21324/83583/pistoff_kristoff_single_robusto___60916__40937__01181.1728569255.jpg?c=2"
+        "label": "Cigars International — Pistoff Kristoff current red-and-black band",
+        "url": "https://www.cigarsinternational.com/dw/image/v2/BKCV_PRD/on/demandware.static/-/Sites-stg-master-catalog/default/dw4c4096cc/CI/KRP-PM-1015_open.png?sh=800&sw=800"
       }
     ],
-    "flavorSource": "Kristoff Cigars — official tasting notes"
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "Current label from the manufacturer's redesigned presentation; single-cigar crop. Vitola is specified separately.",
+    "imageCrop": "pistoff"
   },
   {
     "id": "kristoff-guardrail-robusto",
@@ -276,8 +283,8 @@
       "Spice",
       "Dark chocolate"
     ],
-    "image": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png",
-    "imageCredit": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
+    "image": "https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg",
+    "imageCredit": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
     "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -299,17 +306,21 @@
       {
         "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
         "url": "https://habanocigars.com/shop/kristoff-original-maduro-robusto-20ct/"
+      },
+      {
+        "label": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
+        "url": "https://www.cigarpage.com/kristoff-original-maduro.html"
       }
     ],
     "imageSources": [
       {
-        "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
-        "url": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png"
+        "label": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
+        "url": "https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Single-cigar product photograph.",
-    "imageTransparent": true
+    "imageNote": "Updated black-and-gold band shown on a single cigar; Matador presentation used as line photo.",
+    "imageCrop": "maduro"
   },
   {
     "id": "kristoff-original-maduro-matador",
@@ -328,8 +339,8 @@
       "Spice",
       "Dark chocolate"
     ],
-    "image": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png",
-    "imageCredit": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
+    "image": "https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg",
+    "imageCredit": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
     "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -351,17 +362,21 @@
       {
         "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
         "url": "https://habanocigars.com/shop/kristoff-original-maduro-matador-20ct/"
+      },
+      {
+        "label": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
+        "url": "https://www.cigarpage.com/kristoff-original-maduro.html"
       }
     ],
     "imageSources": [
       {
-        "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
-        "url": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png"
+        "label": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
+        "url": "https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Line photograph; Matador measures 6.5 × 56.",
-    "imageTransparent": true
+    "imageNote": "Updated black-and-gold band shown on a single cigar; Matador presentation used as line photo.",
+    "imageCrop": "maduro"
   },
   {
     "id": "kristoff-vengeance-6x60",
@@ -381,8 +396,8 @@
       "Spice",
       "Creamy cocoa"
     ],
-    "image": "https://www.cigarworld.de/bilder/detail/big2048/14381_37748_163076.jpg",
-    "imageCredit": "Cigarworld.de — Vengeance 6×60 single cigar, exact vitola",
+    "image": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/23262/86974/aefhiaf__51496__31658__62258.1728569891.jpg?c=2",
+    "imageCredit": "GQ Tobaccos — Kristoff Vengeance upright cigar with current silver band",
     "source": "https://kristoff.com/product/vengeance_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -404,17 +419,20 @@
       {
         "label": "Cigarworld.de — Vengeance 6×60 single cigar, exact vitola",
         "url": "https://www.cigarworld.de/zigarren/dominikanische-republik/kristoff-vengeance-6x60-90015102_37748"
+      },
+      {
+        "label": "GQ Tobaccos — Kristoff Vengeance upright cigar with current silver band",
+        "url": "https://www.gqtobaccos.com/cigars/kristoff-vengeance-toro-box-of-20-cigars/"
       }
     ],
     "imageSources": [
       {
-        "label": "Cigarworld.de — Vengeance 6×60 single cigar, exact vitola",
-        "url": "https://www.cigarworld.de/bilder/detail/big2048/14381_37748_163076.jpg"
+        "label": "GQ Tobaccos — Kristoff Vengeance upright cigar with current silver band",
+        "url": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/23262/86974/aefhiaf__51496__31658__62258.1728569891.jpg?c=2"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Exact 6×60 vitola, displayed upright for the showroom.",
-    "imageOrientation": "landscape"
+    "imageNote": "Silver-band Vengeance line photo (Toro shown); selected 6×60 size and specifications remain separate."
   },
   {
     "id": "kristoff-tres-compadres-6x60",

@@ -629,3 +629,30 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
  .app.kristoff-showcase .photo-shell>img.rotated-photo{width:min(520px,55svh)}
  .app.kristoff-showcase .arrow{width:46px;height:46px}
 }
+
+/* Updated Kristoff bands: crop existing retailer photography to a single cigar.
+   The source image stays intact; only the surrounding packaging is hidden. */
+.app.kristoff-showcase .photo-shell>img.band-crop{
+  position:absolute;top:50%;left:50%;
+  width:100%;height:100%;max-width:100%;max-height:100%;
+  object-fit:cover;object-position:center;
+  filter:url(#remove-product-bg) drop-shadow(0 22px 18px rgba(0,0,0,.42));
+  background:transparent!important;
+  will-change:transform;
+}
+.app.kristoff-showcase .photo-shell>img.band-crop.crop-pistoff{
+  clip-path:inset(0 0 0 63%);
+  transform:translate(calc(-50% - 125px),-50%) scale(1.08);
+}
+.app.kristoff-showcase .photo-shell>img.band-crop.crop-maduro{
+  clip-path:inset(0 0 0 62%);
+  transform:translate(calc(-50% - 95px),-50%) scale(1.08);
+}
+@media(max-width:600px){
+  .app.kristoff-showcase .photo-shell>img.band-crop.crop-pistoff{
+    transform:translate(calc(-50% - 92px),-50%) scale(1.08);
+  }
+  .app.kristoff-showcase .photo-shell>img.band-crop.crop-maduro{
+    transform:translate(calc(-50% - 72px),-50%) scale(1.08);
+  }
+}

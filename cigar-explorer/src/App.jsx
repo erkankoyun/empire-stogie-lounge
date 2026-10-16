@@ -110,7 +110,7 @@ function ProductImage({ product, active, detail, progress }) {
         <img
           src={product.image}
           alt={`${product.name} ${product.variant}`}
-          className={`${product.imageHasTransparency ? "transparent-product-photo" : ""} ${product.id === "viva-la-vida" ? "viva-bg-clean" : ""} ${product.imageTransparent ? "true-cutout" : ""} ${product.imageOrientation === "landscape" ? "rotated-photo" : ""}`}
+          className={`${product.imageHasTransparency ? "transparent-product-photo" : ""} ${product.id === "viva-la-vida" ? "viva-bg-clean" : ""} ${product.imageTransparent ? "true-cutout" : ""} ${product.imageOrientation === "landscape" ? "rotated-photo" : ""} ${product.imageCrop ? `band-crop crop-${product.imageCrop}` : ""}`}
           loading={active ? "eager" : "lazy"}
           decoding="async"
           draggable="false"
