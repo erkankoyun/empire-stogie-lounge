@@ -1,0 +1,369 @@
+[
+  {
+    "id": "plasencia-alma-fuerte-sixto-ii",
+    "brand": "PLASENCIA",
+    "name": "Alma Fuerte",
+    "variant": "Sixto II Hexágono",
+    "size": "6 × 60",
+    "strength": "Medium-full",
+    "origin": "Nicaragua",
+    "wrapper": "Nicaraguan Habano oscuro",
+    "binder": "Nicaragua",
+    "filler": "Nicaragua",
+    "flavors": [
+      "Dark chocolate",
+      "Plum",
+      "Cinnamon",
+      "Oak",
+      "Molasses"
+    ],
+    "image": "./assets/cigars/catalog-b/plasencia-alma-fuerte-sixto-ii.webp",
+    "imageCredit": "Plasencia Cigars",
+    "source": "https://www.plasenciacigars.com/collections/alma-fuerte-black/",
+    "sourceName": "Plasencia Cigars",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Plasencia Cigars, Estelí",
+    "handmade": "Yes — hand-rolled",
+    "shape": "Hexagonal press (six sides)",
+    "boxPressed": true,
+    "sources": [
+      {
+        "label": "Plasencia Cigars",
+        "url": "https://www.plasenciacigars.com/collections/alma-fuerte-black/"
+      },
+      {
+        "label": "Plasencia manufacturing details",
+        "url": "https://www.plasenciacigars.com/plasencia-cigars-%E2%80%8Balma-fuerte-%E2%80%8Branked-among-top-10-cigars-three-major-cigar-publications-2017/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Plasencia Cigars",
+        "url": "https://www.plasenciacigars.com/assets/fuerte-black-sixto-ii-single-silo-sm.1570d377.webp"
+      }
+    ]
+  },
+  {
+    "id": "plasencia-reserva-original-robusto",
+    "brand": "PLASENCIA",
+    "name": "Reserva Original",
+    "variant": "Robusto",
+    "size": "4¾ × 52",
+    "strength": "Medium",
+    "origin": "Nicaragua",
+    "wrapper": "Nicaragua — certified organic",
+    "binder": "Nicaragua — certified organic",
+    "filler": "Nicaragua — certified organic",
+    "flavors": [
+      "Caramel",
+      "Cocoa",
+      "Marzipan",
+      "Nuts",
+      "Cedar"
+    ],
+    "image": "./assets/cigars/catalog-b/plasencia-reserva-original-robusto.webp",
+    "imageCredit": "Plasencia Cigars",
+    "source": "https://www.plasenciacigars.com/collections/reserva-original/",
+    "sourceName": "Plasencia Cigars",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Not disclosed",
+    "handmade": "Yes — hand-rolled",
+    "shape": "Round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Plasencia Cigars",
+        "url": "https://www.plasenciacigars.com/collections/reserva-original/"
+      },
+      {
+        "label": "Plasencia handmade cigar portfolio",
+        "url": "https://www.plasenciacigars.com/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Plasencia Cigars",
+        "url": "https://www.plasenciacigars.com/assets/reserva-robusto-single-silo-sm.ee5ce54a.webp"
+      }
+    ]
+  },
+  {
+    "id": "diesel-unholy-cocktail",
+    "brand": "DIESEL",
+    "name": "Diesel Original",
+    "variant": "Unholy Cocktail Belicoso",
+    "size": "5 × 56",
+    "strength": "Medium-full",
+    "origin": "Nicaragua",
+    "wrapper": "Pennsylvania Broadleaf",
+    "binder": "Nicaragua",
+    "filler": "Nicaragua",
+    "flavors": [
+      "Chocolate",
+      "Sweet tobacco",
+      "Spice",
+      "Earth",
+      "Cedar"
+    ],
+    "image": "./assets/cigars/catalog-b/diesel-unholy-cocktail.webp",
+    "imageCredit": "Cigars Direct product photo",
+    "source": "https://www.dieselcigars.com/products/diesel/",
+    "sourceName": "Diesel Cigars",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Not disclosed",
+    "handmade": "Yes — hand-rolled",
+    "shape": "Belicoso — round section",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Diesel Cigars",
+        "url": "https://www.dieselcigars.com/products/diesel/"
+      },
+      {
+        "label": "Cigars International construction and origin",
+        "url": "https://www.cigarsinternational.com/mmao/product/?pid=J6B-PM-1017"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigars Direct exact Unholy Cocktail Belicoso",
+        "url": "https://cdn.shopify.com/s/files/1/0075/0000/5473/products/diesel-original-unholy-cocktail-single.jpg?v=1646365055"
+      }
+    ]
+  },
+  {
+    "id": "diesel-whiskey-row-robusto",
+    "brand": "DIESEL",
+    "name": "Whiskey Row",
+    "variant": "Robusto",
+    "size": "5½ × 52",
+    "strength": "Medium-full",
+    "origin": "Nicaragua",
+    "wrapper": "Ecuador Habano",
+    "binder": "Mexico San Andrés — Rabbit Hole bourbon barrel-aged",
+    "filler": "Nicaragua: Ometepe, Jalapa, Condega",
+    "flavors": [
+      "Oak",
+      "Spice",
+      "Sweetness",
+      "Bourbon",
+      "Floral finish"
+    ],
+    "image": "./assets/cigars/catalog-b/diesel-whiskey-row-robusto.webp",
+    "imageCredit": "Diesel Cigars",
+    "source": "https://www.dieselcigars.com/products/whiskey-row/",
+    "sourceName": "Diesel Cigars",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Tabacalera AJ Fernandez, Nicaragua",
+    "handmade": "Yes — hand-rolled",
+    "shape": "Round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Diesel Cigars",
+        "url": "https://www.dieselcigars.com/products/whiskey-row/"
+      },
+      {
+        "label": "Cigar World manufacturer production release",
+        "url": "https://www.cigarworld.com/news/diesel-unleashes-new-90-rated-4-pack/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Diesel Cigars",
+        "url": "https://generalcigar.s3.amazonaws.com/public/diesel-cigars/prod/Uploads/Whiskey-Row-v4.png"
+      }
+    ],
+    "imageNote": "Official Whiskey Row line image; vitola shown is representative."
+  },
+  {
+    "id": "west-tampa-black-robusto",
+    "brand": "WEST TAMPA",
+    "name": "Black",
+    "variant": "Robusto",
+    "size": "5 × 50",
+    "strength": "Full",
+    "origin": "Nicaragua",
+    "wrapper": "Ecuador dark Habano",
+    "binder": "Nicaragua — Ometepe Habano",
+    "filler": "Nicaragua: Estelí and Condega",
+    "flavors": [
+      "Spice",
+      "Earth",
+      "Coffee",
+      "Sweetness"
+    ],
+    "image": "./assets/cigars/catalog-b/west-tampa-black-robusto.webp",
+    "imageCredit": "Cigars Direct product photo",
+    "source": "https://www.neptunecigar.com/cigars/west-tampa-tobacco-company-black-robusto",
+    "sourceName": "Neptune Cigar product specifications",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Garmendia Cigar Company, Estelí",
+    "handmade": "Yes — hand-rolled",
+    "shape": "Round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Neptune Cigar product specifications",
+        "url": "https://www.neptunecigar.com/cigars/west-tampa-tobacco-company-black-robusto"
+      },
+      {
+        "label": "West Tampa manufacturer launch press release",
+        "url": "https://www.cigarjournal.com/rick-rodriguez-unveils-west-tampa-tobacco-company/"
+      },
+      {
+        "label": "West Tampa handcrafted cigars",
+        "url": "https://www.westtampatobacco.com/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigars Direct product photo",
+        "url": "https://www.cigarsdirect.com/cdn/shop/files/west-tampa-black-robusto-single.jpg?v=1707949878"
+      }
+    ]
+  },
+  {
+    "id": "west-tampa-white-robusto",
+    "brand": "WEST TAMPA",
+    "name": "White",
+    "variant": "Robusto",
+    "size": "5 × 50",
+    "strength": "Medium",
+    "origin": "Nicaragua",
+    "wrapper": "Ecuador Habano Light Pink",
+    "binder": "Ecuador Habano",
+    "filler": "Nicaragua: Ometepe, Jalapa, Pueblo Nuevo",
+    "flavors": [
+      "Cream",
+      "Spice",
+      "Earth",
+      "Vanilla"
+    ],
+    "image": "./assets/cigars/catalog-b/west-tampa-white-robusto.webp",
+    "imageCredit": "Cigars Direct product photo",
+    "source": "https://www.neptunecigar.com/cigars/west-tampa-tobacco-company-white-robusto",
+    "sourceName": "Neptune Cigar product specifications",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Garmendia Cigar Company, Estelí",
+    "handmade": "Yes — hand-rolled",
+    "shape": "Round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Neptune Cigar product specifications",
+        "url": "https://www.neptunecigar.com/cigars/west-tampa-tobacco-company-white-robusto"
+      },
+      {
+        "label": "West Tampa manufacturer launch press release",
+        "url": "https://www.cigarjournal.com/rick-rodriguez-unveils-west-tampa-tobacco-company/"
+      },
+      {
+        "label": "West Tampa handcrafted cigars",
+        "url": "https://www.westtampatobacco.com/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigars Direct product photo",
+        "url": "https://www.cigarsdirect.com/cdn/shop/files/west-tampa-tobacco-white-robusto-single.jpg"
+      }
+    ]
+  },
+  {
+    "id": "new-mercy-club-style-maduro",
+    "brand": "NEW MERCY MOTO CIGAR CO.",
+    "name": "Club Style Maduro",
+    "variant": "Toro",
+    "size": "6 × 52",
+    "strength": "Full",
+    "origin": "Not disclosed",
+    "wrapper": "Mexico San Andrés Maduro",
+    "binder": "Sumatra (growing country not disclosed)",
+    "filler": "Nicaragua: Jalapa, Condega, Ometepe",
+    "flavors": [
+      "Cocoa",
+      "Espresso",
+      "Earth",
+      "Dark fruit"
+    ],
+    "image": "./assets/cigars/catalog-b/new-mercy-club-style-maduro.webp",
+    "imageCredit": "New Mercy Moto Cigar Co.",
+    "source": "https://newmercymotocigars.com/products/new-mercy-moto-cigar-co-maduro",
+    "sourceName": "New Mercy Moto Cigar Co.",
+    "madeIn": "Not disclosed",
+    "rolledIn": "Not disclosed",
+    "factory": "Not disclosed",
+    "handmade": "Hand-rolled — brand description",
+    "shape": "Round Toro (pictured)",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "New Mercy Moto Cigar Co.",
+        "url": "https://newmercymotocigars.com/products/new-mercy-moto-cigar-co-maduro"
+      },
+      {
+        "label": "New Mercy Moto hand-rolled cigar brand",
+        "url": "https://newmercymotocigars.com/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "New Mercy Moto Cigar Co.",
+        "url": "https://newmercymotocigars.com/cdn/shop/files/IMG-0122.png?v=1768789067&width=990"
+      }
+    ],
+    "imageNote": "Official product photograph of several cigars from this exact line; individual photo not published."
+  },
+  {
+    "id": "new-mercy-riders-choice-habano",
+    "brand": "NEW MERCY MOTO CIGAR CO.",
+    "name": "Riders Choice Habano",
+    "variant": "Toro",
+    "size": "6 × 52",
+    "strength": "Medium-full",
+    "origin": "Not disclosed",
+    "wrapper": "Ecuador Habano",
+    "binder": "Sumatra (growing country not disclosed)",
+    "filler": "Nicaragua: Jalapa, Condega, Ometepe",
+    "flavors": [
+      "Sweet spice",
+      "Cedar",
+      "Leather",
+      "Nuts"
+    ],
+    "image": "./assets/cigars/catalog-b/new-mercy-riders-choice-habano.webp",
+    "imageCredit": "New Mercy Moto Cigar Co.",
+    "source": "https://newmercymotocigars.com/products/new-mercy-moto-cigar-co-habano",
+    "sourceName": "New Mercy Moto Cigar Co.",
+    "madeIn": "Not disclosed",
+    "rolledIn": "Not disclosed",
+    "factory": "Not disclosed",
+    "handmade": "Hand-rolled — brand description",
+    "shape": "Round Toro (pictured)",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "New Mercy Moto Cigar Co.",
+        "url": "https://newmercymotocigars.com/products/new-mercy-moto-cigar-co-habano"
+      },
+      {
+        "label": "New Mercy Moto hand-rolled cigar brand",
+        "url": "https://newmercymotocigars.com/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "New Mercy Moto Cigar Co.",
+        "url": "https://newmercymotocigars.com/cdn/shop/files/IMG-0125.png?v=1768789034&width=990"
+      }
+    ],
+    "imageNote": "Official product photograph of several cigars from this exact line; individual photo not published."
+  }
+]

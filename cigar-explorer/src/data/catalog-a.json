@@ -1,0 +1,439 @@
+[
+  {
+    "id": "blind-faith",
+    "brand": "ALEC & BRADLEY",
+    "name": "Blind Faith",
+    "variant": "Toro",
+    "size": "6 × 52",
+    "strength": "MEDIUM",
+    "origin": "DANLÍ, HONDURAS",
+    "wrapper": "Honduras (Trojes)",
+    "binder": "Honduras / Nicaragua",
+    "filler": "Nicaragua (Estelí)",
+    "flavors": [
+      "Cocoa",
+      "Earth",
+      "Black pepper"
+    ],
+    "image": "./assets/cigars/catalog-a/blind-faith.webp",
+    "imageCredit": "Alec Bradley — manufacturer photograph",
+    "source": "https://alecbradley.com/cigars/blind-faith",
+    "sourceName": "Alec Bradley",
+    "madeIn": "Honduras",
+    "rolledIn": "Danlí, Honduras",
+    "factory": "Raíces Cubanas",
+    "handmade": true,
+    "shape": "Toro · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://alecbradley.com/cigars/blind-faith"
+      },
+      {
+        "label": "Alec & Bradley press release: rolling location",
+        "url": "https://cigarweekly.com/cw-news/alec-bradley-blind-faith-featured-at-the-tpe"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/gccstrapi/bf_3fbcb529fe.webp"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Alec Bradley (manufacturer tasting notes)",
+    "imageNote": "Manufacturer line photograph; the pictured vitola may differ from the selected size."
+  },
+  {
+    "id": "gatekeeper",
+    "brand": "ALEC & BRADLEY",
+    "name": "Gatekeeper",
+    "variant": "Toro",
+    "size": "6 × 52",
+    "strength": "MEDIUM",
+    "origin": "DANLÍ, HONDURAS",
+    "wrapper": "Ecuadorian Habano",
+    "binder": "Nicaragua",
+    "filler": "Nicaragua / Dominican Republic",
+    "flavors": [
+      "Cedar",
+      "Toasted nuts",
+      "Leather"
+    ],
+    "image": "./assets/cigars/catalog-a/gatekeeper.webp",
+    "imageCredit": "Alec Bradley — manufacturer photograph",
+    "source": "https://alecbradley.com/cigars/gatekeeper",
+    "sourceName": "Alec Bradley",
+    "madeIn": "Honduras",
+    "rolledIn": "Danlí, Honduras",
+    "factory": "Tabacos de Oriente (Plasencia)",
+    "handmade": true,
+    "shape": "Toro · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://alecbradley.com/cigars/gatekeeper"
+      },
+      {
+        "label": "Brand production update: Honduras since 2021",
+        "url": "https://www.cigaraficionado.com/article/alec-bradley-gatekeeper-production-moving-from-dominican-republic-to-honduras"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/gccstrapi/gatekeeper_92dfb8590c.webp"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Alec Bradley (manufacturer tasting notes)",
+    "imageNote": "Manufacturer line photograph; the pictured vitola may differ from the selected size."
+  },
+  {
+    "id": "charter-oak",
+    "brand": "FOUNDATION",
+    "name": "Charter Oak Connecticut",
+    "variant": "Toro",
+    "size": "6 × 52",
+    "strength": "MILD–MEDIUM",
+    "origin": "NICARAGUA",
+    "wrapper": "Connecticut Shade",
+    "binder": "Sumatra",
+    "filler": "Nicaragua",
+    "flavors": [
+      "Cedar",
+      "Graham cracker",
+      "Honey",
+      "Pepper"
+    ],
+    "image": "./assets/cigars/catalog-a/charter-oak.webp",
+    "imageCredit": "Foundation Cigar Company — manufacturer photograph",
+    "source": "https://foundationcigarcompany.com/charter-oak-ct-shade/",
+    "sourceName": "Foundation Cigar Company",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Toro · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://foundationcigarcompany.com/charter-oak-ct-shade/"
+      },
+      {
+        "label": "Retailer: handmade and origin",
+        "url": "https://www.neptunecigar.com/cigars/foundation-charter-oak-connecticut-toro"
+      },
+      {
+        "label": "Small Batch: retailer tasting notes",
+        "url": "https://www.smallbatchcigar.com/charter-oak"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://foundationcigarcompany.com/wp-content/uploads/2025/03/charter-oak-ct-shade-toro-6x52-1.png"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Small Batch Cigar (retailer tasting notes)",
+    "imageNote": "Manufacturer line photograph; the pictured vitola may differ from the selected size."
+  },
+  {
+    "id": "tabernacle",
+    "brand": "FOUNDATION",
+    "name": "The Tabernacle CT Broadleaf",
+    "variant": "Toro",
+    "size": "6 × 52",
+    "strength": "FULL",
+    "origin": "ESTELÍ, NICARAGUA",
+    "wrapper": "USA Connecticut Broadleaf",
+    "binder": "Mexico San Andrés",
+    "filler": "Nicaragua (Estelí / Jalapa) / Honduras (Jamastrán)",
+    "flavors": [
+      "Earth",
+      "Coffee",
+      "Chocolate",
+      "Fruity sweetness"
+    ],
+    "image": "./assets/cigars/catalog-a/tabernacle.webp",
+    "imageCredit": "Foundation Cigar Company — manufacturer photograph",
+    "source": "https://foundationcigarcompany.com/the-tabernacle-ct-broadleaf/",
+    "sourceName": "Foundation Cigar Company",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Estelí, Nicaragua",
+    "factory": "Tabacalera A.J. Fernandez",
+    "handmade": true,
+    "shape": "Toro · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://foundationcigarcompany.com/the-tabernacle-ct-broadleaf/"
+      },
+      {
+        "label": "Foundation press release: factory and origin",
+        "url": "https://cigardojo.com/2016/07/foundation-cigar-co-announces-the-tabernacle/"
+      },
+      {
+        "label": "Smokingpipes: retailer tasting notes",
+        "url": "https://www.smokingpipes.com/cigars/foundation-cigar-company/moreinfo.cfm?product_id=333832"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://foundationcigarcompany.com/wp-content/uploads/2025/03/Toro-6x52-1.png"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Smokingpipes (retailer tasting notes)",
+    "imageNote": "Manufacturer line photograph; the pictured vitola may differ from the selected size."
+  },
+  {
+    "id": "olmec-maduro",
+    "brand": "FOUNDATION",
+    "name": "Olmec Maduro",
+    "variant": "Toro",
+    "size": "6 × 52",
+    "strength": "FULL",
+    "origin": "ESTELÍ, NICARAGUA",
+    "wrapper": "Mexico San Andrés Maduro",
+    "binder": "Nicaragua (Jalapa)",
+    "filler": "Nicaragua (Estelí / Jalapa)",
+    "flavors": [
+      "Cacao",
+      "Dark espresso",
+      "Spice"
+    ],
+    "image": "./assets/cigars/catalog-a/olmec-maduro.webp",
+    "imageCredit": "Foundation Cigar Company — manufacturer photograph",
+    "source": "https://foundationcigarcompany.com/olmec/",
+    "sourceName": "Foundation Cigar Company",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Estelí, Nicaragua",
+    "factory": "Tabacalera A.J. Fernandez",
+    "handmade": true,
+    "shape": "Toro · box-pressed",
+    "boxPressed": true,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://foundationcigarcompany.com/olmec/"
+      },
+      {
+        "label": "Retailer: selected Toro construction and factory",
+        "url": "https://cigarsncigars.com/foundation-olmec-maduro-toro/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://foundationcigarcompany.com/wp-content/uploads/2025/02/olmecmaduro-Toro-6x52-1.png"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Foundation Cigar Company (manufacturer tasting notes)",
+    "imageNote": "Manufacturer line photograph; the pictured vitola may differ from the selected size."
+  },
+  {
+    "id": "cohiba-red-dot",
+    "brand": "COHIBA",
+    "name": "Red Dot",
+    "variant": "Toro Tubo · U.S. Cohiba",
+    "size": "6 × 50",
+    "strength": "MEDIUM",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Cameroon",
+    "binder": "Indonesia (Jember)",
+    "filler": "Dominican Piloto Cubano",
+    "flavors": [
+      "Nuts",
+      "Cream",
+      "Caramel"
+    ],
+    "image": "./assets/cigars/catalog-a/cohiba-red-dot.webp",
+    "imageCredit": "Cohiba — manufacturer photograph",
+    "source": "https://www.cohiba.com/the-collection/red-dot/",
+    "sourceName": "Cohiba",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Toro · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://www.cohiba.com/the-collection/red-dot/"
+      },
+      {
+        "label": "Cigar World (manufacturer): strength and tasting notes",
+        "url": "https://www.cigarworld.com/cigars/cohiba/red-dot/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/cohiba/prod/Uploads/reddot-stick.png"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Cigar World / General Cigar (manufacturer tasting notes)",
+    "imageNote": "Official U.S. Cohiba line photograph showing a cigar with its presentation tube; selected vitola may differ."
+  },
+  {
+    "id": "cohiba-black",
+    "brand": "COHIBA",
+    "name": "Black",
+    "variant": "Gigante · U.S. Cohiba",
+    "size": "6 × 60",
+    "strength": "MEDIUM–FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "USA Connecticut Broadleaf",
+    "binder": "Dominican Piloto Cubano",
+    "filler": "Dominican Piloto Cubano / Mexico San Andrés",
+    "flavors": [
+      "Chocolate",
+      "Coffee",
+      "Nuts"
+    ],
+    "image": "./assets/cigars/catalog-a/cohiba-black.webp",
+    "imageCredit": "Cohiba — manufacturer photograph",
+    "source": "https://www.cohiba.com/the-collection/black/",
+    "sourceName": "Cohiba",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Gigante · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://www.cohiba.com/the-collection/black/"
+      },
+      {
+        "label": "Cigar World (manufacturer): handmade origin and tasting notes",
+        "url": "https://www.cigarworld.com/cigars/cohiba/black/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/cohiba/prod/Uploads/black-stick.png"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Cigar World / General Cigar (manufacturer tasting notes)",
+    "imageNote": "Official U.S. Cohiba line photograph showing a cigar with its presentation tube; selected vitola may differ."
+  },
+  {
+    "id": "perdomo-champagne",
+    "brand": "PERDOMO",
+    "name": "10th Anniversary Champagne",
+    "variant": "Robusto",
+    "size": "5 × 54",
+    "strength": "MILD–MEDIUM",
+    "origin": "ESTELÍ, NICARAGUA",
+    "wrapper": "Ecuadorian Connecticut",
+    "binder": "Cuban-seed Nicaragua",
+    "filler": "Cuban-seed Nicaragua",
+    "flavors": [
+      "Cream",
+      "Honey",
+      "Oak",
+      "Cedar"
+    ],
+    "image": "./assets/cigars/catalog-a/perdomo-champagne.webp",
+    "imageCredit": "Perdomo — manufacturer photograph",
+    "source": "https://perdomocigars.squarespace.com/10th-anniversary",
+    "sourceName": "Perdomo",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Estelí, Nicaragua",
+    "factory": "Tabacalera Perdomo",
+    "handmade": true,
+    "shape": "Robusto · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://perdomocigars.squarespace.com/10th-anniversary"
+      },
+      {
+        "label": "Manufacturer: hand rolling process",
+        "url": "https://www.perdomocigars.com/the-perdomo-way"
+      },
+      {
+        "label": "Manufacturer: Estelí factory",
+        "url": "https://www.perdomocigars.com/news/staying-ahead-of-the-game"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5455ab7d0c912e6662630e/1617816542271-TSZ2PF1LHPOWIV1QMB8M/10c-tilt.jpg"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Perdomo (manufacturer tasting notes)",
+    "imageNote": "Manufacturer line photograph; the pictured vitola may differ from the selected size."
+  },
+  {
+    "id": "perdomo-20-maduro",
+    "brand": "PERDOMO",
+    "name": "20th Anniversary Maduro",
+    "variant": "Robusto",
+    "size": "5 × 56",
+    "strength": "MEDIUM–FULL",
+    "origin": "ESTELÍ, NICARAGUA",
+    "wrapper": "Cuban-seed Nicaraguan Maduro",
+    "binder": "Cuban-seed Nicaragua",
+    "filler": "Cuban-seed Nicaragua",
+    "flavors": [
+      "Chocolate",
+      "Espresso",
+      "Natural sweetness"
+    ],
+    "image": "./assets/cigars/catalog-a/perdomo-20-maduro.webp",
+    "imageCredit": "Perdomo — manufacturer photograph",
+    "source": "https://perdomocigars.squarespace.com/20th-anniversary",
+    "sourceName": "Perdomo",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Estelí, Nicaragua",
+    "factory": "Tabacalera Perdomo",
+    "handmade": true,
+    "shape": "Robusto · box-pressed",
+    "boxPressed": true,
+    "sources": [
+      {
+        "label": "Manufacturer: blend and size",
+        "url": "https://perdomocigars.squarespace.com/20th-anniversary"
+      },
+      {
+        "label": "Manufacturer: hand rolling process",
+        "url": "https://www.perdomocigars.com/the-perdomo-way"
+      },
+      {
+        "label": "Manufacturer: Estelí factory",
+        "url": "https://www.perdomocigars.com/news/staying-ahead-of-the-game"
+      },
+      {
+        "label": "Retailer: selected Robusto box-press",
+        "url": "https://www.neptunecigar.com/cigars/perdomo-20th-anniversary-maduro-r556"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Original manufacturer photograph",
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5455ab7d0c912e6662630e/1567008563084-6HO0C1G4VCHP5R5S0IMO/20m%2B1900x.jpg"
+      }
+    ],
+    "imageCaption": "Manufacturer line photograph; shown size may vary.",
+    "flavorSource": "Perdomo (manufacturer tasting notes)",
+    "imageNote": "Manufacturer line photograph; the pictured vitola may differ from the selected size."
+  }
+]

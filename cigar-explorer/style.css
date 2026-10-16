@@ -570,3 +570,35 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
   .topbar .brand{gap:10px}
   .lounge-emblem{width:48px;height:48px}
 }
+
+/* Full product specifications remain readable below the showroom. */
+.app:not(.brand-mode):not(.detail-mode){grid-template-areas:"topbar topbar topbar" "hero hero hero" "left carousel right" "counter explore flavors" "credit credit credit" "specifications specifications specifications"}
+.cigar-specifications{grid-area:specifications;position:relative;z-index:6;width:min(100%,1280px);justify-self:center;margin-top:28px;padding:clamp(22px,3vw,40px);border:1px solid rgba(255,255,255,.17);border-radius:16px;background:rgba(10,12,15,.76)}
+.cigar-spec-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:28px;margin-bottom:26px}
+.cigar-spec-heading small{color:#bda47c;font-size:12px;letter-spacing:.13em}
+.cigar-spec-heading h2{font:600 clamp(24px,2.6vw,38px)/1.25 Georgia,serif;margin:12px 0 0}
+.cigar-spec-heading h2 span{display:block;color:#c3cad4;font:400 16px/1.5 Arial,sans-serif;margin-top:8px}
+.cigar-selector{display:flex;flex-direction:column;gap:10px;font-size:12px;letter-spacing:.06em;color:#b6bfcc;width:min(100%,320px)}
+.cigar-selector select{appearance:auto;max-width:100%;min-height:48px;padding:10px 12px;background:#171a20;color:#f2eee8;border:1px solid #647080;border-radius:8px;font:400 15px/1.4 Arial,sans-serif}
+.cigar-selector select:focus-visible{outline:2px solid #e3c087;outline-offset:4px}
+.cigar-spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 26px;margin:0}
+.cigar-spec-grid>div{padding:18px 0;border-top:1px solid rgba(255,255,255,.13);min-width:0}
+.cigar-spec-grid dt{font-size:13px;line-height:1.5;color:#a8b3c3;margin-bottom:7px}
+.cigar-spec-grid dd{margin:0;font-size:16px;line-height:1.6;color:#eeeae3;overflow-wrap:anywhere}
+.cigar-tasting{margin-top:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.13)}
+.cigar-tasting h3{font-size:18px;margin:0 0 12px}.cigar-tasting p{font-size:17px;line-height:1.7;margin:8px 0;color:#dfc9a5}
+.cigar-tasting .tasting-context{font-size:14px;color:#b9c1ce;max-width:85ch}
+.cigar-sources{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:22px;font-size:14px;line-height:1.6}
+.cigar-sources strong{color:#bdc6d4;font-weight:500}.cigar-sources a{display:inline-flex;align-items:center;min-height:44px;color:#dfc9a5;text-underline-offset:4px}
+.catalog-note{font-size:13px;line-height:1.7;color:#a7b1bf;max-width:100ch;margin:14px 0 0}
+@media(max-width:1000px){
+ .app:not(.brand-mode):not(.detail-mode){grid-template-areas:"topbar topbar" "hero hero" "carousel carousel" "left right" "flavors flavors" "explore explore" "counter counter" "credit credit" "specifications specifications"}
+ .cigar-spec-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+ .cigar-spec-heading{flex-direction:column;gap:22px}.cigar-selector{width:100%}
+ .cigar-spec-grid{grid-template-columns:minmax(0,1fr)}
+ .cigar-specifications{margin-top:12px;padding:22px 18px}
+ .cigar-spec-grid dd{font-size:16px}.cigar-sources{align-items:flex-start}
+}
+.photo-shell>img.transparent-product-photo{filter:drop-shadow(0 22px 18px rgba(0,0,0,.42))!important}

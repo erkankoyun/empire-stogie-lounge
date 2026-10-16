@@ -1,0 +1,150 @@
+[
+  {
+    "id": "lfd-double-ligero-dl700",
+    "brand": "LA FLOR DOMINICANA",
+    "name": "DOUBLE LIGERO",
+    "variant": "DL-700 NATURAL",
+    "size": "6.5 × 60",
+    "strength": "FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "ECUADORIAN SUN-GROWN SUMATRA",
+    "binder": "DOMINICAN REPUBLIC",
+    "filler": "DOMINICAN REPUBLIC",
+    "flavors": [
+      "Spice",
+      "Pepper",
+      "Wood",
+      "Coffee"
+    ],
+    "image": "./assets/cigars/catalog-d/lfd-double-ligero-dl700.webp",
+    "imageCredit": "Cigars Direct",
+    "source": "https://www.laflordominicana.com/double-ligero",
+    "sourceName": "LA FLOR DOMINICANA",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "La Flor Dominicana — own factory",
+    "handmade": true,
+    "shape": "Gordo / Double Toro",
+    "boxPressed": false,
+    "accent": "#bc8544",
+    "sources": [
+      {
+        "label": "La Flor Dominicana — official blend",
+        "url": "https://www.laflordominicana.com/double-ligero"
+      },
+      {
+        "label": "La Flor Dominicana — own factory",
+        "url": "https://www.laflordominicana.com/our-factory"
+      },
+      {
+        "label": "Neptune Cigars — size, construction and tasting notes",
+        "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-double-ligero-dl-700"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigars Direct — product photo",
+        "url": "https://cdn.shopify.com/s/files/1/0075/0000/5473/files/la-flor-dominicana-double-ligero-700-single_9ce2236a-faf7-401f-a271-77e2ec2b1726.jpg?v=1791228814"
+      }
+    ]
+  },
+  {
+    "id": "lfd-andalusian-bull",
+    "brand": "LA FLOR DOMINICANA",
+    "name": "ANDALUSIAN BULL",
+    "variant": "FIGURADO",
+    "size": "6.5 × 64",
+    "strength": "FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "ECUADORIAN COROJO",
+    "binder": "DOMINICAN REPUBLIC",
+    "filler": "DOMINICAN REPUBLIC",
+    "flavors": [
+      "Spice",
+      "Sweetness",
+      "Caramel",
+      "Earth",
+      "Leather"
+    ],
+    "image": "./assets/cigars/catalog-d/lfd-andalusian-bull.webp",
+    "imageCredit": "Cigars Direct",
+    "source": "https://www.laflordominicana.com/andalusian-bull",
+    "sourceName": "LA FLOR DOMINICANA",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "La Flor Dominicana — own factory",
+    "handmade": true,
+    "shape": "Figurado / Pyramid",
+    "boxPressed": false,
+    "accent": "#39a777",
+    "sources": [
+      {
+        "label": "La Flor Dominicana — official blend",
+        "url": "https://www.laflordominicana.com/andalusian-bull"
+      },
+      {
+        "label": "La Flor Dominicana — own factory",
+        "url": "https://www.laflordominicana.com/our-factory"
+      },
+      {
+        "label": "Neptune Cigars — size, construction and tasting notes",
+        "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-andalusian-bull"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigars Direct — product photo",
+        "url": "https://cdn.shopify.com/s/files/1/0075/0000/5473/products/la-flor-dominicana-andalusian-bull-single_copy.jpg?v=1680722390"
+      }
+    ]
+  },
+  {
+    "id": "lfd-la-nox-toro",
+    "brand": "LA FLOR DOMINICANA",
+    "name": "LA NOX",
+    "variant": "TORO",
+    "size": "6.5 × 50",
+    "strength": "FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "BRAZILIAN MADURO",
+    "binder": "MEXICAN SAN ANDRÉS",
+    "filler": "DOMINICAN PILOTO + PELO DE ORO",
+    "flavors": [
+      "Coffee",
+      "Cocoa",
+      "Leather",
+      "Raisin"
+    ],
+    "image": "./assets/cigars/catalog-d/lfd-la-nox-toro.webp",
+    "imageCredit": "Cigars Direct",
+    "source": "https://www.laflordominicana.com/la-nox",
+    "sourceName": "LA FLOR DOMINICANA",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "La Flor Dominicana — own factory",
+    "handmade": true,
+    "shape": "Toro",
+    "boxPressed": false,
+    "accent": "#7d88d5",
+    "sources": [
+      {
+        "label": "La Flor Dominicana — official blend",
+        "url": "https://www.laflordominicana.com/la-nox"
+      },
+      {
+        "label": "La Flor Dominicana — own factory",
+        "url": "https://www.laflordominicana.com/our-factory"
+      },
+      {
+        "label": "Neptune Cigars — size, construction and tasting notes",
+        "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-la-nox"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigars Direct — product photo",
+        "url": "https://cdn.shopify.com/s/files/1/0075/0000/5473/products/la-flor-dominicana-la-nox-toro-single.jpg?v=1646909387"
+      }
+    ]
+  }
+]

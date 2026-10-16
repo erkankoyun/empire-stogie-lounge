@@ -1,0 +1,382 @@
+[
+  {
+    "id": "macanudo-cafe",
+    "brand": "MACANUDO CIGARS",
+    "name": "Café",
+    "variant": "Hyde Park",
+    "size": "5.5 × 49",
+    "strength": "Mellow",
+    "origin": "Dominican Republic",
+    "wrapper": "USA Connecticut Shade",
+    "binder": "Mexico San Andrés",
+    "filler": "Mexico; Dominican Piloto Cubano",
+    "flavors": [
+      "Sweet",
+      "Creamy",
+      "Nutty",
+      "Woody"
+    ],
+    "image": "./assets/cigars/catalog-c/macanudo-cafe.webp",
+    "imageCredit": "Macanudo Cigars · official product photo",
+    "source": "https://www.macanudo.com/cigars/legacy/macanudo-cafe/",
+    "sourceName": "Macanudo Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "General Cigar Dominicana",
+    "handmade": true,
+    "shape": "Round",
+    "boxPressed": "Not disclosed",
+    "flavoring": "Not disclosed",
+    "sources": [
+      {
+        "label": "Manufacturer product specifications",
+        "url": "https://www.macanudo.com/cigars/legacy/macanudo-cafe/"
+      },
+      {
+        "label": "Manufacturer-owned Cigar World: production and hand rolling",
+        "url": "https://www.cigarworld.com/education/deep-dive-macanudo-cigars/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer product photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/macanudo/prod/Uploads/Sticks-v4.png"
+      }
+    ],
+    "imageNote": "Manufacturer line photograph; displayed size may vary."
+  },
+  {
+    "id": "macanudo-white",
+    "brand": "MACANUDO CIGARS",
+    "name": "Inspirado White",
+    "variant": "Robusto",
+    "size": "5 × 50",
+    "strength": "Mellow–Medium",
+    "origin": "Dominican Republic",
+    "wrapper": "Ecuador Connecticut",
+    "binder": "Indonesia",
+    "filler": "Nicaragua Estelí and Jalapa; Mexico San Andrés",
+    "flavors": [
+      "Creamy",
+      "Spice",
+      "Cedar"
+    ],
+    "image": "./assets/cigars/catalog-c/macanudo-white.webp",
+    "imageCredit": "Macanudo Cigars · official product photo",
+    "source": "https://www.macanudo.com/cigars/inspirado/white/",
+    "sourceName": "Macanudo Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "General Cigar Dominicana",
+    "handmade": true,
+    "shape": "Round",
+    "boxPressed": "Not disclosed",
+    "flavoring": "Not disclosed",
+    "sources": [
+      {
+        "label": "Manufacturer product specifications",
+        "url": "https://www.macanudo.com/cigars/inspirado/white/"
+      },
+      {
+        "label": "Manufacturer-owned Cigar World: production and hand rolling",
+        "url": "https://www.cigarworld.com/education/deep-dive-macanudo-cigars/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer product photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/macanudo/prod/Uploads/stick-v17.png"
+      }
+    ],
+    "imageNote": "Manufacturer line photograph; displayed size may vary."
+  },
+  {
+    "id": "macanudo-espresso",
+    "brand": "MACANUDO CIGARS",
+    "name": "M Espresso with Cream",
+    "variant": "Toro",
+    "size": "6 × 50",
+    "strength": "Medium",
+    "origin": "Nicaragua",
+    "wrapper": "Indonesia: Maduro and shade barber pole",
+    "binder": "Philippines",
+    "filler": "Nicaragua",
+    "flavors": [
+      "Espresso",
+      "Cream",
+      "Tobacco"
+    ],
+    "image": "./assets/cigars/catalog-c/macanudo-espresso.webp",
+    "imageCredit": "Macanudo Cigars · official product photo",
+    "source": "https://www.macanudo.com/cigars/m-by-macanudo/espresso-with-cream/",
+    "sourceName": "Macanudo Cigars",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Round",
+    "boxPressed": "Not disclosed",
+    "flavoring": "Infused / flavored: espresso and cream",
+    "sources": [
+      {
+        "label": "Manufacturer product specifications",
+        "url": "https://www.macanudo.com/cigars/m-by-macanudo/espresso-with-cream/"
+      },
+      {
+        "label": "Neptune Cigar: product-specific origin and handmade construction",
+        "url": "https://www.neptunecigar.com/cigars/m-by-macanudo-espresso-toro"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer product photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/macanudo/prod/Uploads/stick-v23.png"
+      }
+    ],
+    "imageNote": "Manufacturer line photograph; displayed size may vary."
+  },
+  {
+    "id": "cao-brazilia",
+    "brand": "CAO",
+    "name": "Brazilia",
+    "variant": "Gol!",
+    "size": "5 × 56",
+    "strength": "Medium–Full",
+    "origin": "Honduras",
+    "wrapper": "Brazil Arapiraca",
+    "binder": "Nicaragua",
+    "filler": "Nicaragua",
+    "flavors": [
+      "Toasty",
+      "Earthy",
+      "Nutty",
+      "Floral"
+    ],
+    "image": "./assets/cigars/catalog-c/cao-brazilia.webp",
+    "imageCredit": "Cigar Inc. · product photo",
+    "source": "https://www.caocigars.com/cigars/brazilia/",
+    "sourceName": "Cao",
+    "madeIn": "Honduras",
+    "rolledIn": "Honduras",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Round",
+    "boxPressed": "Not disclosed",
+    "flavoring": "Not disclosed",
+    "sources": [
+      {
+        "label": "Manufacturer product specifications",
+        "url": "https://www.caocigars.com/cigars/brazilia/"
+      },
+      {
+        "label": "Neptune Cigar: handmade in Honduras",
+        "url": "https://www.neptunecigar.com/cigar/cao-brazilia"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigar Inc. Gol! 5 × 56 single product photo",
+        "url": "https://cdn.shopify.com/s/files/1/0694/2470/9864/files/CAO-Brazilia-Gol-Gordo-5-x-56_PREMIUM-CIGAR-LUXURY-ELEGANT-ACCESSORIES_Cigar-Inc_www.cigarinc.com__pickcigar.png?v=1790380743"
+      }
+    ],
+    "imageNote": "Gol! 5 × 56 product photograph."
+  },
+  {
+    "id": "cao-flathead",
+    "brand": "CAO",
+    "name": "Flathead",
+    "variant": "V660 Carb",
+    "size": "6 × 60",
+    "strength": "Medium–Full",
+    "origin": "Nicaragua",
+    "wrapper": "USA Connecticut Broadleaf",
+    "binder": "USA Connecticut Habano",
+    "filler": "Dominican Piloto Cubano Ligero; Nicaragua Ligero",
+    "flavors": [
+      "Sweet",
+      "Fruit",
+      "Leather",
+      "Rich"
+    ],
+    "image": "./assets/cigars/catalog-c/cao-flathead.webp",
+    "imageCredit": "Cao · official product photo",
+    "source": "https://www.caocigars.com/cigars/flathead/",
+    "sourceName": "Cao",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Scandinavian Tobacco Estelí",
+    "handmade": true,
+    "shape": "Box-pressed with flat cap",
+    "boxPressed": true,
+    "flavoring": "Not disclosed",
+    "sources": [
+      {
+        "label": "Manufacturer product specifications",
+        "url": "https://www.caocigars.com/cigars/flathead/"
+      },
+      {
+        "label": "Cigar Aficionado: factory and origin",
+        "url": "https://www.cigaraficionado.com/article/cao-hits-cruising-speed-with-flathead-17253"
+      },
+      {
+        "label": "Official V660 Carb photograph",
+        "url": "https://www.caocigars.com/flathead-garage/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "CAO official V660 Carb photo",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/caocigars/dev/Uploads/dreamcar/660-v3.png"
+      }
+    ],
+    "imageNote": "Official V660 Carb photograph."
+  },
+  {
+    "id": "punch-clasico",
+    "brand": "PUNCH CIGARS",
+    "name": "Clásico",
+    "variant": "Rothschild",
+    "size": "4.5 × 50",
+    "strength": "Medium",
+    "origin": "Honduras",
+    "wrapper": "Ecuador Sumatra",
+    "binder": "USA Connecticut Broadleaf",
+    "filler": "Honduras; Nicaragua; Dominican Piloto Cubano",
+    "flavors": [
+      "Earthy",
+      "Sweet"
+    ],
+    "image": "./assets/cigars/catalog-c/punch-clasico.webp",
+    "imageCredit": "Punch Cigars · official product photo",
+    "source": "https://www.punchcigars.com/products/clasico/",
+    "sourceName": "Punch Cigars",
+    "madeIn": "Honduras",
+    "rolledIn": "Honduras",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Round",
+    "boxPressed": "Not disclosed",
+    "flavoring": "Not disclosed",
+    "sources": [
+      {
+        "label": "Manufacturer product specifications",
+        "url": "https://www.punchcigars.com/products/clasico/"
+      },
+      {
+        "label": "Punch brand: handmade cigars",
+        "url": "https://www.punchcigars.com/"
+      },
+      {
+        "label": "Manufacturer-owned Cigar World: Honduran production",
+        "url": "https://www.cigarworld.com/cigars/punch/clasico/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer product photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/punch/prod/Uploads/stick.png"
+      }
+    ],
+    "imageNote": "Manufacturer line photograph; displayed size may vary."
+  },
+  {
+    "id": "punch-knuckle",
+    "brand": "PUNCH CIGARS",
+    "name": "Knuckle Buster Habano",
+    "variant": "Robusto",
+    "size": "4.5 × 52",
+    "strength": "Medium",
+    "origin": "Honduras",
+    "wrapper": "Nicaragua Habano",
+    "binder": "Nicaragua Habano",
+    "filler": "Nicaragua Habano; Honduras Habano",
+    "flavors": [
+      "Caramel",
+      "Pepper",
+      "Almond"
+    ],
+    "image": "./assets/cigars/catalog-c/punch-knuckle.webp",
+    "imageCredit": "Punch Cigars · official product photo",
+    "source": "https://www.punchcigars.com/products/knuckle-buster-habano/",
+    "sourceName": "Punch Cigars",
+    "madeIn": "Honduras",
+    "rolledIn": "Honduras",
+    "factory": "Honduras American Tabaco S.A. (HATSA), Danlí",
+    "handmade": true,
+    "shape": "Round",
+    "boxPressed": "Not disclosed",
+    "flavoring": "Not disclosed",
+    "sources": [
+      {
+        "label": "Manufacturer product specifications",
+        "url": "https://www.punchcigars.com/products/knuckle-buster-habano/"
+      },
+      {
+        "label": "Cigar Aficionado: exact size, origin and factory",
+        "url": "https://www.cigaraficionado.com/article/punch-releasing-a-new-value-brand-called-knuckle-buster"
+      },
+      {
+        "label": "Punch brand: handmade cigars",
+        "url": "https://www.punchcigars.com/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer product photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/punch/prod/Uploads/STICK-v11.png"
+      }
+    ],
+    "imageNote": "Manufacturer line photograph; displayed size may vary."
+  },
+  {
+    "id": "punch-golden",
+    "brand": "PUNCH CIGARS",
+    "name": "Golden Era",
+    "variant": "Robusto",
+    "size": "5 × 50",
+    "strength": "Mellow–Medium",
+    "origin": "Honduras",
+    "wrapper": "Honduras Havana Seed Corojo",
+    "binder": "Honduras Havana Seed Corojo",
+    "filler": "Honduras Havana Seed Corojo and Habano",
+    "flavors": [
+      "Earthy",
+      "Creamy",
+      "Nutty",
+      "Pepper",
+      "Wood"
+    ],
+    "image": "./assets/cigars/catalog-c/punch-golden.webp",
+    "imageCredit": "Punch Cigars · official product photo",
+    "source": "https://www.punchcigars.com/products/golden-era/",
+    "sourceName": "Punch Cigars",
+    "madeIn": "Honduras",
+    "rolledIn": "Honduras",
+    "factory": "Fábrica de Puros Aladino, Las Lomas Jamastrán",
+    "handmade": true,
+    "shape": "Round",
+    "boxPressed": "Not disclosed",
+    "flavoring": "Not disclosed",
+    "sources": [
+      {
+        "label": "Manufacturer product specifications",
+        "url": "https://www.punchcigars.com/products/golden-era/"
+      },
+      {
+        "label": "Manufacturer-owned Cigar World: size, factory, body and tasting notes",
+        "url": "https://www.cigarworld.com/education/cigar-world-deep-dive-punch-golden-era/"
+      },
+      {
+        "label": "Punch brand: handmade cigars",
+        "url": "https://www.punchcigars.com/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer product photograph",
+        "url": "https://d25bsrltkk1hnl.cloudfront.net/public/punch/prod/Uploads/STICK-v10.png"
+      }
+    ],
+    "imageNote": "Manufacturer line photograph; displayed size may vary."
+  }
+]

@@ -2,242 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BRAND_DEFINITIONS } from "./brands.js";
 
-const PRODUCTS = [
-  {
-    id: "viva-la-vida",
-    brand: "ARTESANO DEL TOBACCO",
-    name: "VIVA LA VIDA",
-    variant: "ROBUSTO",
-    accent: "#b4372f",
-    image: "https://www.tccigar.com/cdn/shop/files/Viva_La_Vida_Robusto.jpg?v=1762743942&width=4000",
-    imageCredit: "cigars-shops.ru",
-    size: '5 × 54',
-    strength: "FULL",
-    origin: "ESTELÍ, NICARAGUA",
-    wrapper: "HABANO OSCURO 2000",
-    binder: "COROJO 99 / NICARAGUA",
-    filler: "CRIOLLO 98 / NICARAGUA",
-    flavors: ["Roasted nuts","Dark coffee","Rum","Rye","Raisin toast","Nutty finish"],
-    source: "https://artesanodeltobacco.com/cigar-brands/viva-la-vida/",
-    sourceName: "ARTESANO DEL TOBACCO",
-    facts: [
-      ["01 / HEAD", "ROBUSTO", '5 × 54', "A broad Robusto format with a 54 ring gauge."],
-      ["02 / WRAPPER", "HABANO OSCURO", "NICARAGUA", "The classic Viva La Vida uses a dark Habano Oscuro 2000 wrapper."],
-      ["03 / CORE", "ALL NICARAGUAN", "AJ FERNANDEZ", "Binder and filler tobaccos come from Nicaragua and the line is produced with A.J. Fernandez."],
-      ["04 / BODY", "FULL", "RICH + CREAMY", "The maker describes a creamy, smooth, full-bodied profile."],
-      ["05 / FLAVOR", "ROASTED COFFEE", "NUTS · RUM · RYE", "Published notes include roasted nuts, heavily roasted coffee and boozy rum-and-rye tones."],
-      ["06 / FINISH", "RAISIN TOAST", "NUTTY FINISH", "The profile settles into warm raisin-toast character and a nutty finish."]
-    ]
-  },
-  {
-    id: "oliva-melanio",
-    brand: "OLIVA",
-    name: "SERIE V",
-    variant: "MELANIO ROBUSTO",
-    accent: "#a86a34",
-    image: "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1920x1920/products/13921/67373/Oliva_serie_V_melanio_robusto_4__06603__32959__26286.1728566911.JPG?c=2",
-    imageCredit: "GQ Tobaccos / BigCommerce",
-    size: '5 × 52',
-    strength: "MEDIUM–FULL",
-    origin: "NICARAGUA",
-    wrapper: "ECUADORIAN SUMATRA",
-    binder: "NICARAGUA",
-    filler: "NICARAGUA / JALAPA LIGERO",
-    flavors: ["Caramel","Nuts","Cedar","Coffee","Mild spice","Cinnamon"],
-    source: "https://olivacigar.com/cigars/serie-v-melanio/",
-    sourceName: "OLIVA CIGARS",
-    facts: [
-      ["01 / FORMAT", "ROBUSTO", '5 × 52', "The Serie V Melanio range includes a 5 × 52 Robusto."],
-      ["02 / WRAPPER", "ECUADOR", "SUMATRA SEED", "The Melanio is known for its Ecuadorian wrapper over a Nicaraguan core."],
-      ["03 / FILLER", "JALAPA", "FERMENTED LIGERO", "Oliva highlights carefully fermented ligero and a carefully aged Jalapa blend."],
-      ["04 / BODY", "RICH", "BALANCED POWER", "The blend is built around robust, rich Nicaraguan tobacco with a polished delivery."],
-      ["05 / FLAVOR", "CARAMEL + NUTS", "CEDAR · COFFEE", "Published tasting profiles commonly show caramel, nuts, cedar, coffee and gentle spice."],
-      ["06 / FINISH", "MILD SPICE", "CINNAMON SWEETNESS", "The finish carries mild spice with a soft cinnamon-like sweetness."]
-    ]
-  },
-  {
-    id: "oliva-135",
-    brand: "OLIVA",
-    name: "SERIE V",
-    variant: "135 ANIVERSARIO",
-    accent: "#d19b52",
-    image: "https://www.cigarcircus.com/web/image/product.template/33857/image_1920",
-    imageCredit: "EGM Cigars",
-    size: '5.5 × 54',
-    strength: "MEDIUM–FULL",
-    origin: "NICARAGUA",
-    wrapper: "ECUADORIAN HABANO SUN GROWN",
-    binder: "NICARAGUA",
-    filler: "NICARAGUA / JALAPA",
-    flavors: ["Coffee","Dark chocolate","Earth","Spice","Nuts"],
-    source: "https://atlanticcigar.com/oliva-serie-v-135th-anniversary-edicion-limitada-perfecto/",
-    sourceName: "OLIVA / ATLANTIC CIGAR",
-    facts: [
-      ["01 / SHAPE", "PERFECTO", '5.5 × 54', "A commemorative Perfecto format with a tapered foot."],
-      ["02 / WRAPPER", "HABANO SUN GROWN", "ECUADOR", "Published specifications list an Ecuadorian Sun Grown Habano wrapper."],
-      ["03 / CORE", "NICARAGUA", "JALAPA LIGERO", "The binder and filler are Nicaraguan, with Jalapa tobacco central to the Serie V character."],
-      ["04 / BODY", "MEDIUM–FULL", "SMOOTH POWER", "The blend is designed to carry Serie V intensity while maintaining a smooth presentation."],
-      ["05 / FLAVOR", "COFFEE", "DARK CHOCOLATE", "Published descriptions emphasize rich coffee and dark-chocolate tones."],
-      ["06 / FINISH", "SPICE", "EARTH + NUTS", "Balanced spice rounds out the richer coffee, earth and nut profile."]
-    ]
-  },
-  {
-    id: "my-father-blue",
-    brand: "MY FATHER",
-    name: "MY FATHER",
-    variant: "BLUE ROBUSTO",
-    accent: "#61b9d5",
-    image: "https://www.cigarsdirect.com/cdn/shop/files/my-father-cigars-blue-robusto-single.jpg?v=1752808840&width=2000",
-    imageCredit: "Cigars Direct",
-    size: '5.25 × 52',
-    strength: "MEDIUM–FULL",
-    origin: "HONDURAS",
-    wrapper: "CT BROADLEAF ROSADO",
-    binder: "HONDURAS",
-    filler: "HONDURAS / FINCA LA OPULENCIA",
-    flavors: ["Smoky cedar","Earth","Black pepper","Cocoa","Leather","Black cherry"],
-    source: "https://myfathercigars.com/cigar/my-father-blue/",
-    sourceName: "MY FATHER CIGARS",
-    facts: [
-      ["01 / FORMAT", "ROBUSTO", '5.25 × 52', "My Father Blue is offered in box-pressed formats, including this Robusto."],
-      ["02 / WRAPPER", "CT BROADLEAF ROSADO", "HONDURAN PROJECT", "The official blend uses a Connecticut Broadleaf Rosado wrapper."],
-      ["03 / CORE", "HONDURAS", "FINCA LA OPULENCIA", "Binder and filler come from Honduras, including tobacco from the Garcia family’s Honduran farm."],
-      ["04 / BODY", "MEDIUM–FULL", "BOLD + REFINED", "My Father describes Blue as medium to full-bodied."],
-      ["05 / FLAVOR", "CEDAR + COCOA", "EARTH · PEPPER", "Retail tasting descriptions emphasize smoky cedar, earth, pepper and cocoa."],
-      ["06 / FINISH", "LEATHER", "BLACK CHERRY · MOLASSES", "Later notes can move toward leather, darker fruit and subtle molasses-like sweetness."]
-    ]
-  },
-  {
-    id: "opus-x",
-    brand: "ARTURO FUENTE",
-    name: "FUENTE FUENTE",
-    variant: "OPUSX SUPER BELICOSO",
-    accent: "#b83a31",
-    image: "https://cigarworld.co.uk/cdn/shop/files/fuente_super_belicoso.jpg?v=1773268155&width=2000",
-    imageCredit: "Cigar World",
-    size: '5.5 × 52',
-    strength: "FULL",
-    origin: "DOMINICAN REPUBLIC",
-    wrapper: "DOMINICAN OPUSX",
-    binder: "DOMINICAN",
-    filler: "DOMINICAN",
-    flavors: ["Sweet tobacco","Cedar","Spice","Rich earth","Lingering sweetness"],
-    source: "https://arturofuente.com/our-cigars/opusx/ff-opusx/",
-    sourceName: "ARTURO FUENTE",
-    facts: [
-      ["01 / FORMAT", "SUPER BELICOSO", '5.5 × 52', "The OpusX Super Belicoso is a 5.5-inch, 52-ring figurado."],
-      ["02 / WRAPPER", "DOMINICAN", "CHATEAU DE LA FUENTE", "The line is built around Fuente’s celebrated Dominican-grown wrapper."],
-      ["03 / PURO", "100% DOMINICAN", "WRAPPER · BINDER · FILLER", "Fuente describes OpusX as the original Dominican puro."],
-      ["04 / BODY", "FULL", "SMOOTH + BOLD", "The house description emphasizes a combination of smoothness and boldness."],
-      ["05 / FLAVOR", "SWEET FULLNESS", "CEDAR · SPICE", "The exclusive wrapper contributes a sweet, lingering fullness over a rich Dominican core."],
-      ["06 / FINISH", "LONG", "RICH + LINGERING", "The finish is designed around persistent richness rather than a quick fade."]
-    ]
-  },
-  {
-    id: "la-opulencia",
-    brand: "MY FATHER",
-    name: "LA OPULENCIA",
-    variant: "ROBUSTO",
-    accent: "#55a875",
-    image: "https://www.cigarsdirect.com/cdn/shop/products/my-father-la-opulencia-robusto-single.jpg?v=1658862740&width=2000",
-    imageCredit: "Cigars Direct",
-    size: '5.25 × 52',
-    strength: "MEDIUM–FULL",
-    origin: "NICARAGUA",
-    wrapper: "MEXICO ROSADO OSCURO",
-    binder: "NICARAGUA",
-    filler: "NICARAGUA",
-    flavors: ["Chocolate","Cocoa","Oak","Anise","Pepper","Leather"],
-    source: "https://myfathercigars.com/cigar/my-father-la-opulencia/",
-    sourceName: "MY FATHER CIGARS",
-    facts: [
-      ["01 / FORMAT", "ROBUSTO", '5.25 × 52', "A box-pressed Robusto in the La Opulencia family."],
-      ["02 / WRAPPER", "ROSADO OSCURO", "MEXICO", "The official line is finished with a Mexico Rosado Oscuro wrapper."],
-      ["03 / CORE", "NICARAGUA", "GARCIA FAMILY FARMS", "Corojo, Criollo and Habano tobaccos from Garcia-family farms build the interior blend."],
-      ["04 / BODY", "MEDIUM–FULL", "RICH + COMPLEX", "My Father positions La Opulencia around richness, aroma and complexity."],
-      ["05 / FLAVOR", "CHOCOLATE + COCOA", "PEPPER · LEATHER", "Published tasting descriptions repeatedly center on cocoa/chocolate with pepper and leather."],
-      ["06 / FINISH", "OAK", "ANISE + SPICE", "Oak, anise and lingering spice add a dry, structured finish."]
-    ]
-  },
-  {
-    id: "chateau-fuente",
-    brand: "ARTURO FUENTE",
-    name: "CHATEAU",
-    variant: "FUENTE NATURAL",
-    accent: "#69935b",
-    image: "https://adwanicigar.com/cdn/shop/products/AFCR.jpg?v=1634123913&width=2000",
-    imageCredit: "Adwani Cigar",
-    size: '4.5 × 50',
-    strength: "MELLOW–MEDIUM",
-    origin: "DOMINICAN REPUBLIC",
-    wrapper: "CONNECTICUT SHADE",
-    binder: "DOMINICAN",
-    filler: "DOMINICAN",
-    flavors: ["Cedar","Nuts","Cream","Sweet tobacco","Wood"],
-    source: "https://arturofuente.com/our-cigars/chateau-fuente/",
-    sourceName: "ARTURO FUENTE",
-    facts: [
-      ["01 / FORMAT", "CHATEAU", '4.5 × 50', "The standard Chateau Fuente measures 4.5 inches with a 50 ring gauge."],
-      ["02 / PRESENTATION", "CEDAR SLEEVE", "SIGNATURE FOOT RIBBON", "The series is individually wrapped in its signature cedar sleeve."],
-      ["03 / WRAPPER", "CONNECTICUT SHADE", "NATURAL", "Natural Chateau Fuente presentations are commonly finished with Connecticut Shade."],
-      ["04 / CORE", "DOMINICAN", "BINDER + FILLER", "Aged Dominican tobaccos form the binder and filler."],
-      ["05 / FLAVOR", "NUTTY + SMOOTH", "CEDAR", "Retail descriptions emphasize a rich, nutty, smooth profile with cedar influence."],
-      ["06 / BODY", "MELLOW–MEDIUM", "CREAMY FINISH", "A softer profile makes this one of the gentler cigars in the shelf set."]
-    ]
-  },
-  {
-    id: "my-father-no1",
-    brand: "MY FATHER",
-    name: "MY FATHER",
-    variant: "NO.1 ROBUSTO",
-    accent: "#c97c68",
-    image: "https://www.cigarvault.ca/cdn/shop/products/my-father-no1-robusto-525552.jpg?v=1680712974&width=2000",
-    imageCredit: "Cigar Vault",
-    size: '5.25 × 52',
-    strength: "FULL",
-    origin: "NICARAGUA",
-    wrapper: "HABANO ROSADO",
-    binder: "NICARAGUA",
-    filler: "NICARAGUA",
-    flavors: ["Cedar","Leather","Pepper","Cocoa","Spice","Cream"],
-    source: "https://myfathercigars.com/cigar/my-father/",
-    sourceName: "MY FATHER CIGARS",
-    facts: [
-      ["01 / FORMAT", "NO.1 ROBUSTO", '5.25 × 52', "The No.1 is the Robusto expression in the flagship My Father line."],
-      ["02 / WRAPPER", "HABANO ROSADO", "SELECTED LEAF", "My Father describes the line around a carefully selected Habano-Rosado wrapper."],
-      ["03 / CORE", "NICARAGUA", "BINDER + FILLER", "The binder and filler are Nicaraguan tobaccos grown for the Garcia family."],
-      ["04 / BODY", "FULL", "PEPPER-DRIVEN", "The official profile is full-bodied with the house’s characteristic spice."],
-      ["05 / FLAVOR", "LEATHER + CEDAR", "HOT PEPPER", "The maker highlights leather, cedar and a medley of hot-pepper notes."],
-      ["06 / FINISH", "COCOA + CREAM", "SPICE", "Other published tastings add cocoa, cream and layered spice to the finish."]
-    ]
-  },
-  {
-    id: "rocky-emerald",
-    brand: "ROCKY PATEL",
-    name: "EMERALD",
-    variant: "ROBUSTO",
-    accent: "#35a55b",
-    image: "https://klarocigars.com/cdn/shop/files/Rocky-Patel-Emerald-Robusto-h__91612.jpg?v=1740746957&width=2000",
-    imageCredit: "Klaro Cigars",
-    size: '5.5 × 50',
-    strength: "MEDIUM",
-    origin: "NICARAGUA",
-    wrapper: "ECUADORIAN HABANO",
-    binder: "NICARAGUA + MEXICO",
-    filler: "NICARAGUA + HONDURAS",
-    flavors: ["Sweetness","Coffee","Leather","Hickory","Black pepper"],
-    source: "https://www.rockypatel.com/cigar/emerald/",
-    sourceName: "ROCKY PATEL",
-    facts: [
-      ["01 / FORMAT", "ROBUSTO", '5.5 × 50', "The Emerald Robusto is 5.5 inches by a 50 ring gauge."],
-      ["02 / WRAPPER", "ECUADORIAN HABANO", "BOX-PRESSED", "Rocky Patel uses an Ecuadorian Habano wrapper on its lighter medium-bodied box-pressed concept."],
-      ["03 / BINDERS", "DUAL BINDER", "NICARAGUA + MEXICO", "The cigar uses two binders, one Nicaraguan and one Mexican."],
-      ["04 / FILLER", "NICARAGUA", "JAMASTRAN, HONDURAS", "The filler is predominantly Nicaraguan with a leaf from Honduras’s Jamastran Valley."],
-      ["05 / BODY", "MEDIUM", "APPROACHABLE", "Rocky Patel describes it as truly medium-bodied, with noticeable sweetness."],
-      ["06 / FLAVOR", "SWEET + WOODY", "COFFEE · PEPPER", "Retail tasting descriptions add coffee, leather, hickory and black pepper."]
-    ]
-  }
-];
+import { PRODUCTS } from "./catalog.js";
 
 const BRANDS = [
   ...BRAND_DEFINITIONS,
@@ -272,7 +37,7 @@ function BrandSelection({ selectBrand, buttonRefs }) {
       <div className="brand-picker-heading">
         <small>{BRANDS.length} BRANDS · CIGAR EXPLORER</small>
         <h1 id="brand-title">CHOOSE YOUR <em>BRAND.</em></h1>
-        <p>Select a brand to discover its cigars, blends and flavor profiles.</p>
+        <p>Select a brand to discover selected cigars, sizes, craftsmanship and tasting notes.</p>
       </div>
       <div className="brand-grid">
         {BRANDS.map(brand => (
@@ -345,7 +110,9 @@ function ProductImage({ product, active, detail, progress }) {
         <img
           src={product.image}
           alt={`${product.name} ${product.variant}`}
-          className={product.id === "viva-la-vida" ? "viva-bg-clean" : ""}
+          className={`${product.imageHasTransparency ? "transparent-product-photo" : ""} ${product.id === "viva-la-vida" ? "viva-bg-clean" : ""}`}
+          loading={active ? "eager" : "lazy"}
+          decoding="async"
           draggable="false"
           referrerPolicy="no-referrer"
           onError={() => setFailed(true)}
@@ -422,7 +189,7 @@ function Carousel({products, active, setActive, detail, progress}) {
             }}
           >
             <div className="aura" />
-            <ProductImage product={product} active={activeItem} detail={detail} progress={progress}/>
+            <ProductImage key={product.id} product={product} active={activeItem} detail={detail} progress={progress}/>
             {!detail && (
               <div className="slot-name">
                 <small>{String(index+1).padStart(2,"0")}</small>
@@ -435,6 +202,41 @@ function Carousel({products, active, setActive, detail, progress}) {
         );
       })}
     </div>
+  );
+}
+
+
+export function CigarSpecifications({ product, products, active, setActive }) {
+  const rows = [
+    ["Size", `${product.size} · inches × ring gauge`],
+    ["Made in", product.madeIn],
+    ["Rolled in", product.rolledIn],
+    ["Factory", product.factory],
+    ["Handmade", product.handmadeLabel],
+    ["Shape", product.shape],
+    ["Box-pressed", product.boxPressedLabel],
+    ["Wrapper", product.wrapper],
+    ["Binder", product.binder],
+    ["Filler", product.filler]
+  ];
+  return (
+    <section className="cigar-specifications" aria-labelledby="cigar-spec-title">
+      <div className="cigar-spec-heading">
+        <div><small>THE CIGAR AT A GLANCE</small><h2 id="cigar-spec-title">{product.name} <span>{product.variant}</span></h2></div>
+        {products.length > 1 && <label className="cigar-selector">SELECT A CIGAR
+          <select value={active} onChange={event => setActive(Number(event.target.value))}>
+            {products.map((cigar, index) => <option key={cigar.id} value={index}>{cigar.name} · {cigar.variant}</option>)}
+          </select>
+        </label>}
+      </div>
+      <dl className="cigar-spec-grid">{rows.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value || "Not disclosed"}</dd></div>)}</dl>
+      <div className="cigar-tasting"><h3>Tasting notes</h3><p>{product.flavors.join(" · ")}</p>
+        <p className="tasting-context">{product.flavoring && product.flavoring !== "Not disclosed" ? product.flavoring : "Tasting notes describe perceived aromas and flavors; they are not an ingredient list."}
+        {product.flavorSource ? ` · ${product.flavorSource}` : ""}</p>
+      </div>
+      <div className="cigar-sources"><strong>Product sources</strong>{product.sources.map((source, index) => <a key={`${source.url}-${index}`} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</div>
+      <p className="catalog-note">Selected size shown. Specifications may vary by size and blend. “Not disclosed” means a source does not confirm that detail. Profiles are a guide to the brand, not a live inventory.</p>
+    </section>
   );
 }
 
@@ -454,7 +256,7 @@ function Detail({product, progress, setProgress, close}) {
         <h2>{fact[1]}</h2>
         <h3 style={{color:product.accent}}>{fact[2]}</h3>
         <p>{fact[3]}</p>
-        <a href={product.source} target="_blank" rel="noreferrer">SOURCE · {product.sourceName} ↗</a>
+        <a href={fact[4] || product.source} target="_blank" rel="noreferrer">SOURCE · {fact[5] || product.sourceName} ↗</a>
         </div>
         <div className="detail-step-nav" aria-label="Cigar details">
           <button disabled={current === 0} onClick={()=>setProgress((current - 1 + .02)/product.facts.length)}>← Previous</button>
@@ -568,6 +370,7 @@ export default function App(){
       setProgress(p=>Math.max(0,Math.min(.9999,p+e.deltaY*.00045)));
     };
     const key=(e)=>{
+      if(e.target.closest?.("input,select,textarea,[contenteditable]"))return;
       if(!selectedBrand)return;
       if (document.getElementById("ageGate")?.classList.contains("open")) return;
       if(!products.length){if(e.key==="Escape")showBrands();return;}
@@ -736,9 +539,11 @@ export default function App(){
           </section>
 
           <aside className="spec-panel left">
-            <div><small>SIZE</small><strong>{product.size}</strong></div>
+            <div><small>SIZE · INCHES × RING GAUGE</small><strong>{product.size}</strong></div>
             <div><small>STRENGTH</small><strong>{product.strength}</strong></div>
-            <div><small>ORIGIN</small><strong>{product.origin}</strong></div>
+            <div><small>MADE IN</small><strong>{product.madeIn}</strong></div>
+            <div><small>CONSTRUCTION</small><strong>{product.handmadeLabel}</strong></div>
+            <div><small>SHAPE</small><strong>{product.shape}</strong></div>
           </aside>
 
           <aside className="spec-panel right">
@@ -748,7 +553,7 @@ export default function App(){
           </aside>
 
           <div className="flavors">
-            <small>FLAVOR PROFILE</small>
+            <small>TASTING NOTES</small>
             <div>{product.flavors.map(f=><span key={f}>{f}</span>)}</div>
           </div>
 
@@ -762,7 +567,8 @@ export default function App(){
           </button>
 
           <div className="counter" aria-label={`Cigar ${active+1} of ${products.length}`}>{String(active+1).padStart(2,"0")} <i/> {String(products.length).padStart(2,"0")}</div>
-          <div className="image-credit">PRODUCT IMAGE · {product.imageCredit}</div>
+          <div className="image-credit">PRODUCT IMAGE · {product.imageCredit}{product.imageNote ? ` · ${product.imageNote}` : ""}</div>
+          <CigarSpecifications product={product} products={products} active={active} setActive={setActive}/>
         </>
       ):(
         <Detail product={product} progress={progress} setProgress={setProgress} close={closeDetail}/>

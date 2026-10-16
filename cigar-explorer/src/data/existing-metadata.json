@@ -1,0 +1,164 @@
+{
+  "viva-la-vida": {
+    "madeIn": "Nicaragua",
+    "rolledIn": "Estelí, Nicaragua",
+    "factory": "Tabacalera A.J. Fernandez",
+    "handmade": true,
+    "shape": "Robusto",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Artesano del Tobacco — Viva La Vida",
+        "url": "https://artesanodeltobacco.com/cigar-brands/viva-la-vida/"
+      },
+      {
+        "label": "Neptune Cigars — format and construction",
+        "url": "https://www.neptunecigar.com/cigars/viva-la-vida-robusto"
+      }
+    ]
+  },
+  "oliva-melanio": {
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Robusto",
+    "boxPressed": true,
+    "sources": [
+      {
+        "label": "Oliva — Serie V Melanio",
+        "url": "https://olivacigar.com/cigars/serie-v-melanio/"
+      },
+      {
+        "label": "Neptune Cigars — format and construction",
+        "url": "https://www.neptunecigar.com/cigars/oliva-serie-v-melanio-robusto"
+      }
+    ]
+  },
+  "oliva-135": {
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Perfecto",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Atlantic Cigar — size and hand-rolled construction",
+        "url": "https://atlanticcigar.com/oliva-serie-v-135th-anniversary-edicion-limitada-perfecto/"
+      },
+      {
+        "label": "Cigars International — format",
+        "url": "https://www.cigarsinternational.com/product/oliva-serie-v-135th-anniversary-edicion-limitada/O35-PM.html"
+      }
+    ]
+  },
+  "my-father-blue": {
+    "madeIn": "Honduras",
+    "rolledIn": "Honduras",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Robusto",
+    "boxPressed": true,
+    "sources": [
+      {
+        "label": "My Father — Blue",
+        "url": "https://myfathercigars.com/cigar/my-father-blue/"
+      }
+    ]
+  },
+  "opus-x": {
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "Tabacalera A. Fuente y Cia.",
+    "handmade": true,
+    "shape": "Super Belicoso",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Arturo Fuente — Fuente Fuente OpusX",
+        "url": "https://arturofuente.com/our-cigars/opusx/ff-opusx/"
+      },
+      {
+        "label": "Arturo Fuente — manufacturing statement",
+        "url": "https://www.arturofuente.com/_download/AF_Release.pdf"
+      },
+      {
+        "label": "Neptune Cigars — format",
+        "url": "https://www.neptunecigar.com/cigars/arturo-fuente-opus-x-super-belicoso"
+      }
+    ]
+  },
+  "la-opulencia": {
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Robusto",
+    "boxPressed": true,
+    "sources": [
+      {
+        "label": "My Father — La Opulencia",
+        "url": "https://myfathercigars.com/cigar/my-father-la-opulencia/"
+      }
+    ]
+  },
+  "chateau-fuente": {
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "Tabacalera A. Fuente y Cia.",
+    "handmade": true,
+    "shape": "Rothschild",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Arturo Fuente — Chateau Fuente",
+        "url": "https://arturofuente.com/our-cigars/chateau-fuente/"
+      },
+      {
+        "label": "Arturo Fuente — manufacturing statement",
+        "url": "https://www.arturofuente.com/_download/AF_Release.pdf"
+      },
+      {
+        "label": "Neptune Cigars — format",
+        "url": "https://www.neptunecigar.com/cigars/arturo-fuente-chateau-fuente"
+      }
+    ]
+  },
+  "my-father-no1": {
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "My Father Cigars S.A.",
+    "handmade": true,
+    "shape": "Robusto",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "My Father — original line",
+        "url": "https://myfathercigars.com/cigar/my-father/"
+      },
+      {
+        "label": "Neptune Cigars — format",
+        "url": "https://www.neptunecigar.com/cigars/my-father-no-1-robusto"
+      }
+    ]
+  },
+  "rocky-emerald": {
+    "madeIn": "Nicaragua",
+    "rolledIn": "Nicaragua",
+    "factory": "Not disclosed",
+    "handmade": true,
+    "shape": "Robusto",
+    "boxPressed": true,
+    "sources": [
+      {
+        "label": "Rocky Patel — Emerald",
+        "url": "https://www.rockypatel.com/cigar/emerald/"
+      },
+      {
+        "label": "Neptune Cigars — handmade construction",
+        "url": "https://www.neptunecigar.com/cigars/rocky-patel-emerald-robusto"
+      }
+    ]
+  }
+}

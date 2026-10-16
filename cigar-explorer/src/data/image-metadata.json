@@ -1,0 +1,192 @@
+{
+  "./assets/cigars/catalog-b/west-tampa-white-robusto.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 900
+  },
+  "./assets/cigars/catalog-b/diesel-whiskey-row-robusto.webp": {
+    "hasTransparency": true,
+    "width": 122,
+    "height": 900
+  },
+  "./assets/cigars/catalog-b/new-mercy-riders-choice-habano.webp": {
+    "hasTransparency": true,
+    "width": 623,
+    "height": 900
+  },
+  "./assets/cigars/catalog-b/west-tampa-black-robusto.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 900
+  },
+  "./assets/cigars/catalog-b/diesel-unholy-cocktail.webp": {
+    "hasTransparency": false,
+    "width": 600,
+    "height": 600
+  },
+  "./assets/cigars/catalog-b/plasencia-reserva-original-robusto.webp": {
+    "hasTransparency": true,
+    "width": 113,
+    "height": 640
+  },
+  "./assets/cigars/catalog-b/new-mercy-club-style-maduro.webp": {
+    "hasTransparency": true,
+    "width": 548,
+    "height": 900
+  },
+  "./assets/cigars/catalog-b/plasencia-alma-fuerte-sixto-ii.webp": {
+    "hasTransparency": true,
+    "width": 99,
+    "height": 640
+  },
+  "./assets/cigars/catalog-a/perdomo-20-maduro.webp": {
+    "hasTransparency": false,
+    "width": 189,
+    "height": 900
+  },
+  "./assets/cigars/catalog-a/tabernacle.webp": {
+    "hasTransparency": true,
+    "width": 74,
+    "height": 550
+  },
+  "./assets/cigars/catalog-a/blind-faith.webp": {
+    "hasTransparency": true,
+    "width": 212,
+    "height": 900
+  },
+  "./assets/cigars/catalog-a/perdomo-champagne.webp": {
+    "hasTransparency": false,
+    "width": 189,
+    "height": 900
+  },
+  "./assets/cigars/catalog-a/charter-oak.webp": {
+    "hasTransparency": true,
+    "width": 81,
+    "height": 600
+  },
+  "./assets/cigars/catalog-a/gatekeeper.webp": {
+    "hasTransparency": true,
+    "width": 211,
+    "height": 900
+  },
+  "./assets/cigars/catalog-a/cohiba-red-dot.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 786
+  },
+  "./assets/cigars/catalog-a/cohiba-black.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 786
+  },
+  "./assets/cigars/catalog-a/olmec-maduro.webp": {
+    "hasTransparency": true,
+    "width": 77,
+    "height": 580
+  },
+  "./assets/cigars/catalog-c/macanudo-espresso.webp": {
+    "hasTransparency": true,
+    "width": 185,
+    "height": 845
+  },
+  "./assets/cigars/catalog-c/cao-flathead.webp": {
+    "hasTransparency": true,
+    "width": 185,
+    "height": 712
+  },
+  "./assets/cigars/catalog-c/punch-golden.webp": {
+    "hasTransparency": true,
+    "width": 130,
+    "height": 858
+  },
+  "./assets/cigars/catalog-c/macanudo-cafe.webp": {
+    "hasTransparency": true,
+    "width": 161,
+    "height": 847
+  },
+  "./assets/cigars/catalog-c/macanudo-white.webp": {
+    "hasTransparency": true,
+    "width": 190,
+    "height": 844
+  },
+  "./assets/cigars/catalog-c/punch-clasico.webp": {
+    "hasTransparency": true,
+    "width": 166,
+    "height": 871
+  },
+  "./assets/cigars/catalog-c/punch-knuckle.webp": {
+    "hasTransparency": true,
+    "width": 178,
+    "height": 851
+  },
+  "./assets/cigars/catalog-c/cao-brazilia.webp": {
+    "hasTransparency": true,
+    "width": 138,
+    "height": 824
+  },
+  "./assets/cigars/existing/oliva-135.webp": {
+    "hasTransparency": false,
+    "width": 720,
+    "height": 900
+  },
+  "./assets/cigars/existing/my-father-blue.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 900
+  },
+  "./assets/cigars/existing/chateau-fuente.webp": {
+    "hasTransparency": false,
+    "width": 896,
+    "height": 900
+  },
+  "./assets/cigars/existing/opus-x.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 900
+  },
+  "./assets/cigars/existing/my-father-no1.webp": {
+    "hasTransparency": false,
+    "width": 600,
+    "height": 600
+  },
+  "./assets/cigars/existing/viva-la-vida.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 900
+  },
+  "./assets/cigars/existing/oliva-melanio.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 900
+  },
+  "./assets/cigars/existing/rocky-emerald.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 900
+  },
+  "./assets/cigars/existing/la-opulencia.webp": {
+    "hasTransparency": false,
+    "width": 900,
+    "height": 900
+  },
+  "./assets/cigars/catalog-d/oliva-135-single.webp": {
+    "hasTransparency": false,
+    "width": 500,
+    "height": 500
+  },
+  "./assets/cigars/catalog-d/lfd-andalusian-bull.webp": {
+    "hasTransparency": false,
+    "width": 1200,
+    "height": 1195
+  },
+  "./assets/cigars/catalog-d/lfd-la-nox-toro.webp": {
+    "hasTransparency": false,
+    "width": 1000,
+    "height": 1000
+  },
+  "./assets/cigars/catalog-d/lfd-double-ligero-dl700.webp": {
+    "hasTransparency": false,
+    "width": 1024,
+    "height": 1024
+  }
+}
