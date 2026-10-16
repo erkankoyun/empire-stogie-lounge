@@ -283,8 +283,8 @@
       "Spice",
       "Dark chocolate"
     ],
-    "image": "https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg",
-    "imageCredit": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
+    "image": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png",
+    "imageCredit": "Habano Cigars — Kristoff Original Maduro, isolated single cigar",
     "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -306,21 +306,17 @@
       {
         "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
         "url": "https://habanocigars.com/shop/kristoff-original-maduro-robusto-20ct/"
-      },
-      {
-        "label": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
-        "url": "https://www.cigarpage.com/kristoff-original-maduro.html"
       }
     ],
     "imageSources": [
       {
-        "label": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
-        "url": "https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg"
+        "label": "Habano Cigars — Kristoff Original Maduro, isolated single cigar",
+        "url": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Updated black-and-gold band shown on a single cigar; Matador presentation used as line photo.",
-    "imageCrop": "maduro"
+    "imageNote": "Single-cigar series photo; exact Robusto or Matador dimensions are shown separately.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-original-maduro-matador",
@@ -339,8 +335,8 @@
       "Spice",
       "Dark chocolate"
     ],
-    "image": "https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg",
-    "imageCredit": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
+    "image": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png",
+    "imageCredit": "Habano Cigars — Kristoff Original Maduro, isolated single cigar",
     "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -362,21 +358,17 @@
       {
         "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
         "url": "https://habanocigars.com/shop/kristoff-original-maduro-matador-20ct/"
-      },
-      {
-        "label": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
-        "url": "https://www.cigarpage.com/kristoff-original-maduro.html"
       }
     ],
     "imageSources": [
       {
-        "label": "Cigar Page — Kristoff Original Maduro updated black-and-gold band",
-        "url": "https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg"
+        "label": "Habano Cigars — Kristoff Original Maduro, isolated single cigar",
+        "url": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Updated black-and-gold band shown on a single cigar; Matador presentation used as line photo.",
-    "imageCrop": "maduro"
+    "imageNote": "Single-cigar series photo; exact Robusto or Matador dimensions are shown separately.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-vengeance-6x60",
