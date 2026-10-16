@@ -224,7 +224,7 @@ export function CigarSpecifications({ product, products, active, setActive }) {
       <div className="cigar-spec-heading">
         <div><small>THE CIGAR AT A GLANCE</small><h2 id="cigar-spec-title">{product.name} <span>{product.variant}</span></h2></div>
         {products.length > 1 && <label className="cigar-selector">SELECT A CIGAR
-          <select value={active} onChange={event => setActive(Number(event.target.value))}>
+          <select aria-label="Select a cigar" value={active} onChange={event => setActive(Number(event.target.value))}>
             {products.map((cigar, index) => <option key={cigar.id} value={index}>{cigar.name} · {cigar.variant}</option>)}
           </select>
         </label>}
@@ -542,7 +542,7 @@ export default function App(){
             <div><small>SIZE · INCHES × RING GAUGE</small><strong>{product.size}</strong></div>
             <div><small>STRENGTH</small><strong>{product.strength}</strong></div>
             <div><small>MADE IN</small><strong>{product.madeIn}</strong></div>
-            <div><small>CONSTRUCTION</small><strong>{product.handmadeLabel}</strong></div>
+            <div><small>HANDMADE</small><strong>{product.handmadeLabel}</strong></div>
             <div><small>SHAPE</small><strong>{product.shape}</strong></div>
           </aside>
 
