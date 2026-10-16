@@ -5,6 +5,7 @@ import groupA from "./data/catalog-a.json";
 import groupB from "./data/catalog-b.json";
 import groupC from "./data/catalog-c.json";
 import groupD from "./data/catalog-d.json";
+import montecristo from "./data/montecristo.json";
 import existingMetadata from "./data/existing-metadata.json";
 
 const UNKNOWN = "Not disclosed";
@@ -52,5 +53,5 @@ function prepareProduct(input) {
 
 export const PRODUCTS = [
   ...LEGACY_PRODUCTS.map(product => ({ ...product, ...metadata[product.id] })),
-  ...groupA, ...groupB, ...groupC, ...groupD
+  ...groupA, ...groupB, ...groupC, ...groupD, ...montecristo
 ].map(prepareProduct);

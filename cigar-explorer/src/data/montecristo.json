@@ -1,0 +1,160 @@
+[
+  {
+    "id": "montecristo-classic",
+    "brand": "MONTECRISTO",
+    "name": "Classic",
+    "variant": "Robusto · U.S. Montecristo",
+    "size": "5 × 52",
+    "strength": "MILD",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Connecticut Shade",
+    "binder": "Dominican Republic",
+    "filler": "Dominican Republic",
+    "flavors": [
+      "Cedar",
+      "Roasted nuts",
+      "Coffee",
+      "Sweet cream"
+    ],
+    "image": "./assets/cigars/montecristo/montecristo-classic.webp",
+    "imageCredit": "Altadis U.S.A. — official manufacturer photograph",
+    "source": "https://www.altadisusa.com/cigars/montecristo/montecristo-classic-series/",
+    "sourceName": "Altadis U.S.A.",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "Tabacalera de García",
+    "handmade": true,
+    "shape": "Robusto · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend, size and origin",
+        "url": "https://www.altadisusa.com/cigars/montecristo/montecristo-classic-series/"
+      },
+      {
+        "label": "Casa de Montecristo: selected Robusto factory and tasting notes",
+        "url": "https://www.casademontecristo.com/item/montecristo-classic/robusto/MXCROB.html"
+      },
+      {
+        "label": "Neptune: handmade and round construction",
+        "url": "https://www.neptunecigar.com/cigars/montecristo-classic-robusto"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer single-cigar photograph",
+        "url": "https://www.altadisusa.com/wp-content/uploads/2026/04/1589559181838-AUSA_MontecristoClassicSeries_single_100x700.png"
+      }
+    ],
+    "imageNote": "Official manufacturer line photograph; pictured vitola may differ from the selected size.",
+    "imageCaption": "Official manufacturer line photograph.",
+    "flavorSource": "Casa de Montecristo (retailer tasting notes)"
+  },
+  {
+    "id": "montecristo-white",
+    "brand": "MONTECRISTO",
+    "name": "White Series",
+    "variant": "Rothchilde · U.S. Montecristo",
+    "size": "5 × 52",
+    "strength": "MILD–MEDIUM",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Ecuadorian Connecticut Shade",
+    "binder": "Nicaragua",
+    "filler": "Dominican Republic / Nicaragua",
+    "flavors": [
+      "Cream",
+      "Vanilla",
+      "Nuts",
+      "Spice"
+    ],
+    "image": "./assets/cigars/montecristo/montecristo-white.webp",
+    "imageCredit": "Altadis U.S.A. — official manufacturer photograph",
+    "source": "https://www.altadisusa.com/cigars/montecristo/montecristo-white-series/",
+    "sourceName": "Altadis U.S.A.",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Dominican Republic",
+    "factory": "Tabacalera de García",
+    "handmade": true,
+    "shape": "Rothchilde / Robusto · round",
+    "boxPressed": false,
+    "sources": [
+      {
+        "label": "Manufacturer: blend, size and origin",
+        "url": "https://www.altadisusa.com/cigars/montecristo/montecristo-white-series/"
+      },
+      {
+        "label": "Neptune: selected Rothchilde handmade, round construction and tasting notes",
+        "url": "https://www.neptunecigar.com/cigars/montecristo-white-rothchilde"
+      },
+      {
+        "label": "White Series production: Altadis announcement",
+        "url": "https://cigar-coop.com/2025/03/altadis-u-s-a-to-add-montecristo-white-series-diadema-cigar-news.html"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer single-cigar photograph",
+        "url": "https://www.altadisusa.com/wp-content/uploads/2026/04/1515543626517-MC-White-Series.png"
+      }
+    ],
+    "imageNote": "Official manufacturer line photograph; pictured vitola may differ from the selected size.",
+    "imageCaption": "Official manufacturer line photograph.",
+    "flavorSource": "Neptune Cigar (retailer tasting notes); cream also described by manufacturer"
+  },
+  {
+    "id": "montecristo-1935",
+    "brand": "MONTECRISTO",
+    "name": "1935 Anniversary Nicaragua",
+    "variant": "No. 2 · U.S. Montecristo",
+    "size": "6 ⅛ × 52",
+    "strength": "MEDIUM–FULL",
+    "origin": "OCOTAL, NICARAGUA",
+    "wrapper": "Nicaragua",
+    "binder": "Nicaragua",
+    "filler": "Nicaragua",
+    "flavors": [
+      "Leather",
+      "Red pepper",
+      "Milk chocolate",
+      "Earth",
+      "Cedar"
+    ],
+    "image": "./assets/cigars/montecristo/montecristo-1935.webp",
+    "imageCredit": "Altadis U.S.A. — official manufacturer photograph",
+    "source": "https://www.altadisusa.com/cigars/montecristo/montecristo-1935/",
+    "sourceName": "Altadis U.S.A.",
+    "madeIn": "Nicaragua",
+    "rolledIn": "Ocotal, Nicaragua",
+    "factory": "San Lotano (A.J. Fernandez)",
+    "handmade": true,
+    "shape": "No. 2 / Torpedo · soft box-pressed",
+    "boxPressed": true,
+    "sources": [
+      {
+        "label": "Manufacturer: blend, size and origin",
+        "url": "https://www.altadisusa.com/cigars/montecristo/montecristo-1935/"
+      },
+      {
+        "label": "Altadis production announcement: factory and soft-press",
+        "url": "https://www.cigaraficionado.com/article/montecristo-1935-anniversary-nicaragua-celebrates-85-years"
+      },
+      {
+        "label": "Neptune: selected No. 2 handmade construction",
+        "url": "https://www.neptunecigar.com/cigars/montecristo-1935-anniversary-nicaragua-no-2"
+      },
+      {
+        "label": "Holt's: retailer tasting notes and body",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/montecristo-1935-anniversary-nicaragua.html"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Official manufacturer single-cigar photograph",
+        "url": "https://www.altadisusa.com/wp-content/uploads/2026/04/1643660376169-AUSA_Montecristo-1935Anniversary_single_700x700.png"
+      }
+    ],
+    "imageNote": "Official manufacturer photograph showing the pointed No. 2 vitola.",
+    "imageCaption": "Official manufacturer line photograph.",
+    "flavorSource": "Holt's (retailer tasting notes)"
+  }
+]

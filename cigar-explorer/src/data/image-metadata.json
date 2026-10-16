@@ -188,5 +188,20 @@
     "hasTransparency": false,
     "width": 1024,
     "height": 1024
+  },
+  "./assets/cigars/montecristo/montecristo-white.webp": {
+    "hasTransparency": true,
+    "width": 95,
+    "height": 708
+  },
+  "./assets/cigars/montecristo/montecristo-1935.webp": {
+    "hasTransparency": true,
+    "width": 83,
+    "height": 665
+  },
+  "./assets/cigars/montecristo/montecristo-classic.webp": {
+    "hasTransparency": true,
+    "width": 87,
+    "height": 608
   }
 }

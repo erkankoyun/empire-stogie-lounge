@@ -31,3 +31,11 @@ Added 2026-10-16:
 | la-flor-dominicana.webp | https://www.laflordominicana.com/ | https://static.wixstatic.com/media/81dd5b_1c9ab74143634fc3af987f3590777b5c~mv2.png |
 
 Brand card accents are defined independently of cigar blend colors. Punch uses its burgundy shield detail; La Flor Dominicana uses its gold mark.
+
+Added Montecristo 2026-10-16:
+
+| Local asset | Brand page | Original asset |
+| --- | --- | --- |
+| montecristo.webp | https://www.montecristocigars.com/ | https://www.montecristocigars.com/cdn/shop/files/montecristo-logo.png?v=1755761341 |
+
+Montecristo represents the U.S. Altadis portfolio. Original red-and-gold mark; red card glow.
