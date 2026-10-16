@@ -1,1 +1,513 @@
-[]
+[
+  {
+    "id": "kristoff-pistoff-corona-gorda",
+    "brand": "KRISTOFF CIGARS",
+    "name": "PISTOFF KRISTOFF",
+    "variant": "CORONA GORDA",
+    "size": "5.75 × 48",
+    "strength": "FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Mexican San Andrés Natural",
+    "binder": "Indonesia",
+    "filler": "Nicaragua",
+    "flavors": [
+      "Toasted nuts",
+      "Spice",
+      "Toffee",
+      "Toast",
+      "Sweet finish"
+    ],
+    "image": "https://www.cgarsltd.co.uk/images/KristoffPistoffCoronaGorda2.JPG",
+    "imageCredit": "CGars Ltd — Pistoff Kristoff Corona Gorda box",
+    "source": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Corona Gorda · round",
+    "boxPressed": false,
+    "accent": "#bb3c35",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — CGars Ltd — Pistoff Kristoff Corona Gorda box",
+        "url": "https://www.cgarsltd.co.uk/kristoff-pistoff-corona-gorda-cigar-box-discontinued-p-57825.html"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "CGars Ltd — Pistoff Kristoff Corona Gorda box",
+        "url": "https://www.cgarsltd.co.uk/images/KristoffPistoffCoronaGorda2.JPG"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "This photograph depicts the exact Corona Gorda presentation in its box."
+  },
+  {
+    "id": "kristoff-pistoff-robusto",
+    "brand": "KRISTOFF CIGARS",
+    "name": "PISTOFF KRISTOFF",
+    "variant": "ROBUSTO",
+    "size": "5.5 × 54",
+    "strength": "FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Mexican San Andrés Natural",
+    "binder": "Indonesia",
+    "filler": "Nicaragua",
+    "flavors": [
+      "Toasted nuts",
+      "Spice",
+      "Toffee",
+      "Toast",
+      "Sweet finish"
+    ],
+    "image": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/21324/83583/pistoff_kristoff_single_robusto___60916__40937__01181.1728569255.jpg?c=2",
+    "imageCredit": "GQ Tobaccos — Pistoff Kristoff Robusto single cigar",
+    "source": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Robusto · round",
+    "boxPressed": false,
+    "accent": "#bb3c35",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — GQ Tobaccos — Pistoff Kristoff Robusto single cigar",
+        "url": "https://www.gqtobaccos.com/cigars/kristoff-pistoff-robusto-single-cigar/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "GQ Tobaccos — Pistoff Kristoff Robusto single cigar",
+        "url": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/21324/83583/pistoff_kristoff_single_robusto___60916__40937__01181.1728569255.jpg?c=2"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes"
+  },
+  {
+    "id": "kristoff-guardrail-robusto",
+    "brand": "KRISTOFF CIGARS",
+    "name": "GUARDRAIL",
+    "variant": "ROBUSTO",
+    "size": "5.5 × 54",
+    "strength": "MEDIUM–FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Brazilian Maduro",
+    "binder": "Dominican Republic",
+    "filler": "Dominican Republic / Zimbabwe",
+    "flavors": [
+      "Caramel",
+      "French-roast coffee",
+      "Dry cocoa",
+      "Sweet cedar",
+      "Allspice",
+      "Cream"
+    ],
+    "image": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048",
+    "imageCredit": "Cigar Studio — Guardrail Robusto single cigar",
+    "source": "https://kristoff.com/product/guardrail-_premium-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Robusto · round",
+    "boxPressed": false,
+    "accent": "#b6b6aa",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/guardrail-_premium-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — Cigar Studio — Guardrail Robusto single cigar",
+        "url": "https://cigarstudio.com/products/kristoff-guardrail-robusto"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigar Studio — Guardrail Robusto single cigar",
+        "url": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes"
+  },
+  {
+    "id": "kristoff-guardrail-matador",
+    "brand": "KRISTOFF CIGARS",
+    "name": "GUARDRAIL",
+    "variant": "MATADOR",
+    "size": "6.5 × 56",
+    "strength": "MEDIUM–FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Brazilian Maduro",
+    "binder": "Dominican Republic",
+    "filler": "Dominican Republic / Zimbabwe",
+    "flavors": [
+      "Caramel",
+      "French-roast coffee",
+      "Dry cocoa",
+      "Sweet cedar",
+      "Allspice",
+      "Cream"
+    ],
+    "image": "https://www.cigars.com/dw/image/v2/BCZK_PRD/on/demandware.static/-/Sites-masterCatalog/default/dwbbdd9b74/images/Cigars%20Master%20Skus%20Images/Cigar%20Master%20Skus%20Images%202/KRGDRLM_box_orb_1.png?q=80&sh=1000&sm=fit&sw=1000",
+    "imageCredit": "Cigars.com — Guardrail Matador 6.5 × 56, box with individual cigar",
+    "source": "https://kristoff.com/product/guardrail-_premium-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Matador · round",
+    "boxPressed": false,
+    "accent": "#b6b6aa",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/guardrail-_premium-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — Cigars.com — Guardrail Matador 6.5 × 56, box with individual cigar",
+        "url": "https://www.cigars.com/item/kristoff-guardrail/matador/KRGDRLM.html"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigars.com — Guardrail Matador 6.5 × 56, box with individual cigar",
+        "url": "https://www.cigars.com/dw/image/v2/BCZK_PRD/on/demandware.static/-/Sites-masterCatalog/default/dwbbdd9b74/images/Cigars%20Master%20Skus%20Images/Cigar%20Master%20Skus%20Images%202/KRGDRLM_box_orb_1.png?q=80&sh=1000&sm=fit&sw=1000"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "Image shows the Matador with its original product box."
+  },
+  {
+    "id": "kristoff-vengeance-toro",
+    "brand": "KRISTOFF CIGARS",
+    "name": "VENGEANCE",
+    "variant": "TORO",
+    "size": "6.25 × 54",
+    "strength": "MEDIUM–FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Connecticut Broadleaf",
+    "binder": "Indonesia",
+    "filler": "Nicaragua / Dominican Republic",
+    "flavors": [
+      "Dark-roast espresso",
+      "Sweet mocha",
+      "Graham cracker",
+      "Spice",
+      "Creamy cocoa"
+    ],
+    "image": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/23262/86974/aefhiaf__51496__31658__62258.1728569891.jpg?c=2",
+    "imageCredit": "GQ Tobaccos — Vengeance Toro single cigar",
+    "source": "https://kristoff.com/product/vengeance_finest-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Toro · round",
+    "boxPressed": false,
+    "accent": "#a6a6a6",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/vengeance_finest-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — GQ Tobaccos — Vengeance Toro single cigar",
+        "url": "https://www.gqtobaccos.com/cigars/kristoff-vengeance-toro-box-of-20-cigars/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "GQ Tobaccos — Vengeance Toro single cigar",
+        "url": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/23262/86974/aefhiaf__51496__31658__62258.1728569891.jpg?c=2"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes"
+  },
+  {
+    "id": "kristoff-original-maduro-robusto",
+    "brand": "KRISTOFF CIGARS",
+    "name": "ORIGINAL MADURO",
+    "variant": "ROBUSTO",
+    "size": "5.5 × 54",
+    "strength": "MEDIUM",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Brazilian Maduro",
+    "binder": "Cuban-seed Dominican",
+    "filler": "Cuban-seed Dominican / Cuban-seed Nicaraguan",
+    "flavors": [
+      "Coffee beans",
+      "Cocoa",
+      "Spice",
+      "Dark chocolate"
+    ],
+    "image": "https://www.bullbrand.co.uk/cdn/shop/files/Kristop-Tubes-Maduro-copy-single.jpg?v=1708523627&width=1946",
+    "imageCredit": "Bull Brand — Original Maduro Robusto single cigar",
+    "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Robusto · round",
+    "boxPressed": false,
+    "accent": "#b58a4d",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/original-maduro_finest-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — Bull Brand — Original Maduro Robusto single cigar",
+        "url": "https://www.bullbrand.co.uk/products/kristoff-original-maduro-robusto-tubed-cigar-single"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Bull Brand — Original Maduro Robusto single cigar",
+        "url": "https://www.bullbrand.co.uk/cdn/shop/files/Kristop-Tubes-Maduro-copy-single.jpg?v=1708523627&width=1946"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes"
+  },
+  {
+    "id": "kristoff-original-maduro-matador",
+    "brand": "KRISTOFF CIGARS",
+    "name": "ORIGINAL MADURO",
+    "variant": "MATADOR",
+    "size": "6.5 × 56",
+    "strength": "MEDIUM",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Brazilian Maduro",
+    "binder": "Cuban-seed Dominican",
+    "filler": "Cuban-seed Dominican / Cuban-seed Nicaraguan",
+    "flavors": [
+      "Coffee beans",
+      "Cocoa",
+      "Spice",
+      "Dark chocolate"
+    ],
+    "image": "https://smokemastercigars.com/cdn/shop/products/A4760D6E-17C5-427E-8673-33C7BCE1A78B.png?crop=center&height=1200&v=1680122663&width=1200",
+    "imageCredit": "Smoke Master — Original Maduro Matador 6.5 × 56",
+    "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Matador · round",
+    "boxPressed": false,
+    "accent": "#b58a4d",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/original-maduro_finest-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — Smoke Master — Original Maduro Matador 6.5 × 56",
+        "url": "https://smokemastercigars.com/products/kristoff-habano-matador"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Smoke Master — Original Maduro Matador 6.5 × 56",
+        "url": "https://smokemastercigars.com/cdn/shop/products/A4760D6E-17C5-427E-8673-33C7BCE1A78B.png?crop=center&height=1200&v=1680122663&width=1200"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes"
+  },
+  {
+    "id": "kristoff-vengeance-6x60",
+    "brand": "KRISTOFF CIGARS",
+    "name": "VENGEANCE",
+    "variant": "6×60",
+    "size": "6 × 60",
+    "strength": "MEDIUM–FULL",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Connecticut Broadleaf",
+    "binder": "Indonesia",
+    "filler": "Nicaragua / Dominican Republic",
+    "flavors": [
+      "Dark-roast espresso",
+      "Sweet mocha",
+      "Graham cracker",
+      "Spice",
+      "Creamy cocoa"
+    ],
+    "image": "https://www.cigarmaxx.de/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/k/r/kristoff_vengeance_6x60_toro_gordo_03.jpg",
+    "imageCredit": "Cigarmaxx — Vengeance 6×60 single cigar",
+    "source": "https://kristoff.com/product/vengeance_finest-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Gordo · round",
+    "boxPressed": false,
+    "accent": "#a6a6a6",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/vengeance_finest-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — Cigarmaxx — Vengeance 6×60 single cigar",
+        "url": "https://www.cigarmaxx.de/kristoff-vengeance-6x60-toro-gordo-zigarren/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Cigarmaxx — Vengeance 6×60 single cigar",
+        "url": "https://www.cigarmaxx.de/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/k/r/kristoff_vengeance_6x60_toro_gordo_03.jpg"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes"
+  },
+  {
+    "id": "kristoff-tres-compadres-6x60",
+    "brand": "KRISTOFF CIGARS",
+    "name": "TRES COMPADRES",
+    "variant": "6×60",
+    "size": "6 × 60",
+    "strength": "MEDIUM",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Nicaraguan Habano",
+    "binder": "Nicaragua (Condega)",
+    "filler": "Nicaragua (Condega / Estelí / Jalapa)",
+    "flavors": [
+      "Sweet cedar",
+      "Toasted almonds",
+      "Spice",
+      "Cream"
+    ],
+    "image": "https://www.noblego.de/media/catalog/product/cache/2/image/650x/2c358c4eafc8ea179ce42cd6999e815d/k/r/kristoff_tres_compadres_660_06.jpg",
+    "imageCredit": "Noblego — Tres Compadres 6×60 close-up of single cigar",
+    "source": "https://kristoff.com/product/tres-compadres_premium-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Gordo · round",
+    "boxPressed": false,
+    "accent": "#2a65c5",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/tres-compadres_premium-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — Noblego — Tres Compadres 6×60 close-up of single cigar",
+        "url": "https://www.noblego.de/kristoff-tres-compadres-660-zigarren/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "Noblego — Tres Compadres 6×60 close-up of single cigar",
+        "url": "https://www.noblego.de/media/catalog/product/cache/2/image/650x/2c358c4eafc8ea179ce42cd6999e815d/k/r/kristoff_tres_compadres_660_06.jpg"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "6×60 size photograph: close-up of band and cigar."
+  },
+  {
+    "id": "kristoff-tres-compadres-toro",
+    "brand": "KRISTOFF CIGARS",
+    "name": "TRES COMPADRES",
+    "variant": "TORO",
+    "size": "6.25 × 54",
+    "strength": "MEDIUM",
+    "origin": "DOMINICAN REPUBLIC",
+    "wrapper": "Nicaraguan Habano",
+    "binder": "Nicaragua (Condega)",
+    "filler": "Nicaragua (Condega / Estelí / Jalapa)",
+    "flavors": [
+      "Sweet cedar",
+      "Toasted almonds",
+      "Spice",
+      "Cream"
+    ],
+    "image": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/24587/89190/drojhdrophjr__15811.1749046469.1280.1280__02849.1749046632.jpg?c=2",
+    "imageCredit": "GQ Tobaccos — Tres Compadres Toro single cigar",
+    "source": "https://kristoff.com/product/tres-compadres_premium-cigar/",
+    "sourceName": "Kristoff Cigars",
+    "madeIn": "Dominican Republic",
+    "rolledIn": "Santiago, Dominican Republic",
+    "factory": "Tabacalera Von Eicken (formerly Charles Fairmorn)",
+    "handmade": true,
+    "shape": "Toro · round",
+    "boxPressed": false,
+    "accent": "#2a65c5",
+    "sources": [
+      {
+        "label": "Kristoff Cigars — official blend, sizes and tasting notes",
+        "url": "https://kristoff.com/product/tres-compadres_premium-cigar/"
+      },
+      {
+        "label": "Kristoff production — Charles Fairmorn / Tabacalera Von Eicken, Dominican Republic",
+        "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
+      },
+      {
+        "label": "Size-specific product photo — GQ Tobaccos — Tres Compadres Toro single cigar",
+        "url": "https://www.gqtobaccos.com/cigars/kristoff-tres-compadres-toro-box-of-20-cigars/"
+      }
+    ],
+    "imageSources": [
+      {
+        "label": "GQ Tobaccos — Tres Compadres Toro single cigar",
+        "url": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/24587/89190/drojhdrophjr__15811.1749046469.1280.1280__02849.1749046632.jpg?c=2"
+      }
+    ],
+    "flavorSource": "Kristoff Cigars — official tasting notes"
+  }
+]
