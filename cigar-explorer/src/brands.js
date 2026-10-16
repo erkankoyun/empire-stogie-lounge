@@ -17,5 +17,6 @@ export const BRAND_DEFINITIONS = [
   { name: "ROCKY PATEL", accent: "#e5e5e5", logo: "rocky-patel.webp", tone: "dark" },
   { name: "PUNCH CIGARS", accent: "#6f3332", logo: "punch.webp", tone: "light" },
   { name: "LA FLOR DOMINICANA", accent: "#c4a35a", logo: "la-flor-dominicana.webp", tone: "dark" },
+  { name: "KRISTOFF CIGARS", accent: "#b9a270", logo: "kristoff.svg", tone: "dark", fit: "wide" },
   { name: "MONTECRISTO", accent: "#c51c30", logo: "montecristo.webp", tone: "light" }
 ];
