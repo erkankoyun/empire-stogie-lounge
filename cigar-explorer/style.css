@@ -687,7 +687,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
 }
 
 /* Original Maduro Robusto + Matador: entire single cigar with no clip, crop or packaging. */
-.app.kristoff-showcase .photo-shell > img[src*="Original-Maduro-Single-EDIT-1-scaled.png"]{
+.app.kristoff-showcase .photo-shell > img[src*="kristoff-original-maduro-2026.png"]{
   position:relative;
   top:auto;
   left:auto;
@@ -702,46 +702,4 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
   transform:none!important;
   background:transparent!important;
   filter:drop-shadow(0 22px 18px rgba(0,0,0,.38))!important;
-}
-
-/*
- * Original Maduro modern band sprite:
- * Only replace the orange cigar rings on the complete Robusto / Matador photos.
- * Photo source: Cigar Page, actual Kristoff Original Maduro black-and-gold cigar ring.
- * Crop exactly the front label from the single stick shown at the right of the photo.
- * The original full-cigar transparency, wrapper, pigtail and dimensions are unchanged.
- */
-.app.kristoff-showcase .slot.active .photo-shell:has(> img[src*="Original-Maduro-Single-EDIT-1-scaled.png"])::after {
-  content:"";
-  position:absolute;
-  z-index:10;
-  pointer-events:none;
-  top:35%;
-  left:50%;
-  width:88px;
-  height:112px;
-  transform:translate(-50%,-50%);
-  background-image:url("https://www.cigarpage.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/k/b/kb-krm6556-a_6_1.jpg");
-  background-repeat:no-repeat;
-  background-size:780px 650px;
-  background-position:-585px -191px;
-  border-radius:11px / 4px;
-  clip-path:polygon(3% 0,97% 0,100% 4%,100% 96%,97% 100%,3% 100%,0 96%,0 4%);
-  filter:drop-shadow(0 2px 2px rgba(0,0,0,.38));
-}
-@media(min-width:1001px) {
-  .app.kristoff-showcase .slot.active .photo-shell:has(> img[src*="Original-Maduro-Single-EDIT-1-scaled.png"])::after {
-    width:108px;
-    height:138px;
-    background-size:960px 800px;
-    background-position:-720px -235px;
-  }
-}
-@media(max-width:400px) {
-  .app.kristoff-showcase .slot.active .photo-shell:has(> img[src*="Original-Maduro-Single-EDIT-1-scaled.png"])::after {
-    width:78px;
-    height:100px;
-    background-size:690px 575px;
-    background-position:-518px -169px;
-  }
 }

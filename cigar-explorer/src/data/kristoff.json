@@ -283,8 +283,8 @@
       "Spice",
       "Dark chocolate"
     ],
-    "image": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png",
-    "imageCredit": "Habano Cigars — Kristoff Original Maduro, isolated single cigar",
+    "image": "./assets/cigars/kristoff-original-maduro-2026.png",
+    "imageCredit": "Empire Stogie Lounge — custom-rendered Original Maduro with black-and-gold band",
     "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -310,12 +310,12 @@
     ],
     "imageSources": [
       {
-        "label": "Habano Cigars — Kristoff Original Maduro, isolated single cigar",
-        "url": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png"
+        "label": "Empire Stogie Lounge custom-rendered product illustration",
+        "url": "https://empirestogielounge.com/cigar-explorer/"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Single-cigar series photo; exact Robusto or Matador dimensions are shown separately.",
+    "imageNote": "Studio-rendered product illustration; dimensions for the selected vitola are listed separately.",
     "imageTransparent": true
   },
   {
@@ -335,8 +335,8 @@
       "Spice",
       "Dark chocolate"
     ],
-    "image": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png",
-    "imageCredit": "Habano Cigars — Kristoff Original Maduro, isolated single cigar",
+    "image": "./assets/cigars/kristoff-original-maduro-2026.png",
+    "imageCredit": "Empire Stogie Lounge — custom-rendered Original Maduro with black-and-gold band",
     "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -362,12 +362,12 @@
     ],
     "imageSources": [
       {
-        "label": "Habano Cigars — Kristoff Original Maduro, isolated single cigar",
-        "url": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png"
+        "label": "Empire Stogie Lounge custom-rendered product illustration",
+        "url": "https://empirestogielounge.com/cigar-explorer/"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Single-cigar series photo; exact Robusto or Matador dimensions are shown separately.",
+    "imageNote": "Studio-rendered product illustration; dimensions for the selected vitola are listed separately.",
     "imageTransparent": true
   },
   {
