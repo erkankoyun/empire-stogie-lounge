@@ -479,11 +479,14 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
   min-width:0;min-height:248px;padding:26px;text-align:left;
   border:1px solid rgba(255,255,255,.18);border-radius:16px;
   background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
-  transition:background .2s,border-color .2s,transform .2s;
+  transition:background .2s,border-color .2s,box-shadow .2s,transform .2s;
 }
-.brand-card:hover{
+.brand-card:hover,
+.brand-card:focus-visible{
   border-color:color-mix(in srgb,var(--brand-accent) 65%,#d0c6b7);
   background:linear-gradient(145deg,color-mix(in srgb,var(--brand-accent) 13%,#17191e),#101216);
+  box-shadow:0 0 24px color-mix(in srgb,var(--brand-accent) 38%,transparent),
+    inset 0 0 22px color-mix(in srgb,var(--brand-accent) 10%,transparent);
   transform:translateY(-3px);
 }
 .brand-monogram{
@@ -513,7 +516,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
   .brand-card{min-height:218px;padding:22px}
   .brand-card strong{font-size:23px}
 }
-@media(prefers-reduced-motion:reduce){.brand-card{transition:none}.brand-card:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.brand-card{transition:none}.brand-card:hover,.brand-card:focus-visible{transform:none}}
 
 /* Brand marks keep their original colors and proportions. */
 .brand-card{min-height:320px}

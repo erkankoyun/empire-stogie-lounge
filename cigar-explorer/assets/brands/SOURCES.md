@@ -22,3 +22,12 @@ Retrieved 2026-10-14. These are the brands' existing marks, hosted locally for r
 
 Alec & Bradley is the distinct Alec & Bradley mark supplied on its Casa Del Puro brand page. No Alec Bradley parent-company crest is substituted.
 New brands are listed independently of the product catalog. A brand with no authored product profiles opens a coming-soon view rather than another brand's cigars.
+
+Added 2026-10-16:
+
+| Local asset | Brand page | Original asset |
+| --- | --- | --- |
+| punch.svg / punch.webp | https://www.punchcigars.com/ | Official header inline SVG; original fill colors from /_resources/app/client/dist/assets/app-BhMpoDnS.css converted to presentation attributes |
+| la-flor-dominicana.webp | https://www.laflordominicana.com/ | https://static.wixstatic.com/media/81dd5b_1c9ab74143634fc3af987f3590777b5c~mv2.png |
+
+Brand card accents are defined independently of cigar blend colors. Punch uses its burgundy shield detail; La Flor Dominicana uses its gold mark.

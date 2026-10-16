@@ -250,7 +250,7 @@ const BRANDS = [
       ...brand,
       displayName: brand.displayName || brand.name,
       count: cigars.length,
-      accent: cigars[0]?.accent || "#b08954",
+      accent: brand.accent || cigars[0]?.accent || "#b08954",
       initials: brand.name.split(" ").map(word => word[0]).join("")
     };
   });
