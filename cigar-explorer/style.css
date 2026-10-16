@@ -656,3 +656,32 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
     transform:translate(calc(-50% - 72px),-50%) scale(1.08);
   }
 }
+
+/*
+ * Kristoff four-photo fine tuning (Pistoff pair + Original Maduro pair).
+ * Keep the authentic updated bands from the current source photographs.
+ * Align the rightmost standalone cigar precisely in the carousel.
+ * Show only the cigar, never the packaging to its left.
+ */
+.app.kristoff-showcase .photo-shell>img.band-crop.crop-pistoff{
+  width:76%;
+  height:86%;
+  max-width:76%;
+  max-height:86%;
+  object-fit:contain;
+  object-position:center;
+  clip-path:inset(0 0 0 67%);
+  transform:translate(-83.5%,-50%);
+  transform-origin:center;
+}
+.app.kristoff-showcase .photo-shell>img.band-crop.crop-maduro{
+  width:85%;
+  height:90%;
+  max-width:85%;
+  max-height:90%;
+  object-fit:contain;
+  object-position:center;
+  clip-path:inset(0 0 0 80%);
+  transform:translate(-90%,-50%);
+  transform-origin:center;
+}
