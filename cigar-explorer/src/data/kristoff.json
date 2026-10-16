@@ -17,8 +17,8 @@
       "Toast",
       "Sweet finish"
     ],
-    "image": "https://www.cgarsltd.co.uk/images/KristoffPistoffCoronaGorda2.JPG",
-    "imageCredit": "CGars Ltd — Pistoff Kristoff Corona Gorda box",
+    "image": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/21324/83583/pistoff_kristoff_single_robusto___60916__40937__01181.1728569255.jpg?c=2",
+    "imageCredit": "GQ Tobaccos — Pistoff Kristoff individual cigar",
     "source": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -38,18 +38,18 @@
         "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
       },
       {
-        "label": "Size-specific product photo — CGars Ltd — Pistoff Kristoff Corona Gorda box",
-        "url": "https://www.cgarsltd.co.uk/kristoff-pistoff-corona-gorda-cigar-box-discontinued-p-57825.html"
+        "label": "GQ Tobaccos — Pistoff Kristoff individual cigar",
+        "url": "https://www.gqtobaccos.com/cigars/kristoff-pistoff-robusto-single-cigar/"
       }
     ],
     "imageSources": [
       {
-        "label": "CGars Ltd — Pistoff Kristoff Corona Gorda box",
-        "url": "https://www.cgarsltd.co.uk/images/KristoffPistoffCoronaGorda2.JPG"
+        "label": "GQ Tobaccos — Pistoff Kristoff individual cigar",
+        "url": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/21324/83583/pistoff_kristoff_single_robusto___60916__40937__01181.1728569255.jpg?c=2"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "This photograph depicts the exact Corona Gorda presentation in its box."
+    "imageNote": "Line photograph of a single Pistoff cigar; Corona Gorda's exact format is specified separately."
   },
   {
     "id": "kristoff-pistoff-robusto",
@@ -152,7 +152,8 @@
         "url": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048"
       }
     ],
-    "flavorSource": "Kristoff Cigars — official tasting notes"
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "Single Guardrail Robusto cigar; no presentation box."
   },
   {
     "id": "kristoff-guardrail-matador",
@@ -173,8 +174,8 @@
       "Allspice",
       "Cream"
     ],
-    "image": "https://www.cigars.com/dw/image/v2/BCZK_PRD/on/demandware.static/-/Sites-masterCatalog/default/dwbbdd9b74/images/Cigars%20Master%20Skus%20Images/Cigar%20Master%20Skus%20Images%202/KRGDRLM_box_orb_1.png?q=80&sh=1000&sm=fit&sw=1000",
-    "imageCredit": "Cigars.com — Guardrail Matador 6.5 × 56, box with individual cigar",
+    "image": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048",
+    "imageCredit": "Cigar Studio — Guardrail individual cigar",
     "source": "https://kristoff.com/product/guardrail-_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -194,18 +195,18 @@
         "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
       },
       {
-        "label": "Size-specific product photo — Cigars.com — Guardrail Matador 6.5 × 56, box with individual cigar",
-        "url": "https://www.cigars.com/item/kristoff-guardrail/matador/KRGDRLM.html"
+        "label": "Cigar Studio — Guardrail individual cigar",
+        "url": "https://cigarstudio.com/products/kristoff-guardrail-robusto"
       }
     ],
     "imageSources": [
       {
-        "label": "Cigars.com — Guardrail Matador 6.5 × 56, box with individual cigar",
-        "url": "https://www.cigars.com/dw/image/v2/BCZK_PRD/on/demandware.static/-/Sites-masterCatalog/default/dwbbdd9b74/images/Cigars%20Master%20Skus%20Images/Cigar%20Master%20Skus%20Images%202/KRGDRLM_box_orb_1.png?q=80&sh=1000&sm=fit&sw=1000"
+        "label": "Cigar Studio — Guardrail individual cigar",
+        "url": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Image shows the Matador with its original product box."
+    "imageNote": "Line photograph; Matador measures 6.5 × 56."
   },
   {
     "id": "kristoff-vengeance-toro",
@@ -275,8 +276,8 @@
       "Spice",
       "Dark chocolate"
     ],
-    "image": "https://www.bullbrand.co.uk/cdn/shop/files/Kristop-Tubes-Maduro-copy-single.jpg?v=1708523627&width=1946",
-    "imageCredit": "Bull Brand — Original Maduro Robusto single cigar",
+    "image": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png",
+    "imageCredit": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
     "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -296,17 +297,19 @@
         "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
       },
       {
-        "label": "Size-specific product photo — Bull Brand — Original Maduro Robusto single cigar",
-        "url": "https://www.bullbrand.co.uk/products/kristoff-original-maduro-robusto-tubed-cigar-single"
+        "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
+        "url": "https://habanocigars.com/shop/kristoff-original-maduro-robusto-20ct/"
       }
     ],
     "imageSources": [
       {
-        "label": "Bull Brand — Original Maduro Robusto single cigar",
-        "url": "https://www.bullbrand.co.uk/cdn/shop/files/Kristop-Tubes-Maduro-copy-single.jpg?v=1708523627&width=1946"
+        "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
+        "url": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png"
       }
     ],
-    "flavorSource": "Kristoff Cigars — official tasting notes"
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "Single-cigar product photograph.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-original-maduro-matador",
@@ -325,8 +328,8 @@
       "Spice",
       "Dark chocolate"
     ],
-    "image": "https://smokemastercigars.com/cdn/shop/products/A4760D6E-17C5-427E-8673-33C7BCE1A78B.png?crop=center&height=1200&v=1680122663&width=1200",
-    "imageCredit": "Smoke Master — Original Maduro Matador 6.5 × 56",
+    "image": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png",
+    "imageCredit": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
     "source": "https://kristoff.com/product/original-maduro_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -346,17 +349,19 @@
         "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
       },
       {
-        "label": "Size-specific product photo — Smoke Master — Original Maduro Matador 6.5 × 56",
-        "url": "https://smokemastercigars.com/products/kristoff-habano-matador"
+        "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
+        "url": "https://habanocigars.com/shop/kristoff-original-maduro-matador-20ct/"
       }
     ],
     "imageSources": [
       {
-        "label": "Smoke Master — Original Maduro Matador 6.5 × 56",
-        "url": "https://smokemastercigars.com/cdn/shop/products/A4760D6E-17C5-427E-8673-33C7BCE1A78B.png?crop=center&height=1200&v=1680122663&width=1200"
+        "label": "Habano Cigars — Kristoff Original Maduro isolated single cigar",
+        "url": "https://habanocigars.com/wp-content/uploads/2025/06/Original-Maduro-Single-EDIT-1-scaled.png"
       }
     ],
-    "flavorSource": "Kristoff Cigars — official tasting notes"
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "Line photograph; Matador measures 6.5 × 56.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-vengeance-6x60",
@@ -376,8 +381,8 @@
       "Spice",
       "Creamy cocoa"
     ],
-    "image": "https://www.cigarmaxx.de/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/k/r/kristoff_vengeance_6x60_toro_gordo_03.jpg",
-    "imageCredit": "Cigarmaxx — Vengeance 6×60 single cigar",
+    "image": "https://www.cigarworld.de/bilder/detail/big2048/14381_37748_163076.jpg",
+    "imageCredit": "Cigarworld.de — Vengeance 6×60 single cigar, exact vitola",
     "source": "https://kristoff.com/product/vengeance_finest-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -397,17 +402,19 @@
         "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
       },
       {
-        "label": "Size-specific product photo — Cigarmaxx — Vengeance 6×60 single cigar",
-        "url": "https://www.cigarmaxx.de/kristoff-vengeance-6x60-toro-gordo-zigarren/"
+        "label": "Cigarworld.de — Vengeance 6×60 single cigar, exact vitola",
+        "url": "https://www.cigarworld.de/zigarren/dominikanische-republik/kristoff-vengeance-6x60-90015102_37748"
       }
     ],
     "imageSources": [
       {
-        "label": "Cigarmaxx — Vengeance 6×60 single cigar",
-        "url": "https://www.cigarmaxx.de/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/k/r/kristoff_vengeance_6x60_toro_gordo_03.jpg"
+        "label": "Cigarworld.de — Vengeance 6×60 single cigar, exact vitola",
+        "url": "https://www.cigarworld.de/bilder/detail/big2048/14381_37748_163076.jpg"
       }
     ],
-    "flavorSource": "Kristoff Cigars — official tasting notes"
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "Exact 6×60 vitola, displayed upright for the showroom.",
+    "imageOrientation": "landscape"
   },
   {
     "id": "kristoff-tres-compadres-6x60",
@@ -426,8 +433,8 @@
       "Spice",
       "Cream"
     ],
-    "image": "https://www.noblego.de/media/catalog/product/cache/2/image/650x/2c358c4eafc8ea179ce42cd6999e815d/k/r/kristoff_tres_compadres_660_06.jpg",
-    "imageCredit": "Noblego — Tres Compadres 6×60 close-up of single cigar",
+    "image": "https://klarocigars.com/cdn/shop/files/Tres-Compadres-Single-Trans-e1709059566516.png?v=1750705149",
+    "imageCredit": "Klaro Cigars — Tres Compadres transparent single cigar",
     "source": "https://kristoff.com/product/tres-compadres_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -447,18 +454,19 @@
         "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
       },
       {
-        "label": "Size-specific product photo — Noblego — Tres Compadres 6×60 close-up of single cigar",
-        "url": "https://www.noblego.de/kristoff-tres-compadres-660-zigarren/"
+        "label": "Klaro Cigars — Tres Compadres transparent single cigar",
+        "url": "https://klarocigars.com/products/kristoff-tres-compadres"
       }
     ],
     "imageSources": [
       {
-        "label": "Noblego — Tres Compadres 6×60 close-up of single cigar",
-        "url": "https://www.noblego.de/media/catalog/product/cache/2/image/650x/2c358c4eafc8ea179ce42cd6999e815d/k/r/kristoff_tres_compadres_660_06.jpg"
+        "label": "Klaro Cigars — Tres Compadres transparent single cigar",
+        "url": "https://klarocigars.com/cdn/shop/files/Tres-Compadres-Single-Trans-e1709059566516.png?v=1750705149"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "6×60 size photograph: close-up of band and cigar."
+    "imageNote": "Line photograph; selected 6×60 format is shown in specifications.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-tres-compadres-toro",
@@ -477,8 +485,8 @@
       "Spice",
       "Cream"
     ],
-    "image": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/24587/89190/drojhdrophjr__15811.1749046469.1280.1280__02849.1749046632.jpg?c=2",
-    "imageCredit": "GQ Tobaccos — Tres Compadres Toro single cigar",
+    "image": "https://klarocigars.com/cdn/shop/files/Tres-Compadres-Single-Trans-e1709059566516.png?v=1750705149",
+    "imageCredit": "Klaro Cigars — Tres Compadres transparent single cigar",
     "source": "https://kristoff.com/product/tres-compadres_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -498,16 +506,18 @@
         "url": "https://www.cigars.com/cigars/handmade-cigars/kristoff-cigars/"
       },
       {
-        "label": "Size-specific product photo — GQ Tobaccos — Tres Compadres Toro single cigar",
-        "url": "https://www.gqtobaccos.com/cigars/kristoff-tres-compadres-toro-box-of-20-cigars/"
+        "label": "Klaro Cigars — Tres Compadres transparent single cigar",
+        "url": "https://klarocigars.com/products/kristoff-tres-compadres"
       }
     ],
     "imageSources": [
       {
-        "label": "GQ Tobaccos — Tres Compadres Toro single cigar",
-        "url": "https://cdn11.bigcommerce.com/s-6ihhxuk/images/stencil/1280x1280/products/24587/89190/drojhdrophjr__15811.1749046469.1280.1280__02849.1749046632.jpg?c=2"
+        "label": "Klaro Cigars — Tres Compadres transparent single cigar",
+        "url": "https://klarocigars.com/cdn/shop/files/Tres-Compadres-Single-Trans-e1709059566516.png?v=1750705149"
       }
     ],
-    "flavorSource": "Kristoff Cigars — official tasting notes"
+    "flavorSource": "Kristoff Cigars — official tasting notes",
+    "imageNote": "Line photograph; selected Toro measures 6.25 × 54.",
+    "imageTransparent": true
   }
 ]

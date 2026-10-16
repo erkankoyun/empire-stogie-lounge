@@ -110,7 +110,7 @@ function ProductImage({ product, active, detail, progress }) {
         <img
           src={product.image}
           alt={`${product.name} ${product.variant}`}
-          className={`${product.imageHasTransparency ? "transparent-product-photo" : ""} ${product.id === "viva-la-vida" ? "viva-bg-clean" : ""}`}
+          className={`${product.imageHasTransparency ? "transparent-product-photo" : ""} ${product.id === "viva-la-vida" ? "viva-bg-clean" : ""} ${product.imageTransparent ? "true-cutout" : ""} ${product.imageOrientation === "landscape" ? "rotated-photo" : ""}`}
           loading={active ? "eager" : "lazy"}
           decoding="async"
           draggable="false"
@@ -396,7 +396,7 @@ export default function App(){
 
   return (
     <main
-      className={!selectedBrand || !products.length?"app brand-mode":detail?"app detail-mode":"app"}
+      className={(!selectedBrand || !products.length ? "app brand-mode" : detail ? "app detail-mode" : "app") + (selectedBrand === "KRISTOFF CIGARS" ? " kristoff-showcase" : "")}
       style={{"--accent":products.length ? product.accent : brand?.accent || "#b08954"}}
       onTouchStart={(e)=>{
         if(!selectedBrand)return;

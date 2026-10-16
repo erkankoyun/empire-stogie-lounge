@@ -605,3 +605,27 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
 
 /* Constrain real product photos to the showroom, including tall cutouts. */
 .photo-shell>img{width:100%;height:100%;min-width:0;min-height:0;object-fit:contain}
+
+/* Kristoff luxury single-cigar showroom: one stick, no white photo cards or numbering. */
+.app.kristoff-showcase:not(.detail-mode) .carousel{height:clamp(480px,60svh,770px);isolation:isolate}
+.app.kristoff-showcase .slot:not(.active){display:none!important}
+.app.kristoff-showcase .slot-name,.app.kristoff-showcase .counter{display:none!important}
+.app.kristoff-showcase:not(.detail-mode) .slot.active{width:min(100%,520px);height:100%;transform:translate(-50%,-50%);filter:none}
+.app.kristoff-showcase .slot.active{filter:none}
+.app.kristoff-showcase .slot .photo-shell{inset:0!important;background:transparent!important;overflow:visible}
+.app.kristoff-showcase .photo-shell>img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:url(#remove-product-bg) drop-shadow(0 26px 24px rgba(0,0,0,.5))}
+.app.kristoff-showcase .photo-shell>img.true-cutout{filter:drop-shadow(0 26px 24px rgba(0,0,0,.5))!important}
+.app.kristoff-showcase .photo-shell>img.rotated-photo{position:absolute;top:50%;left:50%;width:min(680px,65svh);height:auto;max-width:none;max-height:none;transform:translate(-50%,-50%) rotate(-90deg);object-fit:contain}
+.app.kristoff-showcase .slot.active .aura{width:125%;height:86%}
+.app.kristoff-showcase .carousel-controls{padding:0 2px}
+.app.kristoff-showcase .arrow{background:rgba(20,21,23,.8);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.26)}
+@media(max-width:1000px){
+ .app.kristoff-showcase:not(.detail-mode) .carousel{height:clamp(440px,56svh,670px)}
+ .app.kristoff-showcase:not(.detail-mode) .slot.active{width:min(100%,480px)}
+}
+@media(max-width:600px){
+ .app.kristoff-showcase:not(.detail-mode) .carousel{height:clamp(380px,56svh,540px)}
+ .app.kristoff-showcase:not(.detail-mode) .slot.active{width:min(100%,420px)}
+ .app.kristoff-showcase .photo-shell>img.rotated-photo{width:min(520px,55svh)}
+ .app.kristoff-showcase .arrow{width:46px;height:46px}
+}
