@@ -128,8 +128,8 @@
       "Allspice",
       "Cream"
     ],
-    "image": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048",
-    "imageCredit": "Cigar Studio — Guardrail Robusto single cigar",
+    "image": "./assets/cigars/kristoff-guardrail-silver-label.png",
+    "imageCredit": "Guardrail label presentation based on Kristoff Cigars official product photography",
     "source": "https://kristoff.com/product/guardrail-_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -155,12 +155,13 @@
     ],
     "imageSources": [
       {
-        "label": "Cigar Studio — Guardrail Robusto single cigar",
-        "url": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048"
+        "label": "Kristoff Cigars — official Guardrail silver band reference",
+        "url": "https://kristoff.com/wp-content/uploads/2023/10/Guardrail-Single-1-1024x1024.png"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Single Guardrail Robusto cigar; no presentation box."
+    "imageNote": "Label retouched using the manufacturer’s current silver-band photograph as reference; selected size is specified separately.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-guardrail-matador",
@@ -181,8 +182,8 @@
       "Allspice",
       "Cream"
     ],
-    "image": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048",
-    "imageCredit": "Cigar Studio — Guardrail individual cigar",
+    "image": "./assets/cigars/kristoff-guardrail-silver-label.png",
+    "imageCredit": "Guardrail label presentation based on Kristoff Cigars official product photography",
     "source": "https://kristoff.com/product/guardrail-_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -208,12 +209,13 @@
     ],
     "imageSources": [
       {
-        "label": "Cigar Studio — Guardrail individual cigar",
-        "url": "https://cigarstudio.com/cdn/shop/files/6096.png?v=1694554545&width=2048"
+        "label": "Kristoff Cigars — official Guardrail silver band reference",
+        "url": "https://kristoff.com/wp-content/uploads/2023/10/Guardrail-Single-1-1024x1024.png"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Line photograph; Matador measures 6.5 × 56."
+    "imageNote": "Label retouched using the manufacturer’s current silver-band photograph as reference; selected size is specified separately.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-vengeance-toro",
