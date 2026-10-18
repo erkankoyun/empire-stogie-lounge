@@ -664,14 +664,17 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
  * Show only the cigar, never the packaging to its left.
  */
 .app.kristoff-showcase .photo-shell>img.band-crop.crop-pistoff{
+  /* Crop the packaging, keeping the full standalone cigar and its band.
+     Use the source's square aspect ratio so the crop is stable on phones. */
   width:76%;
-  height:86%;
+  height:auto;
+  aspect-ratio:1;
   max-width:76%;
-  max-height:86%;
+  max-height:none;
   object-fit:contain;
   object-position:center;
-  clip-path:inset(0 0 0 67%);
-  transform:translate(-83.5%,-50%);
+  clip-path:inset(0 16% 0 60%);
+  transform:translate(-72%,-50%);
   transform-origin:center;
 }
 .app.kristoff-showcase .photo-shell>img.band-crop.crop-maduro{
