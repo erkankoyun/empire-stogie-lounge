@@ -17,8 +17,8 @@
       "Toast",
       "Sweet finish"
     ],
-    "image": "https://www.cigarsinternational.com/dw/image/v2/BKCV_PRD/on/demandware.static/-/Sites-stg-master-catalog/default/dw4c4096cc/CI/KRP-PM-1015_open.png?sh=800&sw=800",
-    "imageCredit": "Cigars International — Pistoff Kristoff current red-and-black band",
+    "image": "./assets/cigars/kristoff-pistoff-full.png",
+    "imageCredit": "Kristoff Cigars — official full-length single cigar photograph",
     "source": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -48,13 +48,13 @@
     ],
     "imageSources": [
       {
-        "label": "Cigars International — Pistoff Kristoff current red-and-black band",
-        "url": "https://www.cigarsinternational.com/dw/image/v2/BKCV_PRD/on/demandware.static/-/Sites-stg-master-catalog/default/dw4c4096cc/CI/KRP-PM-1015_open.png?sh=800&sw=800"
+        "label": "Kristoff Cigars — official full-length single cigar photograph",
+        "url": "https://kristoff.com/wp-content/uploads/2023/10/2024-Pistoff-Kristoff-Cigar-866x1024.png"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Current label from the manufacturer's redesigned presentation; single-cigar crop. Vitola is specified separately.",
-    "imageCrop": "pistoff"
+    "imageNote": "Official full-length line photograph; selected vitola is specified separately.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-pistoff-robusto",
@@ -74,8 +74,8 @@
       "Toast",
       "Sweet finish"
     ],
-    "image": "https://www.cigarsinternational.com/dw/image/v2/BKCV_PRD/on/demandware.static/-/Sites-stg-master-catalog/default/dw4c4096cc/CI/KRP-PM-1015_open.png?sh=800&sw=800",
-    "imageCredit": "Cigars International — Pistoff Kristoff current red-and-black band",
+    "image": "./assets/cigars/kristoff-pistoff-full.png",
+    "imageCredit": "Kristoff Cigars — official full-length single cigar photograph",
     "source": "https://kristoff.com/product/pistoff-kristoff_premium-cigar/",
     "sourceName": "Kristoff Cigars",
     "madeIn": "Dominican Republic",
@@ -101,13 +101,13 @@
     ],
     "imageSources": [
       {
-        "label": "Cigars International — Pistoff Kristoff current red-and-black band",
-        "url": "https://www.cigarsinternational.com/dw/image/v2/BKCV_PRD/on/demandware.static/-/Sites-stg-master-catalog/default/dw4c4096cc/CI/KRP-PM-1015_open.png?sh=800&sw=800"
+        "label": "Kristoff Cigars — official full-length single cigar photograph",
+        "url": "https://kristoff.com/wp-content/uploads/2023/10/2024-Pistoff-Kristoff-Cigar-866x1024.png"
       }
     ],
     "flavorSource": "Kristoff Cigars — official tasting notes",
-    "imageNote": "Current label from the manufacturer's redesigned presentation; single-cigar crop. Vitola is specified separately.",
-    "imageCrop": "pistoff"
+    "imageNote": "Official full-length line photograph; selected vitola is specified separately.",
+    "imageTransparent": true
   },
   {
     "id": "kristoff-guardrail-robusto",

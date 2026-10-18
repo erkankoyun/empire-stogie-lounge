@@ -706,3 +706,29 @@ button:focus-visible,a:focus-visible{outline:2px solid #f2eee8;outline-offset:5p
   background:transparent!important;
   filter:drop-shadow(0 22px 18px rgba(0,0,0,.38))!important;
 }
+
+/* Official full-length Pistoff photo: contain the complete head and foot. */
+.app.kristoff-showcase .photo-shell > img[src*="kristoff-pistoff-full.png"]{
+  position:relative;
+  top:auto;
+  left:auto;
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain!important;
+  object-position:center!important;
+  clip-path:none!important;
+  transform:none!important;
+  filter:drop-shadow(0 22px 18px rgba(0,0,0,.38))!important;
+}
+.app.kristoff-showcase:not(.detail-mode) .carousel:has(img[src*="kristoff-pistoff-full.png"]){
+  height:clamp(280px,calc(100svh - 390px),520px);
+  align-self:start;
+}
+@media(max-width:1000px){
+  .app.kristoff-showcase:not(.detail-mode) .carousel:has(img[src*="kristoff-pistoff-full.png"]){
+    height:clamp(280px,48svh,480px);
+  }
+}
