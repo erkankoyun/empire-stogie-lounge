@@ -63,6 +63,11 @@
       "srcset": "assets/hero/SLAYT13-768.webp 768w, assets/hero/SLAYT13-1086.webp 1086w"
     },
     {
+      "src": "assets/hero/lounge-interior-professional-20261030.jpeg",
+      "alt": "Warmly lit Empire Stogie Lounge with leather seating, barrel tables, and private cigar lockers",
+      "sizes": "(max-width: 820px) 100vw, 1448px"
+    },
+    {
       "src": "assets/hero/SLAYT15-1086.webp",
       "alt": "Members lounge seating and private cigar lockers",
       "srcset": "assets/hero/SLAYT15-768.webp 768w, assets/hero/SLAYT15-1086.webp 1086w"
