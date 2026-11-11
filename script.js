@@ -26,9 +26,9 @@ const gateFocusable = () => gate ? Array.from(gate.querySelectorAll('a[href], bu
 const backgroundNodes = () => Array.from(document.body.children).filter((node) => node !== gate && node.tagName !== 'SCRIPT');
 
 function setAgeGateOpen(open, restoreFocus = false) {
+  if (!gate) return;
   document.documentElement.classList.toggle('age-gate-active', open);
   backgroundNodes().forEach((node) => { node.inert = open; });
-  if (!gate) return;
   gate.setAttribute('aria-hidden', String(!open));
   if (open) {
     gate.classList.remove('hidden');
@@ -251,9 +251,11 @@ function applyClearNumberGlyphs(root = document.body) {
 
 applyClearNumberGlyphs();
 
-// Load the dedicated Cigars 4 Soldiers section after the main page is ready.
-const c4sSectionScript = document.createElement('script');
-c4sSectionScript.src = 'cigar4soldiers.js?v=1.6';
-c4sSectionScript.defer = true;
-c4sSectionScript.addEventListener('load', () => applyClearNumberGlyphs(document.getElementById('cigar-4-soldier')));
-document.head.appendChild(c4sSectionScript);
+// Only load this homepage feature where it belongs, and never load it twice.
+if (document.querySelector('#drinks') && !document.querySelector('script[src^="cigar4soldiers.js"]')) {
+  const c4sSectionScript = document.createElement('script');
+  c4sSectionScript.src = 'cigar4soldiers.js?v=1.6';
+  c4sSectionScript.defer = true;
+  c4sSectionScript.addEventListener('load', () => applyClearNumberGlyphs(document.getElementById('cigar-4-soldier')));
+  document.head.appendChild(c4sSectionScript);
+}
